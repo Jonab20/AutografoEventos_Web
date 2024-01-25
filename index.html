@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autografo Eventos</title>
+    
+    <!-- Libreria Normalice -->
+    <link rel="preload" href="CSS/normalice.css" as="style">
+    <link rel="stylesheet" href="CSS/normalice.css">
+
+    <!-- Para cargar más rapido la página -->
+    <link rel="preload" href="CSS/estilo.css" as="style"> <!--Para cargar mas rapido el sitio web-->
+    <link href="CSS/estilo.css" rel="stylesheet"> <!--Enlace de CSS a HTML-->
+
+    <!--Para usar los iconos de mover el Carusel de Fotos-->>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+
+<body>
+
+    <header>
+        <div class="nav-bg">
+            <nav>
+                
+                <ul class="menu-horizontal contenedormenu">
+
+                    <li><a class="imagen" href="#"></a></li><!-- <img class="imagen" src="" alt=""> -->
+                    <li><a href="#">Fútbol</a>
+                        <ul class="menu-vertical">
+                            <li><a href="#">Fútbol 11</a></li>
+                            <li><a href="#">Fútbol 6 Lobos</a></li>
+                            <li><a href="#">Fútbol 6 Monte</a></li>
+                            <li><a href="#">Fútbol 7</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">FootGolf</a></li>
+                    <li><a href="#">Truco</a></li>
+                    <li><a href="#">Contacto</a></li>
+                
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="contenedor-carusel">
+        <div class="carusel" id="slider">
+
+            <section class="slider-section">
+                <img src="Imagenes/slide1.jpg">
+            </section>
+            <section class="slider-section">
+                <img src="Imagenes/slide2.jpg">
+            </section>
+            <section class="slider-section">
+                <img src="Imagenes/slide3.jpg">
+            </section>
+
+        </div>
+        <div class="btn-left"><i class='bx bx-chevron-left'></i></div>
+        <div class="btn-right"><i class='bx bx-chevron-right'></i></div>
+    </div>
+
+
+
+    <script src="mas.js"></script>
+</body>
+
+
+</html>

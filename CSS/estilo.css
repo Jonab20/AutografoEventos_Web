@@ -1,0 +1,230 @@
+:root {
+    --azulPrimero: rgb(64, 87, 130);
+    --naranja: #cf8131;
+    --blanco: #ffffff;
+    --grisclaro: rgb(223, 233, 243);
+    --negro: #000000;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+    /* background: #eaeaea; */
+    overflow: hidden;
+
+    /*centrar el carusel de fotos en el body*/
+    .contenedor-carusel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding: 2px; */ /*Espacio vacio que dejo para no llegar a los bordes izquierda y derecha*/
+    }
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /*me permite mostrar bien las opciones en la barra de navegacion*/
+
+}
+
+.contenedor-carusel {
+    margin-top: 2rem; /*margen de espacio de arriba hacia abajo entre el contenedor carusel y el comienzo
+    de el header*/
+    position: relative;
+    width: 100%; /*ancho fijo del contenedor del carusel*/
+    height: 550px; /*altura del contenedor del carusel*/
+    /*width: 1000px; /*ancho fijo del contenedor del carusel*/
+    /* height: 700px; */
+    background-color: #e0e0e0; /*color de fondo del carusel*/
+    box-shadow: 0 8px 32px 0 rgb(0, 0, 0, 0.66); /*sombra*/
+    overflow: hidden; /*para que se vea solo la primer imagen*/
+
+}
+
+.carusel { /*contedor foto*/
+    width: 300%; /*le digo que ocupe de ancho 300% del contenedor del carusel,
+    porque tengo 3 imagenes que mostrar, cada una de las imagenes ocupara el 100%, al poner 300%,
+    me permite mostrar imagen por imagen.
+    De lo contrario de poner 100% me mostraria una sola imagen y no las 3 imagenes.*/
+    height: 100%; /*le digo que ocupe de alto el 100% del contenedor del carusel*/
+    display: flex;
+
+    /*De querer agregar y mostrar mas imagenes en el carusel, deno poner:
+    width: (100% por cada imagen a mostrar, o sea 3 imagenes = 300%, 5 imagenes = 500%,
+    10 imagenes = 1000%);*/
+
+}
+
+.slider-section {
+    width: calc(100%/3); 
+    /*del 100% del contendor de fotos dividilo en 3, ya que tengo 3 fotos que mostrar*/
+    height: 100%; /*el 100% de altura del contendor de fotos*/
+
+
+    /*Si quiero mostrar 10 imagenes seria:
+    width: calc(100% / 10);*/
+}
+
+.slider-section img {
+    
+    width: 100%; /*Tamaño img ancho que la foto ocupe el 100% del contenedor de foto*/
+    height: 100%; /*que la foto ocupe el 100% del contenedor de foto*/
+    /*object-fit: cover; /*para que las imagenes no pierdan calidad, poner esto agranda o hace 
+    zoom de mas a las fotos y se ven cortadas*/
+}
+
+.btn-left {
+    left: 10px;
+}
+
+.btn-right {
+    right: 10px;
+}
+
+.btn-left,
+.btn-right {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    background-color: rgba(148, 146, 146, 0.5);/*transparent;*/
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #00000081;
+    transform: translate(0, -50%);
+    transition: .5s ease;
+    user-select: none; /*para que el usuario no pueda seleccionar ese icono*/
+}
+
+.btn-left:hover,
+.btn-right:hover {
+    background-color: #333333d4;
+    color: #ffffff;
+}
+ 
+.contenedormenu {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.imagen {
+    /*Mostrar la imagen*/
+
+    background-image: url(../Imagenes/El_Autografo_eventos.png); /*Ubicacion del archivo/imagen */
+    background-repeat: no-repeat; /*Para evitar se repita la imagen*/
+    background-size: cover; /*Que la imagen se adapte al ancho de pantalla*/
+    width: 75px; /*ancho imagen*/
+    height: 48px; /*alto imagen*/
+    position: relative;
+    background-color: var(--blanco);
+    
+}
+
+
+.nav-bg{
+    background-color: var(--azulPrimero);  /*Pone el fonde en azul de la barra nav*/
+}
+
+.nav-bg ul {
+    list-style: none;
+}
+
+
+.menu-horizontal {
+    /*Mostrar en COLUMNA los botones cuando la pantalla es Menor a 768px*/
+
+    display: flex;
+    /*Habilita el Flexbox*/
+    flex-direction: column;
+    /*Muestra los enlaces en columna*/
+    align-items: center;
+    /*Muestra los enlaces en forma Horizontal.*/
+    list-style: none;
+    position: relative;
+    
+    
+}
+
+@media (min-width: 768px) {
+    /*Mostrar en FILA los botones cuando la pantalla es Mayor a 768px*/
+    .menu-horizontal {
+        list-style: none;
+        flex-direction: row; /*Muestra los enlaces en FILA, mientras la pantalla sea mayor a 768px*/
+        justify-content: space-evenly;/*space-between: separa los enlaces*/
+    }
+}
+
+.menu-horizontal > li > a {
+    /*Estilo ESPECIFICO a los botones*/
+
+    /*Es para alinear y centar el texto de la barra mientras sea en columna*/
+    display: block;
+    text-align: center;
+    /*Si escribo 1(espacio)rem, la barra de nav. se muestra con poca altura,
+     Si escribo 1rem, sin espacio, la barra de nav. se muestra mas alta.
+     Esto mismo ocurre en padding, font-size, etc.,*/
+
+    /*Estilo que tendran los botones de la barra*/
+    padding: 1rem; 
+    color: var(--blanco); /*Color del texto c/u de los botones*/
+    text-decoration: none; /*Sacar el subrayado a los Enlaces*/
+    font-size: 2 rem; /*Tamaño de letra*/
+    font-weight: bold; /*Texto en Negrita*/
+    padding: 15px 20px;
+    
+}
+
+.menu-horizontal > li > a:hover {
+    /*Color que tendran los botones cuando pase por encima el mousse*/
+
+    background-color: var(--grisclaro); /*Color de fondo c/u de los botones*/
+    color: var(--negro); /*Color del texto c/u de los botones*/
+    
+}
+
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 135px;
+    background-color: rgb(64, 87, 130, .5);
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+
+}
+
+.menu-vertical li:hover {
+    background-color: var(--grisclaro);
+    
+}
+
+.menu-vertical li a {
+    display: block;
+    color: var(--blanco);
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+    
+}
+
+.menu-vertical > li > a:hover {
+
+    color: var(--negro)
+}
