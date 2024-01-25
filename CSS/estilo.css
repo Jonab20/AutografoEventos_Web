@@ -7,6 +7,8 @@
 
 }
 
+
+
 *{
     margin: 0;
     padding: 0;
@@ -15,6 +17,7 @@
 
 
 html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 62.5%;
 }
 
@@ -121,12 +124,16 @@ header {
 .contenedormenu {
     max-width: 120rem;
     margin: 0 auto;
+   
+  
 }
+
+
 
 .imagen {
     /*Mostrar la imagen*/
-
-    background-image: url(../Imagenes/El_Autografo_eventos.png); /*Ubicacion del archivo/imagen */
+    clip-path: polygon(0% 0%, 77% 0, 100% 100%, 0% 100%); /*AGREGO MARCO AL LOGO*/
+    background-image: url(../Imagenes/El_Autografo_eventos_Logo_nvar_v2.png); /*Ubicacion del archivo/imagen */
     background-repeat: no-repeat; /*Para evitar se repita la imagen*/
     background-size: cover; /*Que la imagen se adapte al ancho de pantalla*/
     width: 75px; /*ancho imagen*/
@@ -138,6 +145,8 @@ header {
 
 
 .nav-bg{
+    
+    display: flex; /*Agrego division del logo como contenedor fuera de la lista para que quede al margen*/
     background-color: var(--azulPrimero);  /*Pone el fonde en azul de la barra nav*/
 }
 
@@ -147,8 +156,8 @@ header {
 
 
 .menu-horizontal {
-    /*Mostrar en COLUMNA los botones cuando la pantalla es Menor a 768px*/
 
+    /*Mostrar en COLUMNA los botones cuando la pantalla es Menor a 768px*/
     display: flex;
     /*Habilita el Flexbox*/
     flex-direction: column;
@@ -157,7 +166,6 @@ header {
     /*Muestra los enlaces en forma Horizontal.*/
     list-style: none;
     position: relative;
-    
     
 }
 
