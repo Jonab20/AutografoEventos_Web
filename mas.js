@@ -6,9 +6,11 @@ sliderSection = document.querySelectorAll('.slider-section');
 btnLeft.addEventListener("click", e => moveToLeft())
 btnRight.addEventListener("click", e => moveToRight())
 
-setInterval(() => { /*mover automaticamente el carusel hacia la izquierda cada 5 segundos.*/ 
+/*mover automaticamente el carusel hacia la izquierda cada 5 segundos.*/ 
+setInterval(() => { 
     moveToRight();
 }, 5000)
+
 
 let operacion = 0,
     counter = 0,

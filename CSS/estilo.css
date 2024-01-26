@@ -104,7 +104,7 @@ header {
     position: absolute;
     top: 50%;
     font-size: 1.5rem;
-    background-color: rgba(148, 146, 146, 0.5);/*transparent;*/
+    background-color: rgba(148, 146, 146, 0.5);/*transparent;  (148, 146, 146, 0.5)*/
     border-radius: 50%;
     padding: 5px;
     font-weight: 600;
@@ -130,30 +130,42 @@ header {
 
 
 
-.imagen {
+/* .imagen {
     /*Mostrar la imagen*/
-    clip-path: polygon(0% 0%, 77% 0, 100% 100%, 0% 100%); /*AGREGO MARCO AL LOGO*/
-    background-image: url(../Imagenes/El_Autografo_eventos_Logo_nvar_v2.png); /*Ubicacion del archivo/imagen */
-    background-repeat: no-repeat; /*Para evitar se repita la imagen*/
-    background-size: cover; /*Que la imagen se adapte al ancho de pantalla*/
-    width: 75px; /*ancho imagen*/
-    height: 48px; /*alto imagen*/
-    position: relative;
-    background-color: var(--blanco);
+    /*clip-path: polygon(0% 0%, 77% 0, 100% 100%, 0% 100%); /*AGREGO MARCO AL LOGO*/
+    /*background-image: url(../Imagenes/El_Autografo_eventos_Logo_nvar_v2.png); /*Ubicacion del archivo/imagen */
+    /*background-repeat: no-repeat; /*Para evitar se repita la imagen*/
+    /*background-size: cover; /*Que la imagen se adapte al ancho de pantalla*/
+    /*width: 75px; /*ancho imagen*/
+    /*height: 48px; /*alto imagen*/
+    /*position: relative;
+    /*background-color: var(--blanco);
     
-}
+} */
 
 
 .nav-bg{
     
-    display: flex; /*Agrego division del logo como contenedor fuera de la lista para que quede al margen*/
     background-color: var(--azulPrimero);  /*Pone el fonde en azul de la barra nav*/
+    display: flex; /*Agrego division del logo como contenedor fuera de la lista para que quede al margen*/
+    justify-content: space-between;
+    align-items: center;
+    height: 65px; /*altura de la barra*/
+}
+
+.nav-bg .logo img {
+    height: 65px; /*ALuta del logo*/
+    width: auto; /*ancho del logo*/
+}
+
+.logo img {
+    background-color: var(--blanco); /*color de fondo del logo*/
 }
 
 .nav-bg ul {
     list-style: none;
-}
 
+}
 
 .menu-horizontal {
 
@@ -174,8 +186,9 @@ header {
     .menu-horizontal {
         list-style: none;
         flex-direction: row; /*Muestra los enlaces en FILA, mientras la pantalla sea mayor a 768px*/
-        justify-content: space-evenly;/*space-between: separa los enlaces*/
+        justify-content: space-between;/*space-between: separa los enlaces*/
     }
+
 }
 
 .menu-horizontal > li > a {
