@@ -7,7 +7,7 @@
 
 }
 
-
+/* PRUEBA GIT*/
 
 *{
     margin: 0;
@@ -48,7 +48,7 @@ header {
     margin-top: 2rem; /*margen de espacio de arriba hacia abajo entre el contenedor carusel y el comienzo
     de el header*/
     position: relative;
-    width: 100%; /*ancho fijo del contenedor del carusel*/
+    width: 300%; /*ancho fijo del contenedor del carusel*/
     height: 550px; /*altura del contenedor del carusel*/
     /*width: 1000px; /*ancho fijo del contenedor del carusel*/
     /* height: 700px; */
@@ -63,7 +63,7 @@ header {
     porque tengo 3 imagenes que mostrar, cada una de las imagenes ocupara el 100%, al poner 300%,
     me permite mostrar imagen por imagen.
     De lo contrario de poner 100% me mostraria una sola imagen y no las 3 imagenes.*/
-    height: 100%; /*le digo que ocupe de alto el 100% del contenedor del carusel*/
+    height: auto; /*le digo que ocupe de alto el 100% del contenedor del carusel*/
     display: flex;
 
     /*De querer agregar y mostrar mas imagenes en el carusel, deno poner:
