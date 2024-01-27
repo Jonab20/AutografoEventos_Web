@@ -9,47 +9,49 @@
 
 /*BOTON WHATSAPP*/
 .whatsapp {
-    position:fixed;
-    width:60px;
-    height:60px;
-    bottom:40px;
-    right:40px;
-    background-color:#25d366;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    font-size:30px;
-    z-index:100;
-  }
-  
-  .whatsapp-icon {
-    margin-top:13px;
-  }
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 13px;
+}
+
 /* PRUEBA GIT*/
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 
-html{
+html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 62.5%;
 }
 
-body{
+body {
     font-size: 16px;
     /* background: #eaeaea; */
     overflow: hidden;
 
     /*centrar el carusel de fotos en el body*/
-    .contenedor-carusel{
+    .contenedor-carusel {
         display: flex;
         justify-content: center;
         align-items: center;
-        /* padding: 2px; */ /*Espacio vacio que dejo para no llegar a los bordes izquierda y derecha*/
+        /* padding: 2px; */
+        /*Espacio vacio que dejo para no llegar a los bordes izquierda y derecha*/
     }
 }
 
@@ -58,30 +60,40 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10; /*me permite mostrar bien las opciones en la barra de navegacion*/
+    z-index: 10;
+    /*me permite mostrar bien las opciones en la barra de navegacion*/
 
 }
 
 .contenedor-carusel {
-    margin-top: 2rem; /*margen de espacio de arriba hacia abajo entre el contenedor carusel y el comienzo
+    margin-top: 2rem;
+    /*margen de espacio de arriba hacia abajo entre el contenedor carusel y el comienzo
     de el header*/
     position: relative;
-    width: 300%; /*ancho fijo del contenedor del carusel*/
-    height: 550px; /*altura del contenedor del carusel*/
+    width: 300%;
+    /*ancho fijo del contenedor del carusel*/
+    height: 550px;
+    /*altura del contenedor del carusel*/
     /*width: 1000px; /*ancho fijo del contenedor del carusel*/
     /* height: 700px; */
-    background-color: #e0e0e0; /*color de fondo del carusel*/
-    box-shadow: 0 8px 32px 0 rgb(0, 0, 0, 0.66); /*sombra*/
-    overflow: hidden; /*para que se vea solo la primer imagen*/
+    background-color: #e0e0e0;
+    /*color de fondo del carusel*/
+    box-shadow: 0 8px 32px 0 rgb(0, 0, 0, 0.66);
+    /*sombra*/
+    overflow: hidden;
+    /*para que se vea solo la primer imagen*/
 
 }
 
-.carusel { /*contedor foto*/
-    width: 300%; /*le digo que ocupe de ancho 300% del contenedor del carusel,
+.carusel {
+    /*contedor foto*/
+    width: 300%;
+    /*le digo que ocupe de ancho 300% del contenedor del carusel,
     porque tengo 3 imagenes que mostrar, cada una de las imagenes ocupara el 100%, al poner 300%,
     me permite mostrar imagen por imagen.
     De lo contrario de poner 100% me mostraria una sola imagen y no las 3 imagenes.*/
-    height: auto; /*le digo que ocupe de alto el 100% del contenedor del carusel*/
+    height: auto;
+    /*le digo que ocupe de alto el 100% del contenedor del carusel*/
     display: flex;
 
     /*De querer agregar y mostrar mas imagenes en el carusel, deno poner:
@@ -91,9 +103,10 @@ header {
 }
 
 .slider-section {
-    width: calc(100%/3); 
+    width: calc(100%/3);
     /*del 100% del contendor de fotos dividilo en 3, ya que tengo 3 fotos que mostrar*/
-    height: 100%; /*el 100% de altura del contendor de fotos*/
+    height: 100%;
+    /*el 100% de altura del contendor de fotos*/
 
 
     /*Si quiero mostrar 10 imagenes seria:
@@ -101,9 +114,11 @@ header {
 }
 
 .slider-section img {
-    
-    width: 100%; /*Tamaño img ancho que la foto ocupe el 100% del contenedor de foto*/
-    height: 100%; /*que la foto ocupe el 100% del contenedor de foto*/
+
+    width: 100%;
+    /*Tamaño img ancho que la foto ocupe el 100% del contenedor de foto*/
+    height: 100%;
+    /*que la foto ocupe el 100% del contenedor de foto*/
     /*object-fit: cover; /*para que las imagenes no pierdan calidad, poner esto agranda o hace 
     zoom de mas a las fotos y se ven cortadas*/
 }
@@ -122,7 +137,8 @@ header {
     position: absolute;
     top: 50%;
     font-size: 1.5rem;
-    background-color: rgba(148, 146, 146, 0.5);/*transparent;  (148, 146, 146, 0.5)*/
+    background-color: rgba(148, 146, 146, 0.5);
+    /*transparent;  (148, 146, 146, 0.5)*/
     border-radius: 50%;
     padding: 5px;
     font-weight: 600;
@@ -130,7 +146,8 @@ header {
     color: #00000081;
     transform: translate(0, -50%);
     transition: .5s ease;
-    user-select: none; /*para que el usuario no pueda seleccionar ese icono*/
+    user-select: none;
+    /*para que el usuario no pueda seleccionar ese icono*/
 }
 
 .btn-left:hover,
@@ -138,46 +155,154 @@ header {
     background-color: #333333d4;
     color: #ffffff;
 }
- 
+
 .contenedormenu {
     max-width: 120rem;
     margin: 0 auto;
-   
-  
+}
+
+
+/*SECCION QUIENES SOMOS*/
+
+.figura {
+    clip-path: polygon(0 0, 67% 0, 31% 100%, 0% 100%);
+    width: 100%;
+    height: auto;
+    opacity: 70%;
+    background-color: var(--azulPrimero);
+}
+
+
+/*.figura {
+    width: 250px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-left: 0px solid transparent;
+    border-bottom: 100px solid #428bca;
+}*/
+
+.contenedor_quienes_somos {
+    width: 100%;
+    height: 645px;
+    background-color: var(--azulPrimero);
+}
+
+/* SECCION SPONSORS*/
+.nos_acompañan {
+    width: 100%;
+}
+
+.contenedor_texto {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0;
+    width: 100%;
+    height: 200px;
+}
+
+.contenedor_logos_sponsors {
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+    width: auto;
+    padding: 30px;
 }
 
 
 
+/* SECCION DONDE ESTAMOS*/
+.contenedor_localidades {
+    display: flex;
+    color: #cf8131;
+    justify-content: space-between;
+
+}
+
+.nombres_canchas {
+
+    color: #cf8131;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.texto {
+    width: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/*SECCION FOOTER*/
+
+.contenedor_footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #cf8131;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_footer {
+    height: 150px;
+    width: 250px;
+}
+
+.contenedor_redes {
+    height: 20px;
+    width: 20px;
+    justify-content: space-between;
+}
+
+.redes {
+    height: auto;
+    width: auto;
+}
+
 /* .imagen {
     /*Mostrar la imagen*/
-    /*clip-path: polygon(0% 0%, 77% 0, 100% 100%, 0% 100%); /*AGREGO MARCO AL LOGO*/
-    /*background-image: url(../Imagenes/El_Autografo_eventos_Logo_nvar_v2.png); /*Ubicacion del archivo/imagen */
-    /*background-repeat: no-repeat; /*Para evitar se repita la imagen*/
-    /*background-size: cover; /*Que la imagen se adapte al ancho de pantalla*/
-    /*width: 75px; /*ancho imagen*/
-    /*height: 48px; /*alto imagen*/
-    /*position: relative;
+/*clip-path: polygon(0% 0%, 77% 0, 100% 100%, 0% 100%); /*AGREGO MARCO AL LOGO*/
+/*background-image: url(../Imagenes/El_Autografo_eventos_Logo_nvar_v2.png); /*Ubicacion del archivo/imagen */
+/*background-repeat: no-repeat; /*Para evitar se repita la imagen*/
+/*background-size: cover; /*Que la imagen se adapte al ancho de pantalla*/
+/*width: 75px; /*ancho imagen*/
+/*height: 48px; /*alto imagen*/
+/*position: relative;
     /*background-color: var(--blanco);
     
 } */
 
 
-.nav-bg{
-    
-    background-color: var(--azulPrimero);  /*Pone el fonde en azul de la barra nav*/
-    display: flex; /*Agrego division del logo como contenedor fuera de la lista para que quede al margen*/
+.nav-bg {
+
+    background-color: var(--azulPrimero);
+    /*Pone el fonde en azul de la barra nav*/
+    display: flex;
+    /*Agrego division del logo como contenedor fuera de la lista para que quede al margen*/
     justify-content: space-between;
     align-items: center;
-    height: 65px; /*altura de la barra*/
+    height: 65px;
+    /*altura de la barra*/
+
 }
 
 .nav-bg .logo img {
-    height: 65px; /*ALuta del logo*/
-    width: auto; /*ancho del logo*/
+    height: 65px;
+    /*ALuta del logo*/
+    width: auto;
+    /*ancho del logo*/
 }
 
+
 .logo img {
-    background-color: var(--blanco); /*color de fondo del logo*/
+    background-color: var(--blanco);
+    /*color de fondo del logo*/
+    clip-path: polygon(0% 0%, 77% 0, 100% 100%, 0% 100%);
+    /*agrego el forma al contenedor del logo*/
 }
 
 .nav-bg ul {
@@ -196,20 +321,23 @@ header {
     /*Muestra los enlaces en forma Horizontal.*/
     list-style: none;
     position: relative;
-    
+
 }
 
 @media (min-width: 768px) {
+
     /*Mostrar en FILA los botones cuando la pantalla es Mayor a 768px*/
     .menu-horizontal {
         list-style: none;
-        flex-direction: row; /*Muestra los enlaces en FILA, mientras la pantalla sea mayor a 768px*/
-        justify-content: space-between;/*space-between: separa los enlaces*/
+        flex-direction: row;
+        /*Muestra los enlaces en FILA, mientras la pantalla sea mayor a 768px*/
+        justify-content: space-between;
+        /*space-between: separa los enlaces*/
     }
 
 }
 
-.menu-horizontal > li > a {
+.menu-horizontal>li>a {
     /*Estilo ESPECIFICO a los botones*/
 
     /*Es para alinear y centar el texto de la barra mientras sea en columna*/
@@ -220,21 +348,27 @@ header {
      Esto mismo ocurre en padding, font-size, etc.,*/
 
     /*Estilo que tendran los botones de la barra*/
-    padding: 1rem; 
-    color: var(--blanco); /*Color del texto c/u de los botones*/
-    text-decoration: none; /*Sacar el subrayado a los Enlaces*/
-    font-size: 2 rem; /*Tamaño de letra*/
-    font-weight: bold; /*Texto en Negrita*/
+    padding: 1rem;
+    color: var(--blanco);
+    /*Color del texto c/u de los botones*/
+    text-decoration: none;
+    /*Sacar el subrayado a los Enlaces*/
+    font-size: 2 rem;
+    /*Tamaño de letra*/
+    font-weight: bold;
+    /*Texto en Negrita*/
     padding: 15px 20px;
-    
+
 }
 
-.menu-horizontal > li > a:hover {
+.menu-horizontal>li>a:hover {
     /*Color que tendran los botones cuando pase por encima el mousse*/
 
-    background-color: var(--grisclaro); /*Color de fondo c/u de los botones*/
-    color: var(--negro); /*Color del texto c/u de los botones*/
-    
+    background-color: var(--grisclaro);
+    /*Color de fondo c/u de los botones*/
+    color: var(--negro);
+    /*Color del texto c/u de los botones*/
+
 }
 
 .menu-vertical {
@@ -245,14 +379,14 @@ header {
     background-color: rgb(64, 87, 130, .5);
 }
 
-.menu-horizontal li:hover .menu-vertical{
+.menu-horizontal li:hover .menu-vertical {
     display: block;
 
 }
 
 .menu-vertical li:hover {
     background-color: var(--grisclaro);
-    
+
 }
 
 .menu-vertical li a {
@@ -260,10 +394,10 @@ header {
     color: var(--blanco);
     padding: 15px 15px 15px 20px;
     text-decoration: none;
-    
+
 }
 
-.menu-vertical > li > a:hover {
+.menu-vertical>li>a:hover {
 
     color: var(--negro)
 }
