@@ -23,22 +23,41 @@
 
 
 <body>
-    <scroll-container>
-        <scroll-page id="page-1">1</scroll-page>
-        <scroll-page id="page-2">2</scroll-page>
-        <scroll-page id="page-3">3</scroll-page>
-    </scroll-container>
+    
     <!--refenciamos el boton y link de whatsapp-->
     <a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp"
         target="_blank">
         <i class="fa fa-whatsapp whatsapp-icon"></i></a>
 
     <header>
+        <div class="logo">
+            <img src="Imagenes/El_Autografo_eventos_Logo_nvar_v2.png" alt="Logo del sitio">
+        </div>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menú</label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Fútbol</a>
+                    <ul>
+                        <li><a href="#">Fútbol 11</a></li>
+                        <li><a href="#">Fútbol 6 Lobos</a></li>
+                        <li><a href="#">Fútbol 6 Monte</a></li>
+                        <li><a href="#">Fútbol 7</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">FootGolf</a></li>
+                <li><a href="#">Truco</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- <headerHEADER VIEJOOOOO> 
         <div class="nav-bg">
             <div class="logo">
                 <img src="Imagenes/El_Autografo_eventos_Logo_nvar_v2.png" alt="Logo del sitio">
             </div>
-            <!-- <div class="imagen" href="#"></div>       -->
             <nav>
                 <ul class="menu-horizontal contenedormenu">
 
@@ -56,8 +75,9 @@
 
                 </ul>
             </nav>
+            
         </div>
-    </header>
+    </headerHEADER VIEJOOOOO>   -->
 
     <div class="contenedor-carusel">
         <div class="carusel" id="slider">
@@ -79,7 +99,7 @@
     </div>
 
     <!--ACA COMIENZA LA SECCION QUIENES SOMOS-->
-    <section class="contenedor_quienes_somos">
+    <section class="contenedorquienessomos">
         <div class="figura">
             <img src="Imagenes/quienes_somos_bg.png" alt="quienes somos">
         </div>
@@ -88,7 +108,7 @@
     <!--ACA COMIENZA LA SECCION SPONSORS-->
     <section>
 
-        <div class="nos_acompañan">
+        <div class="nos-acompañan">
             <div class="contenedor_texto">
                 NOS ACOMPAÑAN
             </div>

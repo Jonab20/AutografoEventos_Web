@@ -55,18 +55,144 @@ body {
     }
 }
 
+/*Comienzo del HEADER, BARRA DE NAVEGACION*/
 header {
-    position: absolute;
+
+    /*AHORA*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--azulPrimero);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+
+
+    /*ANTES*/
+    /* position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 10; */
+    /*me permite pocisionar la barra de navegacion por sobre la imagen de fondo*/
     /*me permite mostrar bien las opciones en la barra de navegacion*/
 
 }
 
+header .navbar ul { /*Le quito la forma de lista a Futbol, FootGolf, Truco, Contacto*/
+    list-style: none;
+}
+
+header .navbar ul li { /*Posiciono los botones Futbol, FootGolf, Truco, Contacto*/
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a { /*Doy estilo a Futbol, FootGolf, Truco, Contacto*/
+    /* font-size: 20px; */
+    /* padding: 20px; */
+    color: var(--blanco);
+    display: block;
+    text-decoration: none;
+    /*Sacar el subrayado a los Enlaces*/
+
+    font-size: 2 rem; /*Tamaño de letra*/
+    font-weight: bold; /*Texto en Negrita*/
+    padding: 15px 20px;
+}
+
+header .navbar ul li a:hover { /*Doy estilo cuando pasa el Mouse sobre Futbol, FootGolf, Truco, Contacto*/
+    background-color: var(--grisclaro);
+    color: var(--negro);
+}
+
+header .navbar ul li ul { /*Posiciono el contenedor de los botones Futbol 11, Futbol 6 Monte, etc*/
+    position: absolute;
+    left: 0;
+    width: 135px;
+    background-color: rgb(64, 87, 130, .5);
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    
+}
+
+header .navbar ul li:hover > ul { /*Le digo que cuando presione Futbol se Desplege y muestre los demas botones*/
+    display: initial;
+}
+
+#menu-bar { /*Para que no muestre el boton Menú mientras sea grande la pantalla*/
+    display: none;
+}
+
+header label { /*Doy estilo al boton Menú*/
+    font-size: 20px;
+    color: var(--blanco);
+    cursor: pointer;
+    display: none; /*logro que desaparesca de la vista mientras sea grande la pantalla el boton Menú*/
+}
+
+
+
+@media(max-width:991px) { /*Para cuando a la pag se le achique su ancho*/
+    /* header {  Añade mas Altura a la barra cuando se Achica la pantalla
+        padding: 20px;
+    } */
+    header label { /*Cuando sea chica la pantalla que SI muestre el boton Menú*/
+        display: initial;
+    }
+    header .navbar{ /*Estilo de como quiero que se vea el menu cuando sea chica la pantalla*/
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--azulPrimero);
+        display: none; /*Se muestra solo Menú, se ocultan los demas botones*/
+    }
+    header .navbar ul li{ /*Posiciono los botones: Futbol, FutGolf, Truco, Contacto cuando la pantalla sea chica*/
+        width: 100%;
+    }
+    header .navbar ul li ul {/*Posiciono los botones Futbol 11, Futbol 6, etc, pantalla chica*/
+        position: relative;
+        width: 100%;
+    }
+    header .navbar ul li ul li { /*Color de fondo del contendor de Futbol 11, Futbol 6, etc*/
+        background: var(--grisclaro);
+    }
+    #menu-bar:checked ~ .navbar { /*Cuando presiono Menú, se despligan los botones principales*/
+        display: initial;
+    }
+    header label { 
+        /*Espacio de derecha a final del ancho de pag. para que Menú no quede pegado al final del ancho*/
+        padding-right: 2rem;
+    }
+}
+
+header .logo img {
+    height: 65px;
+    /*ALuta del logo*/
+    width: auto;
+    /*ancho del logo*/
+}
+
+.logo img {
+    background-color: var(--blanco);
+    /*color de fondo del logo*/
+    clip-path: polygon(0% 0%, 77% 0, 100% 100%, 0% 100%);
+    /*agrego el forma al contenedor del logo*/
+}
+
+/*FINAL del HEADER, BARRA DE NAVEGACION*/
+
+
+
+/*Comienzo del CARUSEL*/
 .contenedor-carusel {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     /*margen de espacio de arriba hacia abajo entre el contenedor carusel y el comienzo
     de el header*/
     position: relative;
@@ -156,9 +282,17 @@ header {
     color: #ffffff;
 }
 
-.contenedormenu {
-    max-width: 120rem;
-    margin: 0 auto;
+@media(max-width:991px) { 
+    /*Según el ancho de pantalla se modifica la antura de las siguientes partes*/
+    .contenedor-carusel {
+        height: auto;
+    }
+    .contenedor-carusel .carusel {
+        height: auto;
+    }
+    .contenedor-carusel .carusel .slider-section {
+        height: auto;
+    }
 }
 
 
@@ -277,109 +411,119 @@ header {
 } */
 
 
-.nav-bg {
+
+/*Barra de NAVEGACION VIEJOOOOO*/
+
+/* .contenedormenu {
+    max-width: 120rem;
+    margin: 0 auto;
+} */
+
+
+/* .nav-bg {
 
     background-color: var(--azulPrimero);
     /*Pone el fonde en azul de la barra nav*/
-    display: flex;
+    /*display: flex;
     /*Agrego division del logo como contenedor fuera de la lista para que quede al margen*/
-    justify-content: space-between;
+    /*justify-content: space-between;
     align-items: center;
-    height: 65px;
+    /*height: 65px;
     /*altura de la barra*/
 
-}
+/*} */
 
-.nav-bg .logo img {
+/* .nav-bg .logo img {
     height: 65px;
     /*ALuta del logo*/
-    width: auto;
+    /*width: auto;
     /*ancho del logo*/
-}
+/*} */
 
 
-.logo img {
+/* .logo img {
     background-color: var(--blanco);
     /*color de fondo del logo*/
-    clip-path: polygon(0% 0%, 77% 0, 100% 100%, 0% 100%);
+    /*clip-path: polygon(0% 0%, 77% 0, 100% 100%, 0% 100%);
     /*agrego el forma al contenedor del logo*/
-}
+/*} */
 
-.nav-bg ul {
+/* .nav-bg ul {
     list-style: none;
 
-}
+} */
 
-.menu-horizontal {
+/* .menu-horizontal {
 
     /*Mostrar en COLUMNA los botones cuando la pantalla es Menor a 768px*/
-    display: flex;
+    /*display: flex;
     /*Habilita el Flexbox*/
-    flex-direction: column;
+    /*flex-direction: column;
     /*Muestra los enlaces en columna*/
-    align-items: center;
+    /*align-items: center;
     /*Muestra los enlaces en forma Horizontal.*/
-    list-style: none;
+    /*list-style: none;
     position: relative;
 
-}
+} */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
 
     /*Mostrar en FILA los botones cuando la pantalla es Mayor a 768px*/
-    .menu-horizontal {
+    /* .menu-horizontal {
         list-style: none;
         flex-direction: row;
         /*Muestra los enlaces en FILA, mientras la pantalla sea mayor a 768px*/
-        justify-content: space-between;
+        /*justify-content: space-between;
         /*space-between: separa los enlaces*/
-    }
+    /*} */
 
-}
+/*} */
 
-.menu-horizontal>li>a {
-    /*Estilo ESPECIFICO a los botones*/
+
+/* .menu-horizontal>li>a {
+    /*Estilo ESPECIFICO a los botones de la section Futbol*/
 
     /*Es para alinear y centar el texto de la barra mientras sea en columna*/
-    display: block;
+    /*display: block;
     text-align: center;
     /*Si escribo 1(espacio)rem, la barra de nav. se muestra con poca altura,
      Si escribo 1rem, sin espacio, la barra de nav. se muestra mas alta.
      Esto mismo ocurre en padding, font-size, etc.,*/
 
     /*Estilo que tendran los botones de la barra*/
-    padding: 1rem;
+    /*padding: 1rem;
     color: var(--blanco);
     /*Color del texto c/u de los botones*/
-    text-decoration: none;
+    /*text-decoration: none;
     /*Sacar el subrayado a los Enlaces*/
-    font-size: 2 rem;
+    /*font-size: 2 rem;
     /*Tamaño de letra*/
-    font-weight: bold;
+    /*font-weight: bold;
     /*Texto en Negrita*/
-    padding: 15px 20px;
+    /*padding: 15px 20px;
 
-}
+} */
 
-.menu-horizontal>li>a:hover {
+/* .menu-horizontal>li>a:hover { /*botones de la section Futbol*/
     /*Color que tendran los botones cuando pase por encima el mousse*/
 
-    background-color: var(--grisclaro);
+    /*background-color: var(--grisclaro);
     /*Color de fondo c/u de los botones*/
-    color: var(--negro);
+    /*color: var(--negro);
     /*Color del texto c/u de los botones*/
 
-}
+/*} */
 
-.menu-vertical {
+/* .menu-vertical {
     position: absolute;
     display: none;
     list-style: none;
     width: 135px;
     background-color: rgb(64, 87, 130, .5);
-}
+} */
 
-.menu-horizontal li:hover .menu-vertical {
+/* .menu-horizontal li:hover .menu-vertical {
     display: block;
 
 }
@@ -387,9 +531,9 @@ header {
 .menu-vertical li:hover {
     background-color: var(--grisclaro);
 
-}
+} */
 
-.menu-vertical li a {
+/* .menu-vertical li a {
     display: block;
     color: var(--blanco);
     padding: 15px 15px 15px 20px;
@@ -400,4 +544,4 @@ header {
 .menu-vertical>li>a:hover {
 
     color: var(--negro)
-}
+} */
