@@ -211,6 +211,7 @@ header .logo img {
     background-color: var(--blanco);
     /*color de fondo del logo*/
     clip-path: polygon(0% 0%, 77% 0, 100% 100%, 0% 100%);
+    margin: 0;    
     /*agrego el forma al contenedor del logo*/
 }
 
@@ -334,7 +335,6 @@ header .logo img {
     position: absolute;
     width: 70%;
     height: auto;
-
     /*Dimension del trapecio*/
     border-right: 0px solid transparent;
     border-left: 200px solid transparent;
@@ -342,6 +342,14 @@ header .logo img {
 
     opacity: 80%;
     right: 0;
+}
+
+.txt_qs {
+    font-size: 50px;
+    margin: 15%;
+    right: 0;
+    position: absolute;
+    z-index: 15px;
 }
 
 .img-quienes-somos {
@@ -355,9 +363,10 @@ header .logo img {
     display: flex;
 
 }
+
 /* SECCION REGLAMENTO*/
 
-.trapecio-reglamento{
+.trapecio-reglamento {
     /*Posicion del trapecio*/
     position: absolute;
     width: 70%;
@@ -371,12 +380,21 @@ header .logo img {
     opacity: 80%;
     left: 0;
 }
+
+.txt_reglamento{
+    font-size: 50px;
+    margin: 15%;
+    right: 0;
+    position: absolute;
+    z-index: 15;
+}
+
 .img-reglamento {
     height: 300px;
 
 }
 
-.contenedor-reglamento{
+.contenedor-reglamento {
     width: 100%;
     height: 300px;
     display: flex;
@@ -387,10 +405,10 @@ header .logo img {
 
 
 /* SECCION DONDE NOS ENCONTRAMOS*/
-.contenedor-donde-encontrarnos{
+.contenedor-donde-encontrarnos {
     width: 100%;
     height: 600px;
-    
+
 }
 
 .contenedor_texto {
@@ -436,37 +454,51 @@ header .logo img {
 
 /*SECCION FOOTER*/
 
+/* OPCION2 */
+
+/**/
 .contenedor_footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: var(--naranja);
     width: 100%;
     height: 150px;
     display: flex;
-    
+    justify-content: space-between;
+    align-items: center;
 }
 
+.contenedor_redes {
+    margin: 20px;
+    justify-content: space-evenly;
+}
 
 .logo_footer {
     height: auto;
     width: 150px;
 }
 
-.img-redes{
+.img-redes {
     height: 30px;
     width: 30px;
     margin: 5px;
 }
+
 .redes {
     display: flex;
     align-items: center;
+    right: 4rem;
     color: #ffffff;
-    
 }
-.contendor-logo-footer{
-    width: 100%;
+
+.contendor-logo-footer {
+    margin: 20px;
+    width: auto;
 }
-.contenedor_redes {
-    width: 100%;
-}
+
+
+
+/* OPCION 1 */
 /* 
 .contenedor_footer {
     padding-top: 20px;
