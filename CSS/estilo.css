@@ -348,13 +348,15 @@ header .logo img {
     right: 0;
 }
 
-.txt_qs {
+.txt_qs{
     font-size: 50px;
     margin: 15%;
     right: 0;
     position: absolute;
     z-index: 15px;
+ 
 }
+
 
 .img-quienes-somos {
     width: 100%;
@@ -554,11 +556,19 @@ header .logo img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+}
+
+.link-redes{
+    outline: none;
+    color: #ffffff;
+    text-decoration: none;  
 }
 
 .contenedor_redes {
     margin: 20px;
     justify-content: space-evenly;
+    
 }
 
 .logo_footer {
