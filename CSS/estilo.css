@@ -32,6 +32,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: solid 2px red; Me ayuda a ver que es lo que hace scroll horizontal, marcando lo limites */
+   
 }
 
 
@@ -44,8 +46,6 @@ html {
 
 body {
     font-size: 16px;
-    /* background: #eaeaea; */
-    /* overflow: hidden; */
 
     /*centrar el carusel de fotos en el body*/
     .contenedor-carusel {
@@ -55,6 +55,8 @@ body {
         /* padding: 2px; */
         /*Espacio vacio que dejo para no llegar a los bordes izquierda y derecha*/
     }
+    overflow-x: hidden;
+    /*hago invisible la barra horizontal, ESO CREEEOOO JA!!!*/
 }
 
 /*Comienzo del HEADER, BARRA DE NAVEGACION*/
@@ -237,6 +239,7 @@ header .logo img {
     /*sombra*/
     overflow: hidden;
     /*para que se vea solo la primer imagen*/
+ 
 
 }
 
@@ -255,6 +258,7 @@ header .logo img {
     width: (100% por cada imagen a mostrar, o sea 3 imagenes = 300%, 5 imagenes = 500%,
     10 imagenes = 1000%);*/
 
+    
 }
 
 .slider-section {
@@ -353,6 +357,7 @@ header .logo img {
 }
 
 .img-quienes-somos {
+    width: 100%;
     height: 300px;
 
 }
@@ -390,6 +395,7 @@ header .logo img {
 }
 
 .img-reglamento {
+    width: 100%;
     height: 300px;
 
 }
@@ -405,12 +411,6 @@ header .logo img {
 
 
 /* SECCION DONDE NOS ENCONTRAMOS*/
-.contenedor-donde-encontrarnos {
-    width: 100%;
-    height: 600px;
-
-}
-
 .contenedor_texto {
     background-color: #000000;
     color: #ffffff;
@@ -422,7 +422,56 @@ header .logo img {
     justify-content: space-around;
     align-items: center;
 }
+@media (min-width: 890px) {
+    .localidades {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+    }
+}
 
+.localidades {
+    width: 100%;
+    height: auto;
+    /*Dejo la altura en auto para que sea responsive cuando se achica la pantalla*/
+}
+
+.localidades .contenido-localidad{
+    margin-bottom: 20px;
+    /*Doy espacio entre las fotos cuando esten en columna*/
+}
+
+.localidad .contenido-localidad {
+    display: flex;
+    /*Activo el display flex, por default, coloca uno al lado del otro*/
+    justify-content: space-evenly;
+    /*Centro horizontalmente*/
+    align-items: center;
+    /*Alineo Verticalmente*/
+    text-align: center;
+    /*Centro el texto*/
+}
+
+.contenido-localidad {
+    display: flex;
+    /*Pongo en columna localidad y dirección*/
+    flex-direction: column;
+    /*Centro todo*/
+    align-items: center;
+}
+
+.contenido-localidad div {
+    color: var(--naranja);
+    margin-top: 120px; /*Espacio entre NOS ACOMPAÑAN y la imagen, en pantalla grande*/
+    height: 160px;
+    width: 350px;
+}
+
+/* .contenedor-donde-encontrarnos {
+    width: 100%;
+    height: 600px;
+
+}
 
 .contenedor_localidades {
     padding-top: 150px;
@@ -432,24 +481,63 @@ header .logo img {
     align-items: center;
     text-align: center;
 
-}
+} */
+/*TERMINA DONDE NOS ENCONTRAMOS*/
 
 
 
 /* SECCION SPONSORS*/
-.nos_acompañan {
+.nos-acompañan {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
     width: 100%;
-}
-
-
-
-.contenedor-logos-sponsors {
+    height: 200px;
+    font-size: 50px;
     display: flex;
-    justify-content: space-evenly;
-    height: 350px;
-    width: auto;
-    padding-top: 50px;
+    justify-content: space-around;
+    align-items: center;
 }
+
+@media (min-width: 1200px) {
+    .sponsores {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5rem;
+    }
+}
+
+.sponsores {
+    width: 100%;
+    height: auto; 
+    /*No le establesco altura para que cuando sea Responsive me muestre bien las imagenes*/
+}
+
+.sponsores .img-sponsor {
+    margin-bottom: 20px;
+    /*Doy espacio entre las fotos cuando esten en columna*/
+}
+.sponsor .img-sponsor {
+    display: flex;
+    /*Activo el display flex, por default, coloca uno al lado del otro*/
+    justify-content: space-evenly;
+    /*Centro horizontalmente*/
+    align-items: center;
+    /*Alineo Verticalmente*/
+}
+
+.imgsponsor1 {
+    margin-top: 20px; /*Espacio entre NOS ACOMPAÑAN y la imagen, en pantalla grande*/
+    height: 250px;
+    width: 450px;
+}
+
+.imgsponsor2 {
+    margin-top: 20px; /*Espacio entre NOS ACOMPAÑAN y la imagen, en pantalla grande*/
+    height: 250px;
+    width: 350px;
+}
+/* TERMINA SECCION SPONSORS*/
 
 
 /*SECCION FOOTER*/
