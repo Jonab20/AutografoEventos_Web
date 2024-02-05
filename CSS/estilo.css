@@ -72,6 +72,10 @@ header {
     align-items: center;
     justify-content: space-between;
     z-index: 10;
+    height: 68px;
+    /*Le doy una altura especifica al header para que el logo despues se adapte bien a 
+      la altura esa, y abarque todo el alto y se vea bien.
+    */
 
 
     /*ANTES*/
@@ -203,18 +207,24 @@ header label {
 }
 
 header .logo img {
-    height: 65px;
+    height: 68px;
     /*ALuta del logo*/
     width: auto;
     /*ancho del logo*/
+    
+}
+
+.logo {
+    height: 100%;
+    /*Le digo al contenedor logo que se adapte a la altura del header que es de 68px*/
 }
 
 .logo img {
     background-color: var(--blanco);
     /*color de fondo del logo*/
     clip-path: polygon(0% 0%, 77% 0, 100% 100%, 0% 100%);
-    margin: 0;    
-    /*agrego el forma al contenedor del logo*/
+    margin: 0;
+    /*agrego la forma poligonal al contenedor del logo*/
 }
 
 /*FINAL del HEADER, BARRA DE NAVEGACION*/
@@ -469,6 +479,18 @@ header .logo img {
     width: 350px;
 }
 
+.contenido-localidad h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+    /*Espacio hacia abajo desde el h2 que contiene nombre de las localidades,
+      asi separar de nombre de las canchas.
+    */
+}
+
+.contenido-localidad span {
+    font-size: 20px;
+}
+
 /* .contenedor-donde-encontrarnos {
     width: 100%;
     height: 600px;
@@ -537,7 +559,7 @@ header .logo img {
 .imgsponsor2 {
     margin-top: 20px; /*Espacio entre NOS ACOMPAÑAN y la imagen, en pantalla grande*/
     height: 250px;
-    width: 350px;
+    width: 450px;
 }
 /* TERMINA SECCION SPONSORS*/
 
