@@ -574,7 +574,7 @@ header .logo img {
     padding-bottom: 20px;
     background-color: var(--naranja);
     width: 100%;
-    height: 180px;
+    height: 150px;
     display: flex;
     justify-content: space-between;
     /*Separa horizontalmente*/
@@ -586,14 +586,14 @@ header .logo img {
 
 .espacio-blanco {
     width: 280px;
-    height: 160px;
+    height: 130px;
 }
 
 .contener-logo-footer {
     /*Espacio en la derecha entre el contenedor del logo y contenedor de todas-redes*/
     margin-left: 30px;
-    width: 240px;
-    height: 130px;
+    width: 120px;
+    height: 60px;
 }
 
 .logo-footer {
