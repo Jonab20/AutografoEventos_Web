@@ -592,8 +592,8 @@ header .logo img {
 .contener-logo-footer {
     /*Espacio en la derecha entre el contenedor del logo y contenedor de todas-redes*/
     margin-left: 30px;
-    width: 120px;
-    height: 60px;
+    width: 160px;
+    height: 100px;
 }
 
 .logo-footer {
