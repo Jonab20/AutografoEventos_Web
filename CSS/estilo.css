@@ -33,7 +33,7 @@
     padding: 0;
     box-sizing: border-box;
     /* border: solid 2px red; Me ayuda a ver que es lo que hace scroll horizontal, marcando lo limites */
-   
+
 }
 
 
@@ -73,7 +73,7 @@ header {
     justify-content: space-between;
     z-index: 10;
     height: 68px;
-    /*Le doy una altura especifica al header para que el logo despues se adapte bien a 
+    /*Le doy una altura especifica al header para que el logo despues se adapte bien a
       la altura esa, y abarque todo el alto y se vea bien.
     */
 
@@ -211,7 +211,7 @@ header .logo img {
     /*ALuta del logo*/
     width: auto;
     /*ancho del logo*/
-    
+
 }
 
 .logo {
@@ -249,7 +249,7 @@ header .logo img {
     /*sombra*/
     overflow: hidden;
     /*para que se vea solo la primer imagen*/
- 
+
 
 }
 
@@ -268,7 +268,7 @@ header .logo img {
     width: (100% por cada imagen a mostrar, o sea 3 imagenes = 300%, 5 imagenes = 500%,
     10 imagenes = 1000%);*/
 
-    
+
 }
 
 .slider-section {
@@ -288,7 +288,7 @@ header .logo img {
     /*Tamaño img ancho que la foto ocupe el 100% del contenedor de foto*/
     height: 100%;
     /*que la foto ocupe el 100% del contenedor de foto*/
-    /*object-fit: cover; /*para que las imagenes no pierdan calidad, poner esto agranda o hace 
+    /*object-fit: cover; /*para que las imagenes no pierdan calidad, poner esto agranda o hace
     zoom de mas a las fotos y se ven cortadas*/
 }
 
@@ -364,7 +364,7 @@ header .logo img {
     right: 0;
     position: absolute;
     z-index: 15px;
- 
+
 }
 
 
@@ -533,7 +533,7 @@ header .logo img {
 
 .sponsores {
     width: 100%;
-    height: auto; 
+    height: auto;
     /*No le establesco altura para que cuando sea Responsive me muestre bien las imagenes*/
 }
 
@@ -569,28 +569,93 @@ header .logo img {
 /* OPCION2 */
 
 /**/
-.contenedor_footer {
+.footer {
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: var(--naranja);
     width: 100%;
-    height: 150px;
+    height: 180px;
     display: flex;
     justify-content: space-between;
+    /*Separa horizontalmente*/
     align-items: center;
+    /*Centra verticalmente*/
+
 
 }
 
-.link-redes{
+.espacio-blanco {
+    width: 280px;
+    height: 160px;
+}
+
+.contener-logo-footer {
+    /*Espacio en la derecha entre el contenedor del logo y contenedor de todas-redes*/
+    margin-left: 30px;
+    width: 240px;
+    height: 130px;
+}
+
+.logo-footer {
+    /*Tamaño img logo*/
+    width: 100%;
+    height: 100%;
+}
+
+.footer .todas-redes {
+    /*Espacio en la izquierda desde el final del footer hacia adentro, hacia el contendor
+      de todas-redes.
+    */
+    margin-right: 70px;
+}
+
+.todas-redes {
+    
+    width: 240px;
+    height: 130px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contener-redes {
+    margin-top: 15px;
+    display: block;
+}
+
+.red {
+    display: flex;
+    align-items: center;
+    /*Separacion hacia abajo entre cada red*/
+    margin-bottom: 10px;
+}
+
+.red .img-redes {
+    /*Separacion entre img logo red y link*/
+    margin-right: 10px;
+}
+
+.img-redes {
+    width: 35px;
+    height: 35px;
+}
+
+.link-redes {
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+
+/* .link-redes{
     outline: none;
     color: #ffffff;
-    text-decoration: none;  
-}
+    text-decoration: none;
+} */
 
-.contenedor_redes {
+/* .contenedor_redes {
     margin: 20px;
     justify-content: space-evenly;
-    
+
 }
 
 .logo_footer {
@@ -614,12 +679,12 @@ header .logo img {
 .contendor-logo-footer {
     margin: 20px;
     width: auto;
-}
+} */
 
 
 
 /* OPCION 1 */
-/* 
+/*
 .contenedor_footer {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -649,7 +714,7 @@ header .logo img {
     align-items: center;
     right: 4rem;
     color: #ffffff;
-    
+
 } */
 
 /* .imagen {
@@ -662,7 +727,7 @@ header .logo img {
 /*height: 48px; /*alto imagen*/
 /*position: relative;
     /*background-color: var(--blanco);
-    
+
 } */
 
 
