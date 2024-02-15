@@ -636,8 +636,8 @@ header .logo img {
 }
 
 .img-redes {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
 }
 
 .link-redes {
@@ -645,7 +645,17 @@ header .logo img {
     color: var(--blanco);
 }
 
+iframe{
+    height: 800px;
+    width: 50%;
+}
 
+.contenedor-iframe{
+    display: block;
+    justify-content: right;
+    margin-left: 50px;
+    margin-right: 50px;
+}
 /* .link-redes{
     outline: none;
     color: #ffffff;
