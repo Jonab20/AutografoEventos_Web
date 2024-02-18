@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autografo Eventos</title>
+
+    <!-- Libreria Normalice -->
+    <link rel="preload" href="CSS/normalice.css" as="style">
+    <link rel="stylesheet" href="CSS/normalice.css">
+    <link rel="icon" href="Imagenes/El_Autografo_eventos_favicon.png" type="image/x-icon">
+    <!-- Para cargar más rapido la página -->
+    <link rel="preload" href="CSS/estilo.css" as="style"> <!--Para cargar mas rapido el sitio web-->
+    <link href="CSS/estilo.css" rel="stylesheet"> <!--Enlace de CSS a HTML-->
+
+    <!--Para usar los iconos de mover el Carusel de Fotos-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--Linkeamos la libreria del boton de whatsapp-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!--refenciamos el boton y link de whatsapp-->
+    <a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp"
+        target="_blank">
+        <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+
+    <header>
+        <div class="logo">
+            <img src="Imagenes/El_Autografo_eventos_Logo_nvar_v2.png" alt="Logo del sitio">
+        </div>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menú</label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Fútbol</a>
+                    <ul>
+                        <li><a href="#">Fútbol 11 STA</a></li>
+                        <li><a href="#">Fútbol 6 Lobos</a></li>
+                        <li><a href="#">Fútbol 6 Roque Perez</a></li>
+                        <li><a href="testIframe.html">Fútbol 7 Monte</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">FootGolf</a></li>
+                <li><a href="#">Truco</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--SECCION LOGO LIGA-->
+    <section class="contendor-logo-liga bg-liga">
+        <div>
+            <img class="logo-liga" src="Imagenes/LOGO-F6-LOBOS.png" alt="Logo liga F6-LOBOS">
+        </div>
+    </section>
+    <!--SECCION DISCIPLINAS-->
+   
+   <section class="contenedor-disciplinas ">
+        <div class="contenedor-img-txt-disc">
+            <img class="img-dicsiplina" src="Imagenes/Disc-masculina.png" alt="disciplina masculina">
+            
+            <h1 class="txt-disc "> 
+                MASCULINO
+            </h1>
+
+        </div>
+        <div class="contenedor-img-txt-disc">
+            <img class="img-dicsiplina" src="Imagenes/Disc-fem.png" alt="disciplina femenina">
+            <h1 class="txt-disc">
+                FEMENINO
+            </h1>
+        </div>
+    </section>
+
+
+    <!--SECCION REGLAMENTO-->
+    <section class="contenedor-reglamento">
+
+        <div class="trapecio-reglamento">
+            <h1 class="txt_reglamento">
+                REGLAMENTO
+            </h1>
+
+        </div>
+
+        <div class="foto-reglamento">
+            <img class="img-reglamento" src="Imagenes/reglamento-bg.png" alt="reglamento">
+        </div>
+
+    </section>
+
+    <!--SECCION DONDE ESTAMOS-->
+    <section class="contenedor-donde-estamos">
+        <div>
+            <div class="contenedor_texto">
+                <p>DONDE NOS ENCONTRAMOS</p>
+            </div>
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2608.886508320314!2d-59.08358974170872!3d-35.16563084179177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bd012de6d04c05%3A0xf192e6d3d1291a73!2sCancha%20241lobos!5e1!3m2!1ses-419!2sar!4v1708224195275!5m2!1ses-419!2sar"
+                    width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <!--PIE DE PAGINA-->
+    <footer class="footer">
+        <div class="espacio-blanco">
+
+        </div>
+        <div class="contener-logo-footer">
+            <img class="logo-footer" src="Imagenes/El_Autografo_logo_blanco.png" alt="EL AUTOGRAFO EVENTOS">
+        </div>
+
+        <div class="todas-redes">
+            <div class="contener-redes">
+                <div class="red">
+                    <img class="img-redes" src="Imagenes/logo_facebook.png" alt="el autografo eventos en facebook">
+                    <a class="link-redes" href="https://www.facebook.com/profile.php?id=100063732751592"
+                        target="_blank">El Autógrafo - Eventos </a>
+                    <!-- <span>El Autógrafo - Eventos </span> -->
+                </div>
+                <div class="red">
+                    <img class="img-redes" src="Imagenes/logo_whatsapp.png" alt="whatsapp de el autografo eventos">
+                    <a class="link-redes"
+                        href="https://api.whatsapp.com/send/?phone=5211234567890&text=Me+gustar%C3%ADa+saber+el+precio+del+coche&type=phone_number&app_absent=0"
+                        target="_blank">2227-000000</a>
+                    <!-- <span>2227-000000</span> -->
+                </div>
+                <div class="red">
+                    <img class="img-redes" src="Imagenes/logo_instagram.png" alt="el autografo eventos en instagram">
+                    <a class="link-redes" href="https://www.instagram.com/elautografoeventos/?hl=es-la"
+                        target="_blank">@elautografoeventos</a>
+                    <!-- <span>@elautografoeventos</span> -->
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+
+</body>

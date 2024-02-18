@@ -55,7 +55,6 @@ body {
         /* padding: 2px; */
         /*Espacio vacio que dejo para no llegar a los bordes izquierda y derecha*/
     }
-
     overflow-x: hidden;
     /*hago invisible la barra horizontal, ESO CREEEOOO JA!!!*/
 }
@@ -336,13 +335,22 @@ header .logo img {
 /*SECCION QUIENES SOMOS*/
 section .contenedor-quienes-somos {
     width: 100%;
-    height: 300px;
+    height: 300px; 
 
     /*Alto y ancho del contenedor de quienes somos*/
 
     display: flex;
-
+    
 }
+
+/* @media (max-width: 1120px){
+    .contenedor-quienes-somos{ 
+        /* el contendor se adapta a la altura y ancho de pantalla*/
+        /* width: 100%;
+        height: 100%;
+    } */
+
+/*} */
 
 .foto-quienes {
     width: 100%;
@@ -353,19 +361,18 @@ section .contenedor-quienes-somos {
 .img-quienes-somos {
     width: 100%;
     height: 100%;
-    position: static;
-    /*no seeee si dejarlo*/
+    position:static; /*no seeee si dejarlo*/
 }
 
-.trapecio {
+.trapecio { 
     /*Posicion del trapecio*/
     position: absolute;
-    width: 70%;
+    width: 70%; 
     /* height: auto;  */
     /*Dimension del trapecio*/
     border-right: 0px solid transparent;
     border-left: 200px solid transparent;
-    border-bottom: 295px solid var(--azulPrimero);
+    border-bottom: 295px solid var(--azulPrimero); 
 
     opacity: 70%;
     right: 0;
@@ -373,11 +380,11 @@ section .contenedor-quienes-somos {
 
 }
 
-.txt-qs {
+.txt-qs{
 
-    font-size: 50px;
+    font-size: 50px; 
     margin-top: 15%;
-    margin-right: 15%;
+    margin-right: 15%; 
     right: 0;
     position: absolute;
     z-index: 15px;
@@ -393,6 +400,14 @@ section .contenedor-reglamento {
 
 }
 
+/* @media (max-width: 1120px){
+    .contenedor-reglamento{ 
+        /* el contendor se adapta a la altura y ancho de pantalla*/
+        /* width: 100%;
+        height: 100%;
+    } */
+
+/*} */
 
 .trapecio-reglamento {
     /*Posicion del trapecio*/
@@ -410,7 +425,7 @@ section .contenedor-reglamento {
 }
 
 
-.txt_reglamento {
+.txt_reglamento{
     font-size: 50px;
     margin: 15%;
     right: 0;
@@ -427,8 +442,7 @@ section .contenedor-reglamento {
 .img-reglamento {
     width: 100%;
     height: 100%;
-    position: static;
-    /*no seeee si dejarlo*/
+    position:static; /*no seeee si dejarlo*/
 
 }
 
@@ -447,7 +461,6 @@ section .contenedor-reglamento {
     justify-content: space-around;
     align-items: center;
 }
-
 @media (min-width: 890px) {
     .localidades {
         display: grid;
@@ -462,7 +475,7 @@ section .contenedor-reglamento {
     /*Dejo la altura en auto para que sea responsive cuando se achica la pantalla*/
 }
 
-.localidades .contenido-localidad {
+.localidades .contenido-localidad{
     margin-bottom: 20px;
     /*Doy espacio entre las fotos cuando esten en columna*/
 }
@@ -488,8 +501,7 @@ section .contenedor-reglamento {
 
 .contenido-localidad div {
     color: var(--naranja);
-    margin-top: 120px;
-    /*Espacio entre NOS ACOMPAÑAN y la imagen, en pantalla grande*/
+    margin-top: 120px; /*Espacio entre NOS ACOMPAÑAN y la imagen, en pantalla grande*/
     height: 160px;
     width: 350px;
 }
@@ -505,6 +517,24 @@ section .contenedor-reglamento {
 .contenido-localidad span {
     font-size: 20px;
 }
+
+/* .contenedor-donde-encontrarnos {
+    width: 100%;
+    height: 600px;
+
+}
+
+.contenedor_localidades {
+    padding-top: 150px;
+    display: flex;
+    color: #cf8131;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+} */
+/*TERMINA DONDE NOS ENCONTRAMOS*/
+
 
 
 /* SECCION SPONSORS*/
@@ -538,7 +568,6 @@ section .contenedor-reglamento {
     margin-bottom: 20px;
     /*Doy espacio entre las fotos cuando esten en columna*/
 }
-
 .sponsor .img-sponsor {
     display: flex;
     /*Activo el display flex, por default, coloca uno al lado del otro*/
@@ -549,19 +578,16 @@ section .contenedor-reglamento {
 }
 
 .imgsponsor1 {
-    margin-top: 20px;
-    /*Espacio entre NOS ACOMPAÑAN y la imagen, en pantalla grande*/
+    margin-top: 20px; /*Espacio entre NOS ACOMPAÑAN y la imagen, en pantalla grande*/
     height: 250px;
     width: 450px;
 }
 
 .imgsponsor2 {
-    margin-top: 20px;
-    /*Espacio entre NOS ACOMPAÑAN y la imagen, en pantalla grande*/
+    margin-top: 20px; /*Espacio entre NOS ACOMPAÑAN y la imagen, en pantalla grande*/
     height: 250px;
     width: 450px;
 }
-
 /* TERMINA SECCION SPONSORS*/
 
 
@@ -646,12 +672,12 @@ section .contenedor-reglamento {
     color: var(--blanco);
 }
 
-iframe {
+iframe{
     height: 800px;
     width: 50%;
 }
 
-.contenedor-iframe {
+.contenedor-iframe{
     display: block;
     justify-content: right;
     margin-left: 50px;
@@ -659,56 +685,226 @@ iframe {
 }
 
 
-.logo-liga {
+.logo-liga{
     height: auto;
     width: 300px;
-    margin: 100px;
+}
+/* .link-redes{
+    outline: none;
+    color: #ffffff;
+    text-decoration: none;
+} */
+
+/* .contenedor_redes {
+    margin: 20px;
+    justify-content: space-evenly;
 
 }
 
-.contendor-logo-liga {
+.logo_footer {
+    height: auto;
+    width: 150px;
+}
+
+.img-redes {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+}
+
+.redes {
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 500px;
-    width: 100%;
+    right: 4rem;
+    color: #ffffff;
 }
 
-.bg-liga {
-    background-image: url(/Imagenes/bg-liga.png);
-    background-position: center;
-    background-size: cover;
-}
+.contendor-logo-footer {
+    margin: 20px;
+    width: auto;
+} */
 
-.contenedor-disciplinas {
+
+
+/* OPCION 1 */
+/*
+.contenedor_footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #cf8131;
+    height: 150px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    position: relative;
-
 }
 
-.contenedor-img-txt-disc {
+.logo_footer {
+    height: auto;
+    width: 150px;
+}
+
+.contenedor_redes {
+
+    justify-content: space-evenly;
+}
+.img-redes{
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+}
+.redes {
+    display: flex;
+    align-items: center;
+    right: 4rem;
+    color: #ffffff;
+
+} */
+
+/* .imagen {
+    /*Mostrar la imagen*/
+/*clip-path: polygon(0% 0%, 77% 0, 100% 100%, 0% 100%); /*AGREGO MARCO AL LOGO*/
+/*background-image: url(../Imagenes/El_Autografo_eventos_Logo_nvar_v2.png); /*Ubicacion del archivo/imagen */
+/*background-repeat: no-repeat; /*Para evitar se repita la imagen*/
+/*background-size: cover; /*Que la imagen se adapte al ancho de pantalla*/
+/*width: 75px; /*ancho imagen*/
+/*height: 48px; /*alto imagen*/
+/*position: relative;
+    /*background-color: var(--blanco);
+
+} */
+
+
+
+/*Barra de NAVEGACION VIEJOOOOO*/
+
+/* .contenedormenu {
+    max-width: 120rem;
+    margin: 0 auto;
+} */
+
+
+/* .nav-bg {
+
+    background-color: var(--azulPrimero);
+    /*Pone el fonde en azul de la barra nav*/
+/*display: flex;
+    /*Agrego division del logo como contenedor fuera de la lista para que quede al margen*/
+/*justify-content: space-between;
+    align-items: center;
+    /*height: 65px;
+    /*altura de la barra*/
+
+/*} */
+
+/* .nav-bg .logo img {
+    height: 65px;
+    /*ALuta del logo*/
+/*width: auto;
+    /*ancho del logo*/
+/*} */
+
+
+/* .logo img {
+    background-color: var(--blanco);
+    /*color de fondo del logo*/
+/*clip-path: polygon(0% 0%, 77% 0, 100% 100%, 0% 100%);
+    /*agrego el forma al contenedor del logo*/
+/*} */
+
+/* .nav-bg ul {
+    list-style: none;
+
+} */
+
+/* .menu-horizontal {
+
+    /*Mostrar en COLUMNA los botones cuando la pantalla es Menor a 768px*/
+/*display: flex;
+    /*Habilita el Flexbox*/
+/*flex-direction: column;
+    /*Muestra los enlaces en columna*/
+/*align-items: center;
+    /*Muestra los enlaces en forma Horizontal.*/
+/*list-style: none;
     position: relative;
-    display: inline-block;
+
+} */
+
+/* @media (min-width: 768px) {
+
+    /*Mostrar en FILA los botones cuando la pantalla es Mayor a 768px*/
+/* .menu-horizontal {
+        list-style: none;
+        flex-direction: row;
+        /*Muestra los enlaces en FILA, mientras la pantalla sea mayor a 768px*/
+/*justify-content: space-between;
+        /*space-between: separa los enlaces*/
+/*} */
+
+/*} */
+
+
+/* .menu-horizontal>li>a {
+    /*Estilo ESPECIFICO a los botones de la section Futbol*/
+
+/*Es para alinear y centar el texto de la barra mientras sea en columna*/
+/*display: block;
     text-align: center;
-}
+    /*Si escribo 1(espacio)rem, la barra de nav. se muestra con poca altura,
+     Si escribo 1rem, sin espacio, la barra de nav. se muestra mas alta.
+     Esto mismo ocurre en padding, font-size, etc.,*/
 
-.img-dicsiplina {
-    width: 620px;
-}
+/*Estilo que tendran los botones de la barra*/
+/*padding: 1rem;
+    color: var(--blanco);
+    /*Color del texto c/u de los botones*/
+/*text-decoration: none;
+    /*Sacar el subrayado a los Enlaces*/
+/*font-size: 2 rem;
+    /*Tamaño de letra*/
+/*font-weight: bold;
+    /*Texto en Negrita*/
+/*padding: 15px 20px;
 
-.txt-disc {
+} */
 
+/* .menu-horizontal>li>a:hover { /*botones de la section Futbol*/
+/*Color que tendran los botones cuando pase por encima el mousse*/
+
+/*background-color: var(--grisclaro);
+    /*Color de fondo c/u de los botones*/
+/*color: var(--negro);
+    /*Color del texto c/u de los botones*/
+
+/*} */
+
+/* .menu-vertical {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--negro);
-    font-size: 50px;
+    display: none;
+    list-style: none;
+    width: 135px;
+    background-color: rgb(64, 87, 130, .5);
+} */
+
+/* .menu-horizontal li:hover .menu-vertical {
+    display: block;
+
 }
 
-.contenedor-donde-estamos iframe {
-    width: 100%;
-    height: 500px;
+.menu-vertical li:hover {
+    background-color: var(--grisclaro);
+
+} */
+
+/* .menu-vertical li a {
+    display: block;
+    color: var(--blanco);
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+
 }
+
+.menu-vertical>li>a:hover {
+
+    color: var(--negro)
+} */
