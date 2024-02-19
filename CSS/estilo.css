@@ -4,6 +4,7 @@
     --blanco: #ffffff;
     --grisclaro: rgb(223, 233, 243);
     --negro: #000000;
+    --azulClaro: rgb(244, 249, 255);
 
 }
 
@@ -132,17 +133,18 @@ header .navbar ul li:hover>ul {
     display: initial;
 }
 
-#menu-bar {
+#menu-bar {   
     /*Para que no muestre el boton Menú mientras sea grande la pantalla*/
     display: none;
-}
+}  
 
-header label {
+
+header label {  
     /*Doy estilo al boton Menú*/
     font-size: 20px;
     color: var(--blanco);
     cursor: pointer;
-    display: none;
+    display: none; 
     /*logro que desaparesca de la vista mientras sea grande la pantalla el boton Menú*/
 }
 
@@ -154,10 +156,10 @@ header label {
     /* header {  Añade mas Altura a la barra cuando se Achica la pantalla
         padding: 20px;
     } */
-    header label {
+    header label {  
         /*Cuando sea chica la pantalla que SI muestre el boton Menú*/
         display: initial;
-    }
+    } 
 
     header .navbar {
         /*Estilo de como quiero que se vea el menu cuando sea chica la pantalla*/
@@ -186,12 +188,12 @@ header label {
         background: var(--grisclaro);
     }
 
-    #menu-bar:checked~.navbar {
+    #menu-bar:checked~.navbar {   
         /*Cuando presiono Menú, se despligan los botones principales*/
         display: initial;
-    }
+    } 
 
-    header label {
+    header label { 
         /*Espacio de derecha a final del ancho de pag. para que Menú no quede pegado al final del ancho*/
         padding-right: 2rem;
     }
@@ -202,6 +204,9 @@ header .logo img {
     /*ALuta del logo*/
     width: auto;
     /*ancho del logo*/
+
+    cursor: pointer;
+    /*Aparece la manito cuando paso el cursor sobre el logo*/
 
 }
 
@@ -216,6 +221,13 @@ header .logo img {
     clip-path: polygon(0% 0%, 77% 0, 100% 100%, 0% 100%);
     margin: 0;
     /*agrego la forma poligonal al contenedor del logo*/
+    
+}
+
+/*Cuando pase el cursor por el logo del header cambia el color de fondo del logo*/
+.logo img:hover {
+    background-color: var(--azulClaro);
+    
 }
 
 /*FINAL del HEADER, BARRA DE NAVEGACION*/
@@ -372,6 +384,8 @@ section .contenedor-quienes-somos {
     /*mantiene del lado derecho el trapecio*/
 
 }
+
+
 
 .txt-qs {
 
@@ -567,9 +581,6 @@ section .contenedor-reglamento {
 
 /*SECCION FOOTER*/
 
-/* OPCION2 */
-
-/**/
 .footer {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -591,7 +602,7 @@ section .contenedor-reglamento {
 }
 
 .contener-logo-footer {
-    /*Espacio en la derecha entre el contenedor del logo y contenedor de todas-redes*/
+    /*Espacio en la izquierda entre el contenedor del logo y contenedor de todas-redes*/
     margin-left: 30px;
     width: 160px;
     height: 100px;
@@ -604,7 +615,7 @@ section .contenedor-reglamento {
 }
 
 .footer .todas-redes {
-    /*Espacio en la izquierda desde el final del footer hacia adentro, hacia el contendor
+    /*Espacio en la derecha desde el final del footer hacia adentro, hacia el contendor
       de todas-redes.
     */
     margin-right: 70px;
@@ -645,6 +656,50 @@ section .contenedor-reglamento {
     text-decoration: none;
     color: var(--blanco);
 }
+
+@media (max-width: 880px){
+    .espacio-blanco {
+        width: 280px;
+        height: 10px;
+
+    }
+    .footer {
+        /*Medidas del footer en pantalla chica*/
+        height: 250px;
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+
+        /*Poner en columna*/
+        display: grid;
+        justify-content: center;
+        align-items:center;
+    }
+    .contener-logo-footer {
+        margin-left: 0px;
+    }
+    .logo-footer {
+        /*Espacio en la izquierda*/
+        margin-left: 35%;
+    }
+    .footer .todas-redes {
+        width: 280px;
+        /*Saco espacio en la derecha desde el final del footer hacia adentro, hacia el contendor
+          de todas-redes que tenia en pantalla Grande.
+        */
+        margin-right: 0px;
+
+        /*Espacio en la izquierda*/
+        margin-left: 12%;
+    }
+ 
+    
+}
+/*Termina Footer*/
+
+
+
 
 iframe {
     height: 800px;
