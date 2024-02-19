@@ -697,10 +697,11 @@ section .contenedor-reglamento {
     
 }
 /*Termina Footer*/
+/*Termina el Main*/
 
 
 
-
+/*Comienza pag. LOBOS*/
 iframe {
     height: 800px;
     width: 50%;
@@ -735,6 +736,10 @@ iframe {
     background-size: cover;
 }
 
+
+
+
+/*Disciplinas: Masculino, Femenino*/
 .contenedor-disciplinas {
     width: 100%;
     display: flex;
@@ -762,7 +767,10 @@ iframe {
     color: var(--negro);
     font-size: 50px;
 }
+/*Termina Disciplinas: Masculino, Femenino*/
 
+
+/*SECCION DONDE ESTAMOS*/
 .contenedor-donde-estamos iframe {
     width: 100%;
     height: 500px;
