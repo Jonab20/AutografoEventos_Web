@@ -46,7 +46,3 @@ function moveToLeft() {
 }
 
 /*Termina la automatización para el Carusel*/
-
-
-
-/*Ver menu hamburguesa*/

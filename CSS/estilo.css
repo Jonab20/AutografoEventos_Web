@@ -61,6 +61,7 @@ body {
     /*hago invisible la barra horizontal, ESO CREEEOOO JA!!!*/
 }
 
+
 /*Comienzo del HEADER, BARRA DE NAVEGACION*/
 header {
 
@@ -136,7 +137,7 @@ header .navbar ul li:hover>ul {
 #menu-bar {   
     /*Para que no muestre el boton Menú mientras sea grande la pantalla*/
     display: none;
-}  
+}
 
 
 header label {  
@@ -170,6 +171,8 @@ header label {
         background: var(--azulPrimero);
         display: none;
         /*Se muestra solo Menú, se ocultan los demas botones*/
+
+        
     }
 
     header .navbar ul li {
@@ -197,6 +200,7 @@ header label {
         /*Espacio de derecha a final del ancho de pag. para que Menú no quede pegado al final del ancho*/
         padding-right: 2rem;
     }
+    
 }
 
 header .logo img {
@@ -714,14 +718,6 @@ iframe {
     margin-right: 50px;
 }
 
-
-.logo-liga {
-    height: auto;
-    width: 300px;
-    margin: 100px;
-
-}
-
 .contendor-logo-liga {
     display: flex;
     justify-content: center;
@@ -734,7 +730,22 @@ iframe {
     background-image: url(/Imagenes/bg-liga.png);
     background-position: center;
     background-size: cover;
+
+} 
+
+/* .conte-logo-lobos {
+    height: 265px;
+    width: 300px;
+} */
+
+.logo-liga {
+    height: auto;
+    width: 300px;
+    margin: 100px;
+
 }
+
+
 
 
 
