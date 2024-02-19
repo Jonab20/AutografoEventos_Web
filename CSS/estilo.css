@@ -392,7 +392,7 @@ section .contenedor-quienes-somos {
 
 
 .txt-qs {
-
+    color: #ffffff;
     font-size: 50px;
     margin-top: 15%;
     margin-right: 15%;
@@ -429,6 +429,7 @@ section .contenedor-reglamento {
 
 
 .txt_reglamento {
+    color: #ffffff;
     font-size: 50px;
     margin: 15%;
     right: 0;
@@ -750,7 +751,7 @@ iframe {
 
 
 
-/*Disciplinas: Masculino, Femenino*/
+/*Mas de una Disciplina: Masculino, Femenino*/
 .contenedor-disciplinas {
     width: 100%;
     display: flex;
@@ -759,10 +760,17 @@ iframe {
 
 }
 
+.contenedor-img-txt-disc{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
 .contenedor-img-txt-disc {
     position: relative;
     display: inline-block;
     text-align: center;
+
 }
 
 .img-dicsiplina {
@@ -770,13 +778,26 @@ iframe {
 }
 
 .txt-disc {
-
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--negro);
+/*    color: var(--negro);*/
+    color: #ffffff;
+
     font-size: 50px;
+
+    
+}
+
+
+.contenedor-una-disciplina{
+    position: relative;
+}
+
+.img-una-dicsiplina{
+    width: 100%;
+    height: auto;
 }
 /*Termina Disciplinas: Masculino, Femenino*/
 
