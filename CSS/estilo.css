@@ -337,6 +337,7 @@ header .logo img {
     /*Según el ancho de pantalla se modifica la antura de las siguientes partes*/
     .contenedor-carusel {
         height: auto;
+
     }
 
     .contenedor-carusel .carusel {
@@ -345,14 +346,33 @@ header .logo img {
 
     .contenedor-carusel .carusel .slider-section {
         height: auto;
+
+    }
+    .btn-left,
+    .btn-right {
+        display: flex;
+        position: absolute;
+        top: 35%;
+        font-size: 1.5rem;
+        background-color: rgba(148, 146, 146, 0.5);
+        /*transparent;  (148, 146, 146, 0.5)*/
+        border-radius: 50%;
+        padding: 5px;
+        font-weight: 600;
+        cursor: pointer;
+        color: #00000081;
+        transform: translate(0, -50%);
+        transition: .5s ease;
+        user-select: none;
+        /*para que el usuario no pueda seleccionar ese icono*/
     }
 }
 
 
 /*SECCION QUIENES SOMOS*/
-section .contenedor-quienes-somos {
+.contenedor-quienes-somos {
     width: 100%;
-    height: 300px;
+    height: auto;
 
     /*Alto y ancho del contenedor de quienes somos*/
 
@@ -360,16 +380,24 @@ section .contenedor-quienes-somos {
 
 }
 
-.foto-quienes {
-    width: 100%;
-    height: auto;
+.foto-quienes 
+
+{
+    /*
+      width: 100%;
+    height: auto;  
+    */
+
     /*para que el alto de la foto de fondo sea responsive*/
 }
 
 .img-quienes-somos {
     width: 100%;
-    height: 100%;
-    position: static;
+    height: 300px;
+    object-fit: cover; 
+    /*le digo que arregle la imagen al tamaño del contenedor si este no tiene las 
+    dimensiones identicas, ajustando relacion de aspecto*/
+    /*position: static;*/
     /*no seeee si dejarlo*/
 }
 
@@ -377,11 +405,13 @@ section .contenedor-quienes-somos {
     /*Posicion del trapecio*/
     position: absolute;
     width: 70%;
-    /* height: auto;  */
+    height: 300px;
+    /*    height: auto;   */
+
     /*Dimension del trapecio*/
     border-right: 0px solid transparent;
     border-left: 200px solid transparent;
-    border-bottom: 295px solid var(--azulPrimero);
+    border-bottom: 300px solid var(--azulPrimero);
 
     opacity: 70%;
     right: 0;
@@ -398,17 +428,15 @@ section .contenedor-quienes-somos {
     margin-right: 15%;
     right: 0;
     position: absolute;
-    z-index: 15px;
-
 }
+/* FIN QUIENES SOMOS*/
+
 
 /* SECCION REGLAMENTO*/
 section .contenedor-reglamento {
     width: 100%;
     height: 300px;
     display: flex;
-
-
 }
 
 
@@ -416,7 +444,7 @@ section .contenedor-reglamento {
     /*Posicion del trapecio*/
     position: absolute;
     width: 70%;
-    height: auto;
+    height: auto;   
 
     /*Dimension del trapecio*/
     border-right: 200px solid transparent;
@@ -438,15 +466,21 @@ section .contenedor-reglamento {
 }
 
 .foto-reglamento {
+    /*
     width: 100%;
     height: auto;
+    position: static;*/
     /*para que el alto de la foto de fondo sea responsive*/
+    
+
 }
 
+/* */
 .img-reglamento {
     width: 100%;
-    height: 100%;
-    position: static;
+    height: 300px;
+    object-fit: cover; 
+
     /*no seeee si dejarlo*/
 
 }
