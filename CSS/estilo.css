@@ -152,6 +152,7 @@ header label {
 
 
 @media(max-width:991px) {
+    /*Cuando el ancho de pantalla sea MENOR a 991px, el menu se vera hacia abajo*/
 
     /*Para cuando a la pag se le achique su ancho*/
     /* header {  Añade mas Altura a la barra cuando se Achica la pantalla
@@ -332,8 +333,16 @@ header .logo img {
     color: #ffffff;
 }
 
-@media(max-width:991px) {
-
+@media(min-width:991px) {
+    /*Mientras el ancho de pantalla SEA de 991px o Mayor se vera de la siguiente forma*/
+    body {
+        /*centro todo el body*/
+        display: grid;
+        justify-content: center;
+        align-items: center; 
+        /*display: flex;
+        justify-content: center;*/
+    }
     /*Según el ancho de pantalla se modifica la antura de las siguientes partes*/
     .contenedor-carusel {
         height: auto;
@@ -368,94 +377,454 @@ header .logo img {
     }
 }
 
+@media (min-width: 900px){
+    body {
+        /*centro todo el body*/
+        display: grid;
+        justify-content: center;
+        align-items: center; 
+        /*display: flex;
+        justify-content: center;*/
+    }
+    /*Según el ancho de pantalla se modifica la antura de las siguientes partes*/
+    .contenedor-carusel {
+        height: auto;
+
+    }
+
+    .contenedor-carusel .carusel {
+        height: auto;
+    }
+
+    .contenedor-carusel .carusel .slider-section {
+        height: auto;
+
+    }
+    .btn-left,
+    .btn-right {
+        display: flex;
+        position: absolute;
+        top: 35%;
+        font-size: 1.5rem;
+        background-color: rgba(148, 146, 146, 0.5);
+        /*transparent;  (148, 146, 146, 0.5)*/
+        border-radius: 50%;
+        padding: 5px;
+        font-weight: 600;
+        cursor: pointer;
+        color: #00000081;
+        transform: translate(0, -50%);
+        transition: .5s ease;
+        user-select: none;
+        /*para que el usuario no pueda seleccionar ese icono*/
+    }
+}
+
+@media (min-width: 480px){
+    body {
+        /*centro todo el body*/
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        /* display: flex;
+        justify-content: center; */
+    }
+    /*Según el ancho de pantalla se modifica la antura de las siguientes partes*/
+    .contenedor-carusel {
+        height: auto;
+    
+    }
+    
+    .contenedor-carusel .carusel {
+        height: auto;
+    }
+    
+    .contenedor-carusel .carusel .slider-section {
+        height: auto;
+    
+    }
+    .btn-left,
+    .btn-right {
+        display: flex;
+        position: absolute;
+        top: 35%;
+        font-size: 1.5rem;
+        background-color: rgba(148, 146, 146, 0.5);
+        /*transparent;  (148, 146, 146, 0.5)*/
+        border-radius: 50%;
+        padding: 5px;
+        font-weight: 600;
+        cursor: pointer;
+        color: #00000081;
+        transform: translate(0, -50%);
+        transition: .5s ease;
+        user-select: none;
+        /*para que el usuario no pueda seleccionar ese icono*/
+    }
+}
+
+@media (min-width: 390px){
+    /*Según el ancho de pantalla se modifica la antura de las siguientes partes*/
+    /*centro todo el body*/
+    body {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .contenedor-carusel {
+        height: auto;
+        /* width: 390px; */
+    }
+    
+    .contenedor-carusel .carusel {
+        height: auto;
+    }
+    
+    .contenedor-carusel .carusel .slider-section {
+        height: auto;
+    
+    }
+    .btn-left,
+    .btn-right {
+        display: flex;
+        position: absolute;
+        top: 35%;
+        font-size: 1.5rem;
+        background-color: rgba(148, 146, 146, 0.5);
+        /*transparent;  (148, 146, 146, 0.5)*/
+        border-radius: 50%;
+        padding: 5px;
+        font-weight: 600;
+        cursor: pointer;
+        color: #00000081;
+        transform: translate(0, -50%);
+        transition: .5s ease;
+        user-select: none;
+        /*para que el usuario no pueda seleccionar ese icono*/
+    }
+}
 
 /*SECCION QUIENES SOMOS*/
-.contenedor-quienes-somos {
+/* .contenedor-quienes-somos {
     width: 100%;
-    height: auto;
+    height: auto; */
 
     /*Alto y ancho del contenedor de quienes somos*/
 
-    display: flex;
+    /* display: flex;
 
-}
+} */
 
-.foto-quienes 
-
-{
-    /*
-      width: 100%;
-    height: auto;  
-    */
-
-    /*para que el alto de la foto de fondo sea responsive*/
-}
-
-.img-quienes-somos {
+/* .img-quienes-somos {
     width: 100%;
     height: 300px;
-    object-fit: cover; 
+    object-fit: cover;  */
     /*le digo que arregle la imagen al tamaño del contenedor si este no tiene las 
     dimensiones identicas, ajustando relacion de aspecto*/
-    /*position: static;*/
-    /*no seeee si dejarlo*/
-}
+/* } */
 
-.trapecio {
+/* .trapecio { */
     /*Posicion del trapecio*/
-    position: absolute;
+    /* position: absolute;
     width: 70%;
-    height: 300px;
-    /*    height: auto;   */
+    height: 300px; */
 
     /*Dimension del trapecio*/
-    border-right: 0px solid transparent;
+    /* border-right: 0px solid transparent;
     border-left: 200px solid transparent;
     border-bottom: 300px solid var(--azulPrimero);
 
     opacity: 70%;
-    right: 0;
+    right: 0; */
     /*mantiene del lado derecho el trapecio*/
 
-}
+/* } */
 
 
 
-.txt-qs {
+/* .txt-qs {
     color: #ffffff;
     font-size: 50px;
     margin-top: 15%;
     margin-right: 15%;
     right: 0;
     position: absolute;
+} */
+
+/*--------------------------OPCION FOTO RESPONSIVE*/
+/* .contenedor-quienes-somos {
+    width: 100%;
+    height: 300px;
+}
+
+.foto-quienes-resp {
+    width: auto;
+    height: auto;
+
+}
+
+.img-quienes-somos {
+    width: 100%;
+    height: 100%;
+} */
+
+/*--------------------Opcion 3, FUNCIONA BIEN*/
+.contenedor-quienes-somos {
+    background-image: url(../Imagenes/quienes_somos-resp.png);
+    background-repeat: no-repeat; /*Para evitar se repita la imagen*/
+    background-size: cover; /*Que la imagen se adapte al ancho de pantalla*/
+    background-position: center;
+    height: 300px;
+    position: relative;
+
+    /*Posicion del Texto que esta sobre la Imagen*/
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.espacio1{
+    width: 150px;
+    height: 100px;
+    
+}
+
+.espacio2{
+    width: 150px;
+    height: 100px;
+    
+}
+
+.conte-txt-qs {
+    width: 500px;
+    height: 80px;
+    text-align: center;
+    
+}
+.txt-qs {
+    color: #ffffff;
+    font-size: 50px;
+    cursor: pointer;
+    
+}
+
+.txt-qs:hover {
+    color: rgb(211, 216, 221);
+    transform: translate(3px, 2px);
+    text-shadow: 2px 5px 10px rgb(0, 0, 0);
+    
+}
+
+@media (min-width: 991px){
+    .contenedor-quienes-somos {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 0.9fr 1fr;
+        column-gap: 4rem;
+        align-content: center;
+        justify-items: flex-start;
+    }
+    .espacio2{
+        width: 150px;
+        height: 100px;
+        grid-column: 1 / 2;
+    }
+    .conte-txt-qs {
+        grid-column: 2 / 3;
+    }    
+    .txt-qs {
+        margin-top: 30px;
+        margin-left: 20px;
+        font-size: 45px;
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 900px ) and (max-width: 991px ){
+    /*Mientras la pantalla SEA o este entre 900px y 991px,
+    se vera de la siguiente forma*/
+    .contenedor-quienes-somos {
+        
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 0.9fr 1fr;
+        column-gap: 4rem;
+        align-content: center;
+        justify-items: flex-start;
+
+        
+    }
+    .espacio2{
+        width: 150px;
+        height: 100px;
+        grid-column: 1 / 2;
+    }
+    .conte-txt-qs {
+        grid-column: 2 / 3;
+
+    }
+    .txt-qs {
+        margin-top: 30px;
+        margin-left: 4px;
+        font-size: 45px;
+        width: 450px;
+    }
+    
+    .espacio2{
+        width: 150px;
+        height: 100px;
+        grid-column: 1 / 2;
+    }
+    .conte-txt-qs {
+        grid-column: 2 / 3;
+
+    }
+    .txt-qs {
+        margin-top: 30px;
+        margin-left: 4px;
+        font-size: 45px;
+        width: 450px;
+    }
+}
+
+
+@media (min-width: 480px){
+    /*Mientras la pantalla SEA de 480px o MAYOR se vera de la siguiente forma*/
+    .espacio1,
+    .espacio2 {
+        display: none;
+    }
+    .contenedor-quienes-somos {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .conte-txt-qs {
+        width: 300px;
+        height: 120px;
+    }
+
+}
+
+@media (min-width: 390px){
+    /*Mientras la pantalla SEA de 390px o MAYOR se vera de la siguiente forma*/
+    .espacio1,
+    .espacio2 {
+        display: none;
+    }
+    .contenedor-quienes-somos {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .conte-txt-qs {
+        width: 300px;
+        height: 120px;
+    }
+
 }
 /* FIN QUIENES SOMOS*/
 
 
 /* SECCION REGLAMENTO*/
-section .contenedor-reglamento {
-    width: 100%;
+.contenedor-reglamento {
+    background-image: url(../Imagenes/reglamento-resp.png);
+    background-repeat: no-repeat; /*Para evitar se repita la imagen*/
+    background-size: cover; /*Que la imagen se adapte al ancho de pantalla*/
+    background-position: center;
     height: 300px;
+    position: relative;
+
+    /*Posicion del Texto que esta sobre la Imagen*/
     display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conte-txt-reglamento {
+    width: 500px;
+    height: 90px;
+    text-align: center;
+    
+}
+
+.txt-reglamento {
+    color: #ffffff;
+    font-size: 60px;
+    cursor: pointer;
+    
+}
+
+.txt-reglamento:hover {
+    color: rgb(211, 216, 221);
+    transform: translate(3px, 2px);
+    text-shadow: 2px 5px 10px rgb(0, 0, 0);
+    
+}
+
+.espaci-reglamento1{
+    width: 150px;
+    height: 100px;
+    
+}
+
+.espaci-reglamento2{
+    width: 150px;
+    height: 100px;
+    
+}
+
+@media (max-width: 480px){
+    /*Mientras la pantalla NO sea de 480px o MAYOR se vera de la siguiente forma*/
+    .espaci-reglamento1,
+    .espaci-reglamento2 {
+        display: none;
+    }
+    .contenedor-reglamento {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .conte-txt-reglamento {
+        justify-content: center;
+        width: 150px;
+        height: 100px;
+    }
+    .txt-reglamento {
+        font-size: 30px;
+
+    }
+
 }
 
 
-.trapecio-reglamento {
+/* section .contenedor-reglamento {
+    width: 100%;
+    height: 300px;
+    display: flex;
+} */
+
+
+/* .trapecio-reglamento { */
     /*Posicion del trapecio*/
-    position: absolute;
+    /* position: absolute;
     width: 70%;
-    height: auto;   
+    height: auto;    */
 
     /*Dimension del trapecio*/
-    border-right: 200px solid transparent;
+    /* border-right: 200px solid transparent;
     border-left: 0px solid transparent;
     border-bottom: 300px solid var(--azulPrimero);
 
     opacity: 80%;
     left: 0;
-}
+} */
 
-
+/* 
 .txt_reglamento {
     color: #ffffff;
     font-size: 50px;
@@ -465,25 +834,17 @@ section .contenedor-reglamento {
     z-index: 15;
 }
 
-.foto-reglamento {
-    /*
-    width: 100%;
-    height: auto;
-    position: static;*/
-    /*para que el alto de la foto de fondo sea responsive*/
-    
 
-}
 
-/* */
 .img-reglamento {
     width: 100%;
     height: 300px;
-    object-fit: cover; 
+    object-fit: cover;  */
 
-    /*no seeee si dejarlo*/
+    /*le digo que arregle la imagen al tamaño del contenedor si este no tiene las 
+    dimensiones identicas, ajustando relacion de aspecto*/
 
-}
+/* } */
 
 
 
