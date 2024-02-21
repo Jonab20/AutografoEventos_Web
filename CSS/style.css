@@ -134,18 +134,18 @@ header .navbar ul li:hover>ul {
     display: initial;
 }
 
-#menu-bar {   
+#menu-bar {
     /*Para que no muestre el boton Menú mientras sea grande la pantalla*/
     display: none;
 }
 
 
-header label {  
+header label {
     /*Doy estilo al boton Menú*/
     font-size: 20px;
     color: var(--blanco);
     cursor: pointer;
-    display: none; 
+    display: none;
     /*logro que desaparesca de la vista mientras sea grande la pantalla el boton Menú*/
 }
 
@@ -158,10 +158,10 @@ header label {
     /* header {  Añade mas Altura a la barra cuando se Achica la pantalla
         padding: 20px;
     } */
-    header label {  
+    header label {
         /*Cuando sea chica la pantalla que SI muestre el boton Menú*/
         display: initial;
-    } 
+    }
 
     header .navbar {
         /*Estilo de como quiero que se vea el menu cuando sea chica la pantalla*/
@@ -173,7 +173,7 @@ header label {
         display: none;
         /*Se muestra solo Menú, se ocultan los demas botones*/
 
-        
+
     }
 
     header .navbar ul li {
@@ -192,16 +192,16 @@ header label {
         background: var(--grisclaro);
     }
 
-    #menu-bar:checked~.navbar {   
+    #menu-bar:checked~.navbar {
         /*Cuando presiono Menú, se despligan los botones principales*/
         display: initial;
-    } 
+    }
 
-    header label { 
+    header label {
         /*Espacio de derecha a final del ancho de pag. para que Menú no quede pegado al final del ancho*/
         padding-right: 2rem;
     }
-    
+
 }
 
 header .logo img {
@@ -226,13 +226,13 @@ header .logo img {
     clip-path: polygon(0% 0%, 77% 0, 100% 100%, 0% 100%);
     margin: 0;
     /*agrego la forma poligonal al contenedor del logo*/
-    
+
 }
 
 /*Cuando pase el cursor por el logo del header cambia el color de fondo del logo*/
 .logo img:hover {
     background-color: var(--azulClaro);
-    
+
 }
 
 /*FINAL del HEADER, BARRA DE NAVEGACION*/
@@ -334,15 +334,17 @@ header .logo img {
 }
 
 @media(min-width:991px) {
+
     /*Mientras el ancho de pantalla SEA de 991px o Mayor se vera de la siguiente forma*/
     body {
         /*centro todo el body*/
         display: grid;
         justify-content: center;
-        align-items: center; 
+        align-items: center;
         /*display: flex;
         justify-content: center;*/
     }
+
     /*Según el ancho de pantalla se modifica la antura de las siguientes partes*/
     .contenedor-carusel {
         height: auto;
@@ -357,6 +359,7 @@ header .logo img {
         height: auto;
 
     }
+
     .btn-left,
     .btn-right {
         display: flex;
@@ -377,15 +380,16 @@ header .logo img {
     }
 }
 
-@media (min-width: 900px){
+@media (min-width: 900px) {
     body {
         /*centro todo el body*/
         display: grid;
         justify-content: center;
-        align-items: center; 
+        align-items: center;
         /*display: flex;
         justify-content: center;*/
     }
+
     /*Según el ancho de pantalla se modifica la antura de las siguientes partes*/
     .contenedor-carusel {
         height: auto;
@@ -400,6 +404,7 @@ header .logo img {
         height: auto;
 
     }
+
     .btn-left,
     .btn-right {
         display: flex;
@@ -420,7 +425,7 @@ header .logo img {
     }
 }
 
-@media (min-width: 480px){
+@media (min-width: 480px) {
     body {
         /*centro todo el body*/
         display: grid;
@@ -429,20 +434,22 @@ header .logo img {
         /* display: flex;
         justify-content: center; */
     }
+
     /*Según el ancho de pantalla se modifica la antura de las siguientes partes*/
     .contenedor-carusel {
         height: auto;
-    
+
     }
-    
+
     .contenedor-carusel .carusel {
         height: auto;
     }
-    
+
     .contenedor-carusel .carusel .slider-section {
         height: auto;
-    
+
     }
+
     .btn-left,
     .btn-right {
         display: flex;
@@ -463,28 +470,31 @@ header .logo img {
     }
 }
 
-@media (min-width: 390px){
+@media (min-width: 390px) {
+
     /*Según el ancho de pantalla se modifica la antura de las siguientes partes*/
     /*centro todo el body*/
     body {
         display: grid;
         justify-content: center;
         align-items: center;
-        
+
     }
+
     .contenedor-carusel {
         height: auto;
         /* width: 390px; */
     }
-    
+
     .contenedor-carusel .carusel {
         height: auto;
     }
-    
+
     .contenedor-carusel .carusel .slider-section {
         height: auto;
-    
+
     }
+
     .btn-left,
     .btn-right {
         display: flex;
@@ -510,9 +520,9 @@ header .logo img {
     width: 100%;
     height: auto; */
 
-    /*Alto y ancho del contenedor de quienes somos*/
+/*Alto y ancho del contenedor de quienes somos*/
 
-    /* display: flex;
+/* display: flex;
 
 } */
 
@@ -520,24 +530,24 @@ header .logo img {
     width: 100%;
     height: 300px;
     object-fit: cover;  */
-    /*le digo que arregle la imagen al tamaño del contenedor si este no tiene las 
+/*le digo que arregle la imagen al tamaño del contenedor si este no tiene las 
     dimensiones identicas, ajustando relacion de aspecto*/
 /* } */
 
 /* .trapecio { */
-    /*Posicion del trapecio*/
-    /* position: absolute;
+/*Posicion del trapecio*/
+/* position: absolute;
     width: 70%;
     height: 300px; */
 
-    /*Dimension del trapecio*/
-    /* border-right: 0px solid transparent;
+/*Dimension del trapecio*/
+/* border-right: 0px solid transparent;
     border-left: 200px solid transparent;
     border-bottom: 300px solid var(--azulPrimero);
 
     opacity: 70%;
     right: 0; */
-    /*mantiene del lado derecho el trapecio*/
+/*mantiene del lado derecho el trapecio*/
 
 /* } */
 
@@ -572,8 +582,10 @@ header .logo img {
 /*--------------------Opcion 3, FUNCIONA BIEN*/
 .contenedor-quienes-somos {
     background-image: url(../Imagenes/quienes_somos-resp.png);
-    background-repeat: no-repeat; /*Para evitar se repita la imagen*/
-    background-size: cover; /*Que la imagen se adapte al ancho de pantalla*/
+    background-repeat: no-repeat;
+    /*Para evitar se repita la imagen*/
+    background-size: cover;
+    /*Que la imagen se adapte al ancho de pantalla*/
     background-position: center;
     height: 300px;
     position: relative;
@@ -583,42 +595,43 @@ header .logo img {
     /* flex-direction: column; */
     align-items: center;
     justify-content: space-around;
-    
+
 }
 
-.espacio1{
+.espacio1 {
     width: 150px;
     height: 100px;
-    
+
 }
 
-.espacio2{
+.espacio2 {
     width: 150px;
     height: 100px;
-    
+
 }
 
 .conte-txt-qs {
     width: 500px;
     height: 80px;
     text-align: center;
-    
+
 }
+
 .txt-qs {
     color: #ffffff;
     font-size: 50px;
     cursor: pointer;
-    
+
 }
 
 .txt-qs:hover {
     color: rgb(211, 216, 221);
     transform: translate(3px, 2px);
     text-shadow: 2px 5px 10px rgb(0, 0, 0);
-    
+
 }
 
-@media (min-width: 991px){
+@media (min-width: 991px) {
     .contenedor-quienes-somos {
         display: grid;
         justify-content: center;
@@ -627,14 +640,17 @@ header .logo img {
         align-content: center;
         justify-items: flex-start;
     }
-    .espacio2{
+
+    .espacio2 {
         width: 150px;
         height: 100px;
         grid-column: 1 / 2;
     }
+
     .conte-txt-qs {
         grid-column: 2 / 3;
-    }    
+    }
+
     .txt-qs {
         margin-top: 30px;
         margin-left: 20px;
@@ -643,11 +659,12 @@ header .logo img {
     }
 }
 
-@media screen and (min-width: 900px ) and (max-width: 991px ){
+@media screen and (min-width: 900px) and (max-width: 991px) {
+
     /*Mientras la pantalla SEA o este entre 900px y 991px,
     se vera de la siguiente forma*/
     .contenedor-quienes-somos {
-        
+
         display: grid;
         justify-content: center;
         grid-template-columns: 0.9fr 1fr;
@@ -655,33 +672,38 @@ header .logo img {
         align-content: center;
         justify-items: flex-start;
 
-        
+
     }
-    .espacio2{
+
+    .espacio2 {
         width: 150px;
         height: 100px;
         grid-column: 1 / 2;
     }
+
     .conte-txt-qs {
         grid-column: 2 / 3;
 
     }
+
     .txt-qs {
         margin-top: 30px;
         margin-left: 4px;
         font-size: 45px;
         width: 450px;
     }
-    
-    .espacio2{
+
+    .espacio2 {
         width: 150px;
         height: 100px;
         grid-column: 1 / 2;
     }
+
     .conte-txt-qs {
         grid-column: 2 / 3;
 
     }
+
     .txt-qs {
         margin-top: 30px;
         margin-left: 4px;
@@ -691,17 +713,20 @@ header .logo img {
 }
 
 
-@media (min-width: 480px){
+@media (min-width: 480px) {
+
     /*Mientras la pantalla SEA de 480px o MAYOR se vera de la siguiente forma*/
     .espacio1,
     .espacio2 {
         display: none;
     }
+
     .contenedor-quienes-somos {
         display: grid;
         justify-content: center;
         align-items: center;
     }
+
     .conte-txt-qs {
         width: 300px;
         height: 120px;
@@ -709,31 +734,37 @@ header .logo img {
 
 }
 
-@media (min-width: 390px){
+@media (min-width: 390px) {
+
     /*Mientras la pantalla SEA de 390px o MAYOR se vera de la siguiente forma*/
     .espacio1,
     .espacio2 {
         display: none;
     }
+
     .contenedor-quienes-somos {
         display: grid;
         justify-content: center;
         align-items: center;
     }
+
     .conte-txt-qs {
         width: 300px;
         height: 120px;
     }
 
 }
+
 /* FIN QUIENES SOMOS*/
 
 
 /* SECCION REGLAMENTO*/
 .contenedor-reglamento {
     background-image: url(../Imagenes/reglamento-resp.png);
-    background-repeat: no-repeat; /*Para evitar se repita la imagen*/
-    background-size: cover; /*Que la imagen se adapte al ancho de pantalla*/
+    background-repeat: no-repeat;
+    /*Para evitar se repita la imagen*/
+    background-size: cover;
+    /*Que la imagen se adapte al ancho de pantalla*/
     background-position: center;
     height: 300px;
     position: relative;
@@ -749,51 +780,55 @@ header .logo img {
     width: 500px;
     height: 90px;
     text-align: center;
-    
+
 }
 
 .txt-reglamento {
     color: #ffffff;
-    font-size: 60px;
+    font-size: 50px;
     cursor: pointer;
-    
+
 }
 
 .txt-reglamento:hover {
     color: rgb(211, 216, 221);
     transform: translate(3px, 2px);
     text-shadow: 2px 5px 10px rgb(0, 0, 0);
-    
+
 }
 
-.espaci-reglamento1{
+.espaci-reglamento1 {
     width: 150px;
     height: 100px;
-    
+
 }
 
-.espaci-reglamento2{
+.espaci-reglamento2 {
     width: 150px;
     height: 100px;
-    
+
 }
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
+
     /*Mientras la pantalla NO sea de 480px o MAYOR se vera de la siguiente forma*/
     .espaci-reglamento1,
     .espaci-reglamento2 {
         display: none;
     }
+
     .contenedor-reglamento {
         display: grid;
         justify-content: center;
         align-items: center;
     }
+
     .conte-txt-reglamento {
         justify-content: center;
         width: 150px;
         height: 100px;
     }
+
     .txt-reglamento {
         font-size: 30px;
 
@@ -810,13 +845,13 @@ header .logo img {
 
 
 /* .trapecio-reglamento { */
-    /*Posicion del trapecio*/
-    /* position: absolute;
+/*Posicion del trapecio*/
+/* position: absolute;
     width: 70%;
     height: auto;    */
 
-    /*Dimension del trapecio*/
-    /* border-right: 200px solid transparent;
+/*Dimension del trapecio*/
+/* border-right: 200px solid transparent;
     border-left: 0px solid transparent;
     border-bottom: 300px solid var(--azulPrimero);
 
@@ -841,7 +876,7 @@ header .logo img {
     height: 300px;
     object-fit: cover;  */
 
-    /*le digo que arregle la imagen al tamaño del contenedor si este no tiene las 
+/*le digo que arregle la imagen al tamaño del contenedor si este no tiene las 
     dimensiones identicas, ajustando relacion de aspecto*/
 
 /* } */
@@ -1057,12 +1092,13 @@ header .logo img {
     color: var(--blanco);
 }
 
-@media (max-width: 880px){
+@media (max-width: 880px) {
     .espacio-blanco {
         width: 280px;
         height: 10px;
 
     }
+
     .footer {
         /*Medidas del footer en pantalla chica*/
         height: 250px;
@@ -1074,15 +1110,18 @@ header .logo img {
         /*Poner en columna*/
         display: grid;
         justify-content: center;
-        align-items:center;
+        align-items: center;
     }
+
     .contener-logo-footer {
         margin-left: 0px;
     }
+
     .logo-footer {
         /*Espacio en la izquierda*/
         margin-left: 35%;
     }
+
     .footer .todas-redes {
         width: 280px;
         /*Saco espacio en la derecha desde el final del footer hacia adentro, hacia el contendor
@@ -1093,9 +1132,10 @@ header .logo img {
         /*Espacio en la izquierda*/
         margin-left: 12%;
     }
- 
-    
+
+
 }
+
 /*Termina Footer*/
 /*Termina el Main*/
 
@@ -1123,11 +1163,13 @@ iframe {
 }
 
 .bg-liga {
-    background-image: url(/Imagenes/bg-liga.png);
+
+    /*background-image: url(/Imagenes/bg-liga.png);*/
+    background-image: url(/Imagenes/bg-liga-2.png);
     background-position: center;
     background-size: cover;
 
-} 
+}
 
 /* .conte-logo-lobos {
     height: 265px;
@@ -1155,7 +1197,7 @@ iframe {
 
 }
 
-.contenedor-img-txt-disc{
+.contenedor-img-txt-disc {
     position: relative;
     display: inline-block;
     text-align: center;
@@ -1177,23 +1219,23 @@ iframe {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-/*    color: var(--negro);*/
+    /*    color: var(--negro);*/
     color: #ffffff;
 
     font-size: 50px;
 
-    
+
 }
 
-
-.contenedor-una-disciplina{
+.contenedor-una-disciplina {
     position: relative;
 }
 
-.img-una-dicsiplina{
+.img-una-dicsiplina {
     width: 100%;
     height: auto;
 }
+
 /*Termina Disciplinas: Masculino, Femenino*/
 
 
