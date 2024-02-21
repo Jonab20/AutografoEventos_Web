@@ -1165,7 +1165,7 @@ iframe {
 .bg-liga {
 
     /*background-image: url(/Imagenes/bg-liga.png);*/
-    background-image: url(/Imagenes/bg-liga-2.png);
+    background-image: url(../Imagenes/bg-liga-2.png);
     background-position: center;
     background-size: cover;
 
