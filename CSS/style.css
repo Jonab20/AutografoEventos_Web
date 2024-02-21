@@ -1165,7 +1165,8 @@ iframe {
 .bg-liga {
 
     /*background-image: url(/Imagenes/bg-liga.png);*/
-    background-image: url(../Imagenes/bg-liga-2.png);
+    
+    background-image: url(../Imagenes/bg-liga-3.png);
     background-position: center;
     background-size: cover;
 
@@ -1243,4 +1244,20 @@ iframe {
 .contenedor-donde-estamos iframe {
     width: 100%;
     height: 500px;
+}
+
+/*EN CONSTRUCCION*/
+.contenedor-en-construccion{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 25px;
+    color: #cf8131;
+
+}
+
+.logo-enconstruccion{
+    margin-top: 100px;
+    width: 300px;
+    height: auto;
 }
