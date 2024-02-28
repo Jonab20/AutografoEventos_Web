@@ -970,7 +970,7 @@ header .logo img {
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: 900px) {
     .contenedor-sponsores {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1006,13 +1006,14 @@ header .logo img {
     /*Alineo Verticalmente
 }*/
 
-    .imgsponsor {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        /*Espacio entre NOS ACOMPAÑAN y la imagen, en pantalla grande*/
-        height: 200px;
-        width: 400px;
-    }
+.imgsponsor {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /*Espacio entre NOS ACOMPAÑAN y la imagen, en pantalla grande*/
+    height: 200px;
+    width: 400px;
+}
+
 /*
     .imgsponsor2 {
         margin-top: 20px;
@@ -1033,250 +1034,256 @@ header .logo img {
     /* TERMINA SECCION SPONSORS*/
 
 
-    /*SECCION FOOTER*/
+/*SECCION FOOTER*/
 
-    .footer {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        background-color: var(--naranja);
-        width: 100%;
-        height: 150px;
-        display: flex;
-        justify-content: space-between;
-        /*Separa horizontalmente*/
-        align-items: center;
-        /*Centra verticalmente*/
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--naranja);
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    /*Separa horizontalmente*/
+    align-items: center;
+    /*Centra verticalmente*/
 
+
+}
+
+.espacio-blanco {
+    width: 280px;
+    height: 130px;
+}
+
+.contener-logo-footer {
+    /*Espacio en la izquierda entre el contenedor del logo y contenedor de todas-redes*/
+    margin-left: 30px;
+    width: 160px;
+    height: 100px;
+}
+
+.logo-footer {
+    /*Tamaño img logo*/
+    width: 100%;
+    height: 100%;
+}
+
+.copyright-style {
+    color: #ffffff;
+    font-size: 10px;
+    font-style: normal;
+    background-color: #cf8131;
+    text-align: center;
+    width: 100%;
+    height: 11px;
+}
+
+.footer .todas-redes {
+    /*Espacio en la derecha desde el final del footer hacia adentro, hacia el contendor
+      de todas-redes.
+    */
+    margin-right: 70px;
+}
+
+.todas-redes {
+
+    width: 240px;
+    height: 130px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contener-redes {
+    margin-top: 15px;
+    display: block;
+}
+
+.red {
+    display: flex;
+    align-items: center;
+    /*Separacion hacia abajo entre cada red*/
+    margin-bottom: 10px;
+}
+
+.red .img-redes {
+    /*Separacion entre img logo red y link*/
+    margin-right: 10px;
+}
+
+.img-redes {
+    width: 25px;
+    height: 25px;
+}
+
+.link-redes {
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+@media (max-width: 880px) {
+    .espacio-blanco {
+        width: 280px;
+        height: 10px;
 
     }
 
-    .espacio-blanco {
-        width: 280px;
-        height: 130px;
+    .footer {
+        /*Medidas del footer en pantalla chica*/
+        height: 250px;
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+
+        /*Poner en columna*/
+        display: grid;
+        justify-content: center;
+        align-items: center;
     }
 
     .contener-logo-footer {
-        /*Espacio en la izquierda entre el contenedor del logo y contenedor de todas-redes*/
-        margin-left: 30px;
-        width: 160px;
-        height: 100px;
+        margin-left: 0px;
     }
 
     .logo-footer {
-        /*Tamaño img logo*/
-        width: 100%;
-        height: 100%;
+        /*Espacio en la izquierda*/
+        margin-left: 35%;
     }
 
     .footer .todas-redes {
-        /*Espacio en la derecha desde el final del footer hacia adentro, hacia el contendor
-      de todas-redes.
-    */
-        margin-right: 70px;
-    }
-
-    .todas-redes {
-
-        width: 240px;
-        height: 130px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .contener-redes {
-        margin-top: 15px;
-        display: block;
-    }
-
-    .red {
-        display: flex;
-        align-items: center;
-        /*Separacion hacia abajo entre cada red*/
-        margin-bottom: 10px;
-    }
-
-    .red .img-redes {
-        /*Separacion entre img logo red y link*/
-        margin-right: 10px;
-    }
-
-    .img-redes {
-        width: 25px;
-        height: 25px;
-    }
-
-    .link-redes {
-        text-decoration: none;
-        color: var(--blanco);
-    }
-
-    @media (max-width: 880px) {
-        .espacio-blanco {
-            width: 280px;
-            height: 10px;
-
-        }
-
-        .footer {
-            /*Medidas del footer en pantalla chica*/
-            height: 250px;
-            width: 100%;
-            padding-top: 5px;
-            padding-bottom: 5px;
-
-
-            /*Poner en columna*/
-            display: grid;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .contener-logo-footer {
-            margin-left: 0px;
-        }
-
-        .logo-footer {
-            /*Espacio en la izquierda*/
-            margin-left: 35%;
-        }
-
-        .footer .todas-redes {
-            width: 280px;
-            /*Saco espacio en la derecha desde el final del footer hacia adentro, hacia el contendor
+        width: 280px;
+        /*Saco espacio en la derecha desde el final del footer hacia adentro, hacia el contendor
           de todas-redes que tenia en pantalla Grande.
         */
-            margin-right: 0px;
+        margin-right: 0px;
 
-            /*Espacio en la izquierda*/
-            margin-left: 12%;
-        }
-
-
+        /*Espacio en la izquierda*/
+        margin-left: 12%;
     }
 
-    /*Termina Footer*/
-    /*Termina el Main*/
+}
+
+/*Termina Footer*/
+/*Termina el Main*/
 
 
 
-    /*Comienza pag. LOBOS*/
-    iframe {
-        height: 800px;
-        width: 50%;
-    }
+/*Comienza pag. LOBOS*/
+iframe {
+    height: 800px;
+    width: 50%;
+}
 
-    .contenedor-iframe {
-        display: block;
-        justify-content: right;
-        margin-left: 50px;
-        margin-right: 50px;
-    }
+.contenedor-iframe {
+    display: block;
+    justify-content: right;
+    margin-left: 50px;
+    margin-right: 50px;
+}
 
-    .contendor-logo-liga {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 500px;
-        width: 100%;
-    }
+.contendor-logo-liga {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+}
 
-    .bg-liga {
+.bg-liga {
 
-        /*background-image: url(/Imagenes/bg-liga.png);*/
+    /*background-image: url(/Imagenes/bg-liga.png);*/
 
-        background-image: url(../Imagenes/bg-liga-3.png);
-        background-position: center;
-        background-size: cover;
+    background-image: url(../Imagenes/bg-liga-3.png);
+    background-position: center;
+    background-size: cover;
 
-    }
+}
 
-    /* .conte-logo-lobos {
+/* .conte-logo-lobos {
     height: 265px;
     width: 300px;
 } */
 
-    .logo-liga {
-        height: auto;
-        width: 300px;
-        margin: 100px;
+.logo-liga {
+    height: auto;
+    width: 300px;
+    margin: 100px;
 
-    }
-
-
+}
 
 
+/*Mas de una Disciplina: Masculino, Femenino*/
+.contenedor-disciplinas {
+    width: 100%;
+    display: flex;
+    position: relative;
+
+}
+.contenedor-una-disciplina {
+    position: relative;
+}
 
 
-    /*Mas de una Disciplina: Masculino, Femenino*/
-    .contenedor-disciplinas {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        position: relative;
+.contenedor-img-txt-disc {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
 
-    }
+/*.contenedor-img-txt-disc {
+    position: relative;
+    display: inline-block;
+    text-align: center;
 
-    .contenedor-img-txt-disc {
-        position: relative;
-        display: inline-block;
-        text-align: center;
-    }
+}*/
 
-    .contenedor-img-txt-disc {
-        position: relative;
-        display: inline-block;
-        text-align: center;
+.img-dicsiplina {
+    width: 650px;
+}
 
-    }
+.img-una-dicsiplina {
+    width: 100%;
+    height: auto;
+}
+.txt-disc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*    color: var(--negro);*/
+    color: #ffffff;
 
-    .img-dicsiplina {
-        width: 620px;
-    }
-
-    .txt-disc {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        /*    color: var(--negro);*/
-        color: #ffffff;
-
-        font-size: 50px;
+    font-size: 50px;
 
 
-    }
-
-    .contenedor-una-disciplina {
-        position: relative;
-    }
-
-    .img-una-dicsiplina {
-        width: 100%;
-        height: auto;
-    }
-
-    /*Termina Disciplinas: Masculino, Femenino*/
+}
 
 
-    /*SECCION DONDE ESTAMOS*/
-    .contenedor-donde-estamos iframe {
-        width: 100%;
-        height: 500px;
-    }
 
-    /*EN CONSTRUCCION*/
-    .contenedor-en-construccion {
-        width: 100%;
-        height: auto;
-        text-align: center;
-        font-size: 25px;
-        color: #cf8131;
 
-    }
+/*Termina Disciplinas: Masculino, Femenino*/
 
-    .logo-enconstruccion {
-        margin-top: 100px;
-        width: 300px;
-        height: auto;
-    }
+
+/*SECCION DONDE ESTAMOS*/
+.contenedor-donde-estamos iframe {
+    width: 100%;
+    height: 500px;
+}
+
+/*EN CONSTRUCCION*/
+.contenedor-en-construccion {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 25px;
+    color: #cf8131;
+
+}
+
+.logo-enconstruccion {
+    margin-top: 100px;
+    width: 300px;
+    height: auto;
+}
