@@ -336,14 +336,13 @@ header .logo img {
 @media(min-width:991px) {
 
     /*Mientras el ancho de pantalla SEA de 991px o Mayor se vera de la siguiente forma*/
-    body {
+    /* body { */
         /*centro todo el body*/
-        display: grid;
+        /* display: grid;
         justify-content: center;
         align-items: center;
-        /*display: flex;
-        justify-content: center;*/
-    }
+
+    } */
 
     /*Según el ancho de pantalla se modifica la antura de las siguientes partes*/
     .contenedor-carusel {
@@ -381,14 +380,13 @@ header .logo img {
 }
 
 @media (min-width: 900px) {
-    body {
+    /* body { */
         /*centro todo el body*/
-        display: grid;
+        /* display: grid;
         justify-content: center;
         align-items: center;
-        /*display: flex;
-        justify-content: center;*/
-    }
+
+    } */
 
     /*Según el ancho de pantalla se modifica la antura de las siguientes partes*/
     .contenedor-carusel {
@@ -426,14 +424,13 @@ header .logo img {
 }
 
 @media (min-width: 480px) {
-    body {
+    /* body { */
         /*centro todo el body*/
-        display: grid;
+        /* display: grid;
         justify-content: center;
         align-items: center;
-        /* display: flex;
-        justify-content: center; */
-    }
+        
+    } */
 
     /*Según el ancho de pantalla se modifica la antura de las siguientes partes*/
     .contenedor-carusel {
@@ -474,12 +471,12 @@ header .logo img {
 
     /*Según el ancho de pantalla se modifica la antura de las siguientes partes*/
     /*centro todo el body*/
-    body {
+    /* body {
         display: grid;
         justify-content: center;
         align-items: center;
 
-    }
+    } */
 
     .contenedor-carusel {
         height: auto;
@@ -530,7 +527,7 @@ header .logo img {
     width: 100%;
     height: 300px;
     object-fit: cover;  */
-/*le digo que arregle la imagen al tamaño del contenedor si este no tiene las 
+/*le digo que arregle la imagen al tamaño del contenedor si este no tiene las
     dimensiones identicas, ajustando relacion de aspecto*/
 /* } */
 
@@ -859,7 +856,7 @@ header .logo img {
     left: 0;
 } */
 
-/* 
+/*
 .txt_reglamento {
     color: #ffffff;
     font-size: 50px;
@@ -876,7 +873,7 @@ header .logo img {
     height: 300px;
     object-fit: cover;  */
 
-/*le digo que arregle la imagen al tamaño del contenedor si este no tiene las 
+/*le digo que arregle la imagen al tamaño del contenedor si este no tiene las
     dimensiones identicas, ajustando relacion de aspecto*/
 
 /* } */
