@@ -200,6 +200,7 @@ header label {
     header .navbar ul li ul li {
         /*Color de fondo del contendor de Futbol 11, Futbol 6, etc*/
         background: var(--grisclaro);
+        width: 100%;
     }
 
     #menu-bar:checked~.navbar {
@@ -259,7 +260,7 @@ header label {
     header .navbar ul li ul {
         /*Posiciono los botones Futbol 11, Futbol 6, etc, pantalla chica*/
         position: relative;
-        width: 100%;
+        width: auto;/*100%;*/
     }
 
     header .navbar ul li ul li {
