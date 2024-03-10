@@ -56,7 +56,7 @@ body {
         /* padding: 2px; */
         /*Espacio vacio que dejo para no llegar a los bordes izquierda y derecha*/
     }
-
+    user-select: none; 
     overflow-x: hidden;
     /*hago invisible la barra horizontal, ESO CREEEOOO JA!!!*/
 }
@@ -337,8 +337,8 @@ header .logo img {
 
     /*Mientras el ancho de pantalla SEA de 991px o Mayor se vera de la siguiente forma*/
     /* body { */
-        /*centro todo el body*/
-        /* display: grid;
+    /*centro todo el body*/
+    /* display: grid;
         justify-content: center;
         align-items: center;
 
@@ -381,8 +381,8 @@ header .logo img {
 
 @media (min-width: 900px) {
     /* body { */
-        /*centro todo el body*/
-        /* display: grid;
+    /*centro todo el body*/
+    /* display: grid;
         justify-content: center;
         align-items: center;
 
@@ -425,8 +425,8 @@ header .logo img {
 
 @media (min-width: 480px) {
     /* body { */
-        /*centro todo el body*/
-        /* display: grid;
+    /*centro todo el body*/
+    /* display: grid;
         justify-content: center;
         align-items: center;
         
@@ -535,7 +535,7 @@ header .logo img {
 
 }
 
- .espacio1 {
+.espacio1 {
     width: 150px;
     height: 100px;
     margin-right: 60rem;
@@ -561,7 +561,9 @@ header .logo img {
     text-shadow: 2px 5px 10px rgb(0, 0, 0);
 
 }
-@media (min-width: 900px) and (max-width: 990px){
+
+@media (min-width: 900px) and (max-width: 990px) {
+
     /*Como se vera quienes somos de 900px a 990px*/
     .espacio1 {
         width: 0px;
@@ -577,7 +579,9 @@ header .logo img {
     }
 
 }
-@media (min-width: 780px) and (max-width: 900px){
+
+@media (min-width: 780px) and (max-width: 900px) {
+
     /*Como se vera quienes somos de 780px a 900px*/
     .contenedor-quienes-somos {
 
@@ -586,24 +590,28 @@ header .logo img {
         align-items: center;
         justify-content: center;
     }
+
     .espacio1 {
         width: 0px;
         height: 1px;
         margin-right: 0rem;
     }
-    .txt-qs{
+
+    .txt-qs {
         color: #000000;
 
     }
+
     .txt-qs:hover {
         color: var(--naranja);
         transform: translate(3px, 2px);
         text-shadow: 2px 5px 10px rgb(255, 255, 255);
-    
+
     }
 }
 
-@media (max-width: 780px){
+@media (max-width: 780px) {
+
     /*Como se vera quienes somos de 0px a 780px*/
     .contenedor-quienes-somos {
 
@@ -611,28 +619,33 @@ header .logo img {
         align-items: center;
         justify-content: center;
     }
+
     .espacio1 {
         width: 0px;
         height: 1px;
         margin-right: 0rem;
     }
+
     .conte-txt-qs {
         width: 300px;
         height: 80px;
         text-align: center;
         margin-bottom: 50px;
     }
-    .txt-qs{
+
+    .txt-qs {
         color: #000000;
 
     }
+
     .txt-qs:hover {
         color: var(--naranja);
         transform: translate(3px, 2px);
         text-shadow: 2px 5px 10px rgb(255, 255, 255);
-    
+
     }
 }
+
 /* FIN QUIENES SOMOS*/
 
 
@@ -651,14 +664,15 @@ header .logo img {
 }
 
 /*Como se vera Nos Acompañan de 0px a 480px*/
-@media (max-width: 480px){
-    
+@media (max-width: 480px) {
+
     .nos-acompañan p {
         text-align: center;
         width: 350px;
         font-size: 50px;
     }
-} 
+}
+
 /*Fin Nos Acompañan*/
 
 /* SECCION SPONSORS*/
@@ -674,7 +688,7 @@ header .logo img {
     align-items: center;
     /*Alineo Verticalmente
     /*No le establesco altura para que cuando sea Responsive me muestre bien las imagenes*/
-      
+
 }
 
 .sponsor {
@@ -694,25 +708,29 @@ header .logo img {
 }
 
 /*Como se veran los SPONSORS de 0px a 780px*/
-@media (max-width: 780px){
+@media (max-width: 780px) {
     .contenedor-sponsores {
         flex-direction: column;
         align-items: center;
     }
+
     .sponsor:nth-child(1) {
         margin-top: 0px;
         margin-bottom: 0px;
     }
+
     .sponsor:nth-child(2) {
         margin-top: 0px;
         margin-bottom: 25px;
-        
+
     }
-    .sponsor:nth-child(3){
+
+    .sponsor:nth-child(3) {
         margin-top: 10px;
         margin-bottom: 28px;
     }
 }
+
 /* TERMINA SECCION SPONSORS*/
 
 
@@ -739,7 +757,7 @@ header .logo img {
     width: 500px;
     height: 120px;
     text-align: center;
-    
+
 }
 
 .txt-reglamento {
@@ -761,7 +779,8 @@ header .logo img {
     margin-left: 50rem;
 }
 
-@media (min-width: 900px) and (max-width: 990px){
+@media (min-width: 900px) and (max-width: 990px) {
+
     /*Como se vera NUESTROS PARTIDOS de 900px a 990px*/
     .espaci-reglamento1 {
         width: 0px;
@@ -778,32 +797,35 @@ header .logo img {
 }
 
 /*Como se vera NUESTROS PARTIDOS de 0px a 900px*/
-@media (max-width: 900px){
+@media (max-width: 900px) {
     .contenedor-reglamento {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-       
+
     }
+
     .txt-reglamento {
         color: #000000;
         font-size: 50px;
         cursor: pointer;
     }
-    
+
     .txt-reglamento:hover {
         color: var(--naranja);
         transform: translate(3px, 2px);
         text-shadow: 2px 5px 10px rgb(255, 255, 255);
-    
+
     }
+
     .espaci-reglamento1 {
         width: 0px;
         height: 1px;
         margin-right: 0rem;
     }
 }
+
 /*Termina NUESTROS PARTIDOS*/
 
 
@@ -821,6 +843,7 @@ header .logo img {
 }
 
 @media (min-width: 720px) and (max-width: 780px) {
+
     /*Como se vera NUESTROS PARTIDOS de 720px a 780px*/
     .contenedor_texto p {
         text-align: center;
@@ -830,14 +853,15 @@ header .logo img {
 }
 
 /*Como se vera Donde Nos Encontramos de 0px a 480px*/
-@media (max-width: 480px){
-    
+@media (max-width: 480px) {
+
     .contenedor_texto p {
         text-align: center;
         width: 350px;
         font-size: 40px;
     }
-} 
+}
+
 /*Fin Donde Nos Encontramos*/
 
 
@@ -885,22 +909,25 @@ header .logo img {
 }
 
 /*Como se veran las LOCALIDADES de 0px a 900px*/
-@media (max-width: 900px){
+@media (max-width: 900px) {
     .localidades {
         height: auto;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
     .localidad:nth-child(1) {
         margin-left: 0px;
         margin-top: 30px;
         margin-bottom: 40px;
     }
+
     .localidad:nth-child(2) {
         margin-top: 40px;
         margin-bottom: 40px;
     }
+
     .localidad:nth-child(3) {
         margin-right: 0px;
         margin-top: 40px;
@@ -908,6 +935,7 @@ header .logo img {
     }
 
 }
+
 /*Termina DONDE NOS ENCONTRAMOS, LOCALIDADES y CANCHA*/
 
 
@@ -918,7 +946,7 @@ header .logo img {
     background-color: var(--naranja);
     width: 100%;
     height: 150px;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -939,27 +967,27 @@ header .logo img {
 .espacio-blanco {
     width: 280px;
     height: 130px;
-} 
+}
 
-.contener-logo-footer { 
+.contener-logo-footer {
     /*Espacio en la izquierda entre el contenedor del logo y contenedor de todas-redes*/
     margin-left: 25px;
     width: 160px;
     height: 100px;
-} 
+}
 
-.logo-footer { 
+.logo-footer {
     /*Tamaño img logo*/
     width: 100%;
     height: 100%;
-} 
+}
 
-.todo-footer .todas-redes { 
+.todo-footer .todas-redes {
     /*Espacio en la derecha desde el final del footer hacia adentro, hacia el contendor
       de todas-redes.
     */
     margin-right: 70px;
-} 
+}
 
 .todas-redes {
 
@@ -968,7 +996,7 @@ header .logo img {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-} 
+}
 
 .contener-redes {
     margin-top: 15px;
@@ -977,12 +1005,12 @@ header .logo img {
 
 .red {
     display: flex;
-    align-items: center; 
+    align-items: center;
     /*Separacion hacia abajo entre cada red*/
     margin-bottom: 10px;
-} 
+}
 
-.red .img-redes { 
+.red .img-redes {
     /*Separacion entre img logo red y link*/
     margin-right: 10px;
 }
@@ -1006,10 +1034,10 @@ header .logo img {
     text-align: center;
     width: 100%;
     height: 11px;
-} 
+}
 
 /*Como se veran el FOOTER de 0px a 900px*/
-@media (max-width: 900px){
+@media (max-width: 900px) {
     .footer {
         height: auto;
         width: 100%;
@@ -1030,7 +1058,7 @@ header .logo img {
         width: 280px;
         height: 0px;
 
-    } 
+    }
 
     .contener-logo-footer {
         margin-left: 0px;
@@ -1039,14 +1067,14 @@ header .logo img {
         grid-row: 3/4;
     }
 
-    .logo-footer { 
+    .logo-footer {
         /*Espacio en la izquierda*/
         margin-left: 35%;
         margin-top: 10px;
-    } 
+    }
 
     .todo-footer .todas-redes {
-        width: 280px; 
+        width: 280px;
         /*Saco espacio en la derecha desde el final del footer hacia adentro, hacia el contendor
           de todas-redes que tenia en pantalla Grande.
         */
@@ -1121,6 +1149,7 @@ iframe {
     position: relative;
 
 }
+
 .contenedor-una-disciplina {
     position: relative;
 }
@@ -1147,6 +1176,7 @@ iframe {
     width: 100%;
     height: auto;
 }
+
 .txt-disc {
     position: absolute;
     top: 50%;
@@ -1170,6 +1200,67 @@ iframe {
 .contenedor-donde-estamos iframe {
     width: 100%;
     height: 500px;
+}
+
+/*Footgolf*/
+
+.contenedor-banner-fg{
+    width: 100%;
+    height: 200%;
+    padding-top: 150px;
+    background-image: url(/Imagenes/footgolf-bg.png);
+    background-repeat: no-repeat;
+    /*Para evitar se repita la imagen*/
+    background-size: cover;
+    /*Que la imagen se adapte al ancho de pantalla*/
+    height: 400px;
+    position: relative;
+}
+
+.txt-banner{
+    font-size: 50px;
+    text-align: center;
+    color: #ffffff;
+}
+.contenedor-clubes-fg {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.cl1 {
+    background-color: #175a84;
+}
+
+.cl2 {
+    background-color: #0a6329;
+}
+
+.cont-club {
+    display: flex;
+    padding: 50px;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+}
+
+.img_fg {
+    width: 250px;
+    height: 250px;
+}
+.cont-club-txt{
+    width: 100%;
+    text-align: center;
+}
+.txt-club{
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.cont-txt-fg{
+    width: 100%;
+    height: 150px;
+    display: flex;
 }
 
 /*EN CONSTRUCCION*/
