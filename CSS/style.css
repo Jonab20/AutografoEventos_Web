@@ -512,69 +512,9 @@ header .logo img {
     }
 }
 
-/*SECCION QUIENES SOMOS*/
-/* .contenedor-quienes-somos {
-    width: 100%;
-    height: auto; */
-
-/*Alto y ancho del contenedor de quienes somos*/
-
-/* display: flex;
-
-} */
-
-/* .img-quienes-somos {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;  */
-/*le digo que arregle la imagen al tamaño del contenedor si este no tiene las
-    dimensiones identicas, ajustando relacion de aspecto*/
-/* } */
-
-/* .trapecio { */
-/*Posicion del trapecio*/
-/* position: absolute;
-    width: 70%;
-    height: 300px; */
-
-/*Dimension del trapecio*/
-/* border-right: 0px solid transparent;
-    border-left: 200px solid transparent;
-    border-bottom: 300px solid var(--azulPrimero);
-
-    opacity: 70%;
-    right: 0; */
-/*mantiene del lado derecho el trapecio*/
-
-/* } */
 
 
 
-/* .txt-qs {
-    color: #ffffff;
-    font-size: 50px;
-    margin-top: 15%;
-    margin-right: 15%;
-    right: 0;
-    position: absolute;
-} */
-
-/*--------------------------OPCION FOTO RESPONSIVE*/
-/* .contenedor-quienes-somos {
-    width: 100%;
-    height: 300px;
-}
-
-.foto-quienes-resp {
-    width: auto;
-    height: auto;
-
-}
-
-.img-quienes-somos {
-    width: 100%;
-    height: 100%;
-} */
 
 /*--------------------Opcion 3, FUNCIONA BIEN*/
 .contenedor-quienes-somos {
@@ -589,22 +529,16 @@ header .logo img {
 
     /*Posicion del Texto que esta sobre la Imagen*/
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
-    justify-content: space-around;
+    /* justify-content: space-between; */
+
 
 }
 
-.espacio1 {
+ .espacio1 {
     width: 150px;
     height: 100px;
-
-}
-
-.espacio2 {
-    width: 150px;
-    height: 100px;
-
+    margin-right: 60rem;
 }
 
 .conte-txt-qs {
@@ -618,7 +552,7 @@ header .logo img {
     color: #ffffff;
     font-size: 50px;
     cursor: pointer;
-
+    text-decoration: none;
 }
 
 .txt-qs:hover {
@@ -627,135 +561,141 @@ header .logo img {
     text-shadow: 2px 5px 10px rgb(0, 0, 0);
 
 }
-
-@media (min-width: 991px) {
-    .contenedor-quienes-somos {
-        display: grid;
-        justify-content: center;
-        grid-template-columns: 0.9fr 1fr;
-        column-gap: 4rem;
-        align-content: center;
-        justify-items: flex-start;
-    }
-
-    .espacio2 {
-        width: 150px;
-        height: 100px;
-        grid-column: 1 / 2;
+@media (min-width: 900px) and (max-width: 990px){
+    /*Como se vera quienes somos de 900px a 990px*/
+    .espacio1 {
+        width: 0px;
+        height: 1px;
+        margin-right: 50rem;
     }
 
     .conte-txt-qs {
-        grid-column: 2 / 3;
-    }
-
-    .txt-qs {
-        margin-top: 30px;
-        margin-left: 20px;
-        font-size: 45px;
-        width: 450px;
+        width: 400px;
+        height: 80px;
+        text-align: center;
+        margin-bottom: 50px;
     }
 }
-
-@media screen and (min-width: 900px) and (max-width: 991px) {
-
-    /*Mientras la pantalla SEA o este entre 900px y 991px,
-    se vera de la siguiente forma*/
+@media (min-width: 780px) and (max-width: 900px){
+    /*Como se vera quienes somos de 780px a 900px*/
     .contenedor-quienes-somos {
 
-        display: grid;
-        justify-content: center;
-        grid-template-columns: 0.9fr 1fr;
-        column-gap: 4rem;
-        align-content: center;
-        justify-items: flex-start;
-
-
-    }
-
-    .espacio2 {
-        width: 150px;
-        height: 100px;
-        grid-column: 1 / 2;
-    }
-
-    .conte-txt-qs {
-        grid-column: 2 / 3;
-
-    }
-
-    .txt-qs {
-        margin-top: 30px;
-        margin-left: 4px;
-        font-size: 45px;
-        width: 450px;
-    }
-
-    .espacio2 {
-        width: 150px;
-        height: 100px;
-        grid-column: 1 / 2;
-    }
-
-    .conte-txt-qs {
-        grid-column: 2 / 3;
-
-    }
-
-    .txt-qs {
-        margin-top: 30px;
-        margin-left: 4px;
-        font-size: 45px;
-        width: 450px;
-    }
-}
-
-
-@media (min-width: 480px) {
-
-    /*Mientras la pantalla SEA de 480px o MAYOR se vera de la siguiente forma*/
-    .espacio1,
-    .espacio2 {
-        display: none;
-    }
-
-    .contenedor-quienes-somos {
-        display: grid;
-        justify-content: center;
+        display: flex;
         align-items: center;
+        justify-content: center;
     }
+    .espacio1 {
+        width: 0px;
+        height: 1px;
+        margin-right: 0rem;
+    }
+}
 
+@media (max-width: 780px){
+    /*Como se vera quienes somos de 0px a 780px*/
+    .contenedor-quienes-somos {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .espacio1 {
+        width: 0px;
+        height: 1px;
+        margin-right: 0rem;
+    }
     .conte-txt-qs {
         width: 300px;
-        height: 120px;
+        height: 80px;
+        text-align: center;
+        margin-bottom: 50px;
     }
-
 }
-
-@media (min-width: 390px) {
-
-    /*Mientras la pantalla SEA de 390px o MAYOR se vera de la siguiente forma*/
-    .espacio1,
-    .espacio2 {
-        display: none;
-    }
-
-    .contenedor-quienes-somos {
-        display: grid;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .conte-txt-qs {
-        width: 300px;
-        height: 120px;
-    }
-
-}
-
 /* FIN QUIENES SOMOS*/
 
 
-/* SECCION REGLAMENTO*/
+
+/*Comienzo Nos Acompañan*/
+.nos-acompañan {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    font-size: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*Como se vera Nos Acompañan de 0px a 480px*/
+@media (max-width: 480px){
+    
+    .nos-acompañan p {
+        text-align: center;
+        width: 350px;
+        font-size: 50px;
+    }
+} 
+/*Fin Nos Acompañan*/
+
+/* SECCION SPONSORS*/
+.contenedor-sponsores {
+    width: 100%;
+    height: auto;
+    display: flex;
+    /*Activo el display flex, por default, coloca uno al lado del otro*/
+    flex-direction: row;
+    /*Creo columnas*/
+    justify-content: space-between;
+    /*Centro horizontalmente*/
+    align-items: center;
+    /*Alineo Verticalmente
+    /*No le establesco altura para que cuando sea Responsive me muestre bien las imagenes*/
+      
+}
+
+.sponsor {
+    width: 350px;
+    height: auto;
+
+    /*Espacio arriba, abajo, derecha e izquierda */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.imgsponsor {
+    width: 100%;
+    height: 100%;
+}
+
+/*Como se veran los SPONSORS de 0px a 780px*/
+@media (max-width: 780px){
+    .contenedor-sponsores {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sponsor:nth-child(1) {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .sponsor:nth-child(2) {
+        margin-top: 0px;
+        margin-bottom: 25px;
+        
+    }
+    .sponsor:nth-child(3){
+        margin-top: 10px;
+        margin-bottom: 28px;
+    }
+}
+/* TERMINA SECCION SPONSORS*/
+
+
+
+/* SECCION NUESTROS PARTIDOS*/
 .contenedor-reglamento {
     background-image: url(../Imagenes/reglamento-resp.png);
     background-repeat: no-repeat;
@@ -768,23 +708,22 @@ header .logo img {
 
     /*Posicion del Texto que esta sobre la Imagen*/
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
 
 .conte-txt-reglamento {
     width: 500px;
-    height: 90px;
+    height: 120px;
     text-align: center;
-
+    
 }
 
 .txt-reglamento {
     color: #ffffff;
     font-size: 50px;
     cursor: pointer;
-
 }
 
 .txt-reglamento:hover {
@@ -797,88 +736,41 @@ header .logo img {
 .espaci-reglamento1 {
     width: 150px;
     height: 100px;
-
+    margin-left: 50rem;
 }
 
-.espaci-reglamento2 {
-    width: 150px;
-    height: 100px;
-
-}
-
-@media (max-width: 480px) {
-
-    /*Mientras la pantalla NO sea de 480px o MAYOR se vera de la siguiente forma*/
-    .espaci-reglamento1,
-    .espaci-reglamento2 {
-        display: none;
-    }
-
-    .contenedor-reglamento {
-        display: grid;
-        justify-content: center;
-        align-items: center;
+@media (min-width: 900px) and (max-width: 990px){
+    /*Como se vera NUESTROS PARTIDOS de 900px a 990px*/
+    .espaci-reglamento1 {
+        width: 0px;
+        height: 1px;
+        margin-right: 0rem;
     }
 
     .conte-txt-reglamento {
+        width: 400px;
+        height: 80px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+/*Como se vera NUESTROS PARTIDOS de 0px a 900px*/
+@media (max-width: 900px){
+    .contenedor-reglamento {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
-        width: 150px;
-        height: 100px;
+       
     }
-
-    .txt-reglamento {
-        font-size: 30px;
-
+    .espaci-reglamento1 {
+        width: 0px;
+        height: 1px;
+        margin-right: 0rem;
     }
-
 }
-
-
-/* section .contenedor-reglamento {
-    width: 100%;
-    height: 300px;
-    display: flex;
-} */
-
-
-/* .trapecio-reglamento { */
-/*Posicion del trapecio*/
-/* position: absolute;
-    width: 70%;
-    height: auto;    */
-
-/*Dimension del trapecio*/
-/* border-right: 200px solid transparent;
-    border-left: 0px solid transparent;
-    border-bottom: 300px solid var(--azulPrimero);
-
-    opacity: 80%;
-    left: 0;
-} */
-
-/*
-.txt_reglamento {
-    color: #ffffff;
-    font-size: 50px;
-    margin: 15%;
-    right: 0;
-    position: absolute;
-    z-index: 15;
-}
-
-
-
-.img-reglamento {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;  */
-
-/*le digo que arregle la imagen al tamaño del contenedor si este no tiene las
-    dimensiones identicas, ajustando relacion de aspecto*/
-
-/* } */
-
-
+/*Termina NUESTROS PARTIDOS*/
 
 
 /* SECCION DONDE NOS ENCONTRAMOS*/
@@ -894,34 +786,52 @@ header .logo img {
     align-items: center;
 }
 
-@media (min-width: 890px) {
-    .localidades {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 1rem;
+@media (min-width: 720px) and (max-width: 780px) {
+    /*Como se vera NUESTROS PARTIDOS de 720px a 780px*/
+    .contenedor_texto p {
+        text-align: center;
+        width: 650px;
+        font-size: 50px;
     }
 }
 
+/*Como se vera Donde Nos Encontramos de 0px a 480px*/
+@media (max-width: 480px){
+    
+    .contenedor_texto p {
+        text-align: center;
+        width: 350px;
+        font-size: 40px;
+    }
+} 
+/*Fin Donde Nos Encontramos*/
+
+
 .localidades {
     width: 100%;
-    height: auto;
-    /*Dejo la altura en auto para que sea responsive cuando se achica la pantalla*/
-}
-
-.localidades .contenido-localidad {
-    margin-bottom: 20px;
-    /*Doy espacio entre las fotos cuando esten en columna*/
-}
-
-.localidad .contenido-localidad {
+    height: 300px;
     display: flex;
-    /*Activo el display flex, por default, coloca uno al lado del otro*/
-    justify-content: space-evenly;
-    /*Centro horizontalmente*/
+    flex-direction: row;
     align-items: center;
-    /*Alineo Verticalmente*/
+    justify-content: space-between;
+    row-gap: 0px;
+}
+
+.localidad {
     text-align: center;
-    /*Centro el texto*/
+}
+
+.localidad:nth-child(1) {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.localidad:nth-child(3) {
+    margin-right: 50px;
+}
+
+.contenido-localidad {
+    color: var(--naranja);
 }
 
 .contenido-localidad {
@@ -932,14 +842,6 @@ header .logo img {
     align-items: center;
 }
 
-.contenido-localidad div {
-    color: var(--naranja);
-    margin-top: 120px;
-    /*Espacio entre NOS ACOMPAÑAN y la imagen, en pantalla grande*/
-    height: 160px;
-    width: 350px;
-}
-
 .contenido-localidad h2 {
     font-size: 35px;
     margin-bottom: 15px;
@@ -948,140 +850,82 @@ header .logo img {
     */
 }
 
-.contenido-localidad span {
-    font-size: 20px;
-}
-
-
-/* SECCION SPONSORS*/
-.nos-acompañan {
-    background-color: #000000;
-    color: #ffffff;
-    text-align: center;
-    width: 100%;
-    height: 200px;
-    font-size: 50px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-
-@media (min-width: 900px) {
-    .contenedor-sponsores {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 5rem;
+/*Como se veran las LOCALIDADES de 0px a 900px*/
+@media (max-width: 900px){
+    .localidades {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-}
-
-.contenedor-sponsores {
-    width: 100%;
-    height: auto;
-    display: flex;
-    /*Activo el display flex, por default, coloca uno al lado del otro*/
-    justify-content: space-evenly;
-    /*Centro horizontalmente*/
-    align-items: center;
-    /*Alineo Verticalmente
-    /*No le establesco altura para que cuando sea Responsive me muestre bien las imagenes*/
-}
-
-/*.contenedor-sponsores .img-sponsor {
-    margin-bottom: 20px;
-    /*Doy espacio entre las fotos cuando esten en columna
-}*/
-
-
-/*.sponsor .img-sponsor
-{
-
-    /*Activo el display flex, por default, coloca uno al lado del otro
-    justify-content: space-evenly;
-    /*Centro horizontalmente
-    align-items: center;
-    /*Alineo Verticalmente
-}*/
-
-.imgsponsor {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    /*Espacio entre NOS ACOMPAÑAN y la imagen, en pantalla grande*/
-    height: 200px;
-    width: 400px;
-}
-
-/*
-    .imgsponsor2 {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        /*Espacio entre NOS ACOMPAÑAN y la imagen, en pantalla grande
-        height: 250px;
-        width: 450px;
+    .localidad:nth-child(1) {
+        margin-left: 0px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .localidad:nth-child(2) {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .localidad:nth-child(3) {
+        margin-right: 0px;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
-    .imgsponsor3 {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        /*Espacio entre NOS ACOMPAÑAN y la imagen, en pantalla grande
-        height: 250px;
-        width: 450px;
-    }/*
-
-    /* TERMINA SECCION SPONSORS*/
+}
+/*Termina DONDE NOS ENCONTRAMOS, LOCALIDADES y CANCHA*/
 
 
 /*SECCION FOOTER*/
-
 .footer {
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: var(--naranja);
     width: 100%;
     height: 150px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.todo-footer {
+
+    width: auto;
+    height: auto;
     display: flex;
     justify-content: space-between;
     /*Separa horizontalmente*/
     align-items: center;
     /*Centra verticalmente*/
-
-
 }
 
 .espacio-blanco {
     width: 280px;
     height: 130px;
-}
+} 
 
-.contener-logo-footer {
+.contener-logo-footer { 
     /*Espacio en la izquierda entre el contenedor del logo y contenedor de todas-redes*/
-    margin-left: 30px;
+    margin-left: 25px;
     width: 160px;
     height: 100px;
-}
+} 
 
-.logo-footer {
+.logo-footer { 
     /*Tamaño img logo*/
     width: 100%;
     height: 100%;
-}
+} 
 
-.copyright-style {
-    color: #ffffff;
-    font-size: 10px;
-    font-style: normal;
-    background-color: #cf8131;
-    text-align: center;
-    width: 100%;
-    height: 11px;
-}
-
-.footer .todas-redes {
+.todo-footer .todas-redes { 
     /*Espacio en la derecha desde el final del footer hacia adentro, hacia el contendor
       de todas-redes.
     */
     margin-right: 70px;
-}
+} 
 
 .todas-redes {
 
@@ -1090,7 +934,7 @@ header .logo img {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-}
+} 
 
 .contener-redes {
     margin-top: 15px;
@@ -1099,12 +943,12 @@ header .logo img {
 
 .red {
     display: flex;
-    align-items: center;
+    align-items: center; 
     /*Separacion hacia abajo entre cada red*/
     margin-bottom: 10px;
-}
+} 
 
-.red .img-redes {
+.red .img-redes { 
     /*Separacion entre img logo red y link*/
     margin-right: 10px;
 }
@@ -1119,38 +963,56 @@ header .logo img {
     color: var(--blanco);
 }
 
-@media (max-width: 880px) {
-    .espacio-blanco {
-        width: 280px;
-        height: 10px;
+.copyright-style {
+    justify-content: center;
+    color: #ffffff;
+    font-size: 10px;
+    font-style: normal;
+    background-color: #cf8131;
+    text-align: center;
+    width: 100%;
+    height: 11px;
+} 
 
-    }
-
+/*Como se veran el FOOTER de 0px a 900px*/
+@media (max-width: 900px){
     .footer {
-        /*Medidas del footer en pantalla chica*/
-        height: 250px;
+        height: auto;
         width: 100%;
         padding-top: 5px;
         padding-bottom: 5px;
 
+        display: grid;
+        justify-content: center;
+    }
 
-        /*Poner en columna*/
+    .todo-footer {
         display: grid;
         justify-content: center;
         align-items: center;
     }
 
+    .espacio-blanco {
+        width: 280px;
+        height: 0px;
+
+    } 
+
     .contener-logo-footer {
         margin-left: 0px;
+
+        /*Posiciono el logo en la fila que quiero y no en la default*/
+        grid-row: 3/4;
     }
 
-    .logo-footer {
+    .logo-footer { 
         /*Espacio en la izquierda*/
         margin-left: 35%;
-    }
+        margin-top: 10px;
+    } 
 
-    .footer .todas-redes {
-        width: 280px;
+    .todo-footer .todas-redes {
+        width: 280px; 
         /*Saco espacio en la derecha desde el final del footer hacia adentro, hacia el contendor
           de todas-redes que tenia en pantalla Grande.
         */
@@ -1158,8 +1020,15 @@ header .logo img {
 
         /*Espacio en la izquierda*/
         margin-left: 12%;
+
+        /*Posiciono las redes en la fila que quiero y no en la default*/
+        grid-row: 2/3;
     }
 
+    .copyright-style {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
 }
 
 /*Termina Footer*/
