@@ -151,13 +151,65 @@ header label {
 
 
 
-@media(max-width:991px) {
-    /*Cuando el ancho de pantalla sea MENOR a 991px, el menu se vera hacia abajo*/
-
-    /*Para cuando a la pag se le achique su ancho*/
+/*Como se vera el MENU de 480px a 900px*/
+@media (min-width: 480px) and (max-width: 900px) {
+        /*Para cuando a la pag se le achique su ancho*/
     /* header {  Añade mas Altura a la barra cuando se Achica la pantalla
         padding: 20px;
     } */
+    header label {
+        /*Cuando sea chica la pantalla que SI muestre el boton Menú*/
+        display: initial;
+    }
+
+    header .navbar {
+        /*Estilo de como quiero que se vea el menu cuando sea chica la pantalla*/
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--azulPrimero);
+        display: none;
+        /*Se muestra solo Menú, se ocultan los demas botones*/
+
+
+    }
+
+    header .navbar ul li {
+        /*Posiciono los botones: Futbol, FutGolf, Truco, Contacto cuando la pantalla sea chica*/
+        width: 100%;
+    }
+
+    header .navbar ul li ul {
+        /*Posiciono los botones Futbol 11, Futbol 6, etc, pantalla chica*/
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li {
+        /*Color de fondo del contendor de Futbol 11, Futbol 6, etc*/
+        background: var(--grisclaro);
+    }
+
+    #menu-bar:checked~.navbar {
+        /*Cuando presiono Menú, se despligan los botones principales*/
+        display: initial;
+    }
+
+    header label {
+        /*Espacio de derecha a final del ancho de pag. para que Menú no quede pegado al final del ancho*/
+        padding-right: 2rem;
+    }
+
+}
+
+
+
+/*Como se vera el MENU de 0px a 480px*/
+@media(max-width:480px) {
+
+    /*Para cuando a la pag se le achique su ancho*/
+
     header label {
         /*Cuando sea chica la pantalla que SI muestre el boton Menú*/
         display: initial;
@@ -333,60 +385,9 @@ header .logo img {
     color: #ffffff;
 }
 
-@media(min-width:991px) {
 
-    /*Mientras el ancho de pantalla SEA de 991px o Mayor se vera de la siguiente forma*/
-    /* body { */
-    /*centro todo el body*/
-    /* display: grid;
-        justify-content: center;
-        align-items: center;
-
-    } */
-
-    /*Según el ancho de pantalla se modifica la antura de las siguientes partes*/
-    .contenedor-carusel {
-        height: auto;
-
-    }
-
-    .contenedor-carusel .carusel {
-        height: auto;
-    }
-
-    .contenedor-carusel .carusel .slider-section {
-        height: auto;
-
-    }
-
-    .btn-left,
-    .btn-right {
-        display: flex;
-        position: absolute;
-        top: 35%;
-        font-size: 1.5rem;
-        background-color: rgba(148, 146, 146, 0.5);
-        /*transparent;  (148, 146, 146, 0.5)*/
-        border-radius: 50%;
-        padding: 5px;
-        font-weight: 600;
-        cursor: pointer;
-        color: #00000081;
-        transform: translate(0, -50%);
-        transition: .5s ease;
-        user-select: none;
-        /*para que el usuario no pueda seleccionar ese icono*/
-    }
-}
-
+/*Como se vera el CARUSEL de 900px en ADELANTE*/
 @media (min-width: 900px) {
-    /* body { */
-    /*centro todo el body*/
-    /* display: grid;
-        justify-content: center;
-        align-items: center;
-
-    } */
 
     /*Según el ancho de pantalla se modifica la antura de las siguientes partes*/
     .contenedor-carusel {
@@ -423,14 +424,8 @@ header .logo img {
     }
 }
 
-@media (min-width: 480px) {
-    /* body { */
-    /*centro todo el body*/
-    /* display: grid;
-        justify-content: center;
-        align-items: center;
-        
-    } */
+/*Como se vera el CARUSEL de 480px a 900px*/
+@media (min-width: 480px) and (max-width: 900px) {
 
     /*Según el ancho de pantalla se modifica la antura de las siguientes partes*/
     .contenedor-carusel {
@@ -467,20 +462,14 @@ header .logo img {
     }
 }
 
-@media (min-width: 390px) {
+
+/*Como se veran el CARUSEL de 0px a 480px*/
+@media (max-width: 480px) {
 
     /*Según el ancho de pantalla se modifica la antura de las siguientes partes*/
-    /*centro todo el body*/
-    /* body {
-        display: grid;
-        justify-content: center;
-        align-items: center;
-
-    } */
-
     .contenedor-carusel {
         height: auto;
-        /* width: 390px; */
+
     }
 
     .contenedor-carusel .carusel {
@@ -511,9 +500,6 @@ header .logo img {
         /*para que el usuario no pueda seleccionar ese icono*/
     }
 }
-
-
-
 
 
 /*--------------------Opcion 3, FUNCIONA BIEN*/
@@ -736,7 +722,7 @@ header .logo img {
 
 
 /* SECCION NUESTROS PARTIDOS*/
-.contenedor-reglamento {
+.contenedor-partidos {  /*contenedor-reglamento*/
     background-image: url(../Imagenes/reglamento-resp.png);
     background-repeat: no-repeat;
     /*Para evitar se repita la imagen*/
@@ -753,27 +739,28 @@ header .logo img {
     justify-content: space-around;
 }
 
-.conte-txt-reglamento {
+.conte-txt-partido {  /*conte-txt-reglamento*/
     width: 500px;
     height: 120px;
     text-align: center;
 
 }
 
-.txt-reglamento {
-    color: #ffffff;
+.txt-partido { /*txt-reglamento*/
+    color: #ffffff; 
     font-size: 50px;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.txt-reglamento:hover {
+.txt-partido:hover {  /*txt-reglamento:hover*/
     color: rgb(211, 216, 221);
     transform: translate(3px, 2px);
     text-shadow: 2px 5px 10px rgb(0, 0, 0);
 
 }
 
-.espaci-reglamento1 {
+.espaci-partido1 { /*espaci-reglamento1*/
     width: 150px;
     height: 100px;
     margin-left: 50rem;
@@ -782,13 +769,13 @@ header .logo img {
 @media (min-width: 900px) and (max-width: 990px) {
 
     /*Como se vera NUESTROS PARTIDOS de 900px a 990px*/
-    .espaci-reglamento1 {
+    .espaci-partido1 { /*espaci-reglamento1*/
         width: 0px;
         height: 1px;
         margin-right: 0rem;
     }
 
-    .conte-txt-reglamento {
+    .conte-txt-partido {  /*conte-txt-reglamento*/
         width: 400px;
         height: 80px;
         text-align: center;
@@ -798,7 +785,7 @@ header .logo img {
 
 /*Como se vera NUESTROS PARTIDOS de 0px a 900px*/
 @media (max-width: 900px) {
-    .contenedor-reglamento {
+    .contenedor-partidos {  /*contenedor-reglamento*/
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -806,20 +793,20 @@ header .logo img {
 
     }
 
-    .txt-reglamento {
+    .txt-partido { /*txt-reglamento*/
         color: #000000;
         font-size: 50px;
         cursor: pointer;
     }
 
-    .txt-reglamento:hover {
+    .txt-partido:hover {  /*txt-reglamento:hover*/
         color: var(--naranja);
         transform: translate(3px, 2px);
         text-shadow: 2px 5px 10px rgb(255, 255, 255);
 
     }
 
-    .espaci-reglamento1 {
+    .espaci-partido1 { /*espaci-reglamento1*/
         width: 0px;
         height: 1px;
         margin-right: 0rem;
@@ -1081,7 +1068,7 @@ header .logo img {
         margin-right: 0px;
 
         /*Espacio en la izquierda*/
-        margin-left: 12%;
+        margin-left: 15%;
 
         /*Posiciono las redes en la fila que quiero y no en la default*/
         grid-row: 2/3;
@@ -1098,7 +1085,151 @@ header .logo img {
 
 
 
-/*Comienza pag. LOBOS*/
+/*COMIENZA STA: SUPER TORNEO AMATEUR*/
+
+
+/*COMIENZA DISCIPLINAS/CATEGORIA*/
+.contenedor-una-disciplina {
+    /*Espacio de separacion superior entre la section de la Liga y Disciplina*/
+    margin-top: 3px;
+
+    background-image: url(../Imagenes/Disc-masc-2.png);
+    background-repeat: no-repeat;
+    /*Para evitar se repita la imagen*/
+    background-size: cover;
+    /*Que la imagen se adapte al ancho de pantalla*/
+    background-position: center;
+    height: 500px;
+    position: relative;
+
+    /*Posicion del Texto que esta sobre la Imagen*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+}
+
+.txt-disc {
+    color: var(--blanco);
+    text-align: center;
+    font-size: 50px;
+
+}
+/*TERMINA DISCIPLINAS/CATEGORIA*/
+
+/*COMIENZA SECCION REGLAMENTO*/
+.contenedor-reglamento {  
+    /*Espacio de separacion superior entre la section DISCIPLINA y Reglamento*/
+    margin-top: 3px;
+
+    background-image: url(../Imagenes/reglamento-resp.png);
+    background-repeat: no-repeat;
+    /*Para evitar se repita la imagen*/
+    background-size: cover;
+    /*Que la imagen se adapte al ancho de pantalla*/
+    background-position: center;
+    height: 300px;
+    position: relative;
+
+    /*Posicion del Texto que esta sobre la Imagen*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.conte-txt-reglamento {  
+    width: 500px;
+    height: 120px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.txt-reglamento { 
+    color: #ffffff; 
+    font-size: 50px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.txt-reglamento:hover { 
+    color: rgb(211, 216, 221);
+    transform: translate(3px, 2px);
+    text-shadow: 2px 5px 10px rgb(0, 0, 0);
+
+}
+
+.espaci-reglamento1 {
+    width: 150px;
+    height: 100px;
+    margin-left: 50rem;
+}
+
+/*Como se vera REGLAMENTO de 900px a 990px*/
+@media (min-width: 900px) and (max-width: 990px) {
+
+    
+    .espaci-reglamento1 { 
+        width: 0px;
+        height: 1px;
+        margin-right: 0rem;
+    }
+
+    .conte-txt-reglamento {  
+        width: 400px;
+        height: 80px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+/*Como se vera REGLAMENTO de 0px a 900px*/
+@media (max-width: 900px) {
+    .contenedor-reglamento {  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .txt-reglamento {
+        color: #000000;
+        font-size: 45px;
+        cursor: pointer;
+    }
+
+    .txt-reglamento:hover {  
+        color: var(--naranja);
+        transform: translate(3px, 2px);
+        text-shadow: 2px 5px 10px rgb(255, 255, 255);
+
+    }
+
+    .espaci-reglamento1 { 
+        width: 0px;
+        height: 1px;
+        margin-right: 0rem;
+    }
+
+
+    .txt-disc {
+        font-size: 45px;
+    }
+}
+/*TERMINA SECCION REGLAMENTO*/
+
+/*FINALIZA STA: SUPER TORNEO AMATEUR*/
+
+
+
+/*COMIENZA SECCION MAPA DONDE ESTAMOS*/
+.contenedor-donde-estamos iframe {
+    width: 100%;
+    height: 500px;
+}
+
 iframe {
     height: 800px;
     width: 50%;
@@ -1110,7 +1241,11 @@ iframe {
     margin-left: 50px;
     margin-right: 50px;
 }
+/*TERMINA SECCION MAPA DONDE ESTAMOS*/
 
+
+/*COMIENZA PAG. LOBOS*/
+/*COMIENZA LOGO DE LOBOS*/
 .contendor-logo-liga {
     display: flex;
     justify-content: center;
@@ -1140,10 +1275,88 @@ iframe {
     margin: 100px;
 
 }
+/*TERMINA LOGO DE LOBOS*/
+
+
+
+/*COMIENZA DISCIPLINA/CATEGORIAS LOBOS  MASCULINO, FEMENINO*/
+.contenedor-categoria {
+    /* margin-top: 145px; */
+    width: 100%;
+    height: 500px;
+    position: relative;
+
+
+    /*Posiciono la section categorias*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.conte-categoria {
+    margin-top: 3px;
+    height: 100%;
+    width: 100%;
+    /* position: none; */
+
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.conte-categoria:nth-child(1) {
+    margin-right: 3px;
+}
+
+.img-dicisplina {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.txt-categoria {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: var(--negro);
+    font-size: 50px;
+    text-align: center;
+}
+
+/*Como se veran las CATEGORIAS de 0px a 780px*/
+@media (max-width: 780px) {
+    .contenedor-categoria {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .conte-categoria {
+        height: 100%;
+    }
+    .conte-categoria:nth-child(1) {
+        margin-right: 0px;
+        margin-bottom: 1px;
+    }
+    .conte-categoria:nth-child(2) {
+        margin-top: 0px;
+    }
+    .txt-categoria {
+        position: absolute;
+        top: 40%;
+        
+        transform: translate(-50%, -50%); 
+        color: var(--negro);
+        font-size: 50px;
+        text-align: center;
+    }
+}
 
 
 /*Mas de una Disciplina: Masculino, Femenino*/
-.contenedor-disciplinas {
+/* .contenedor-disciplinas {
     width: 100%;
     display: flex;
     position: relative;
@@ -1159,7 +1372,7 @@ iframe {
     position: relative;
     display: inline-block;
     text-align: center;
-}
+} */
 
 /*.contenedor-img-txt-disc {
     position: relative;
@@ -1168,7 +1381,7 @@ iframe {
 
 }*/
 
-.img-dicsiplina {
+/* .img-dicsiplina {
     width: 650px;
 }
 
@@ -1181,26 +1394,20 @@ iframe {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     /*    color: var(--negro);*/
-    color: #ffffff;
+    /* color: #ffffff;
 
     font-size: 50px;
 
 
-}
+} */
+
+/*TERMINA DISCIPLINA/CATEGORIAS LOBOS  MASCULINO, FEMENINO*/
+/*FINALIZA PAG. LOBOS*/
 
 
 
-
-/*Termina Disciplinas: Masculino, Femenino*/
-
-
-/*SECCION DONDE ESTAMOS*/
-.contenedor-donde-estamos iframe {
-    width: 100%;
-    height: 500px;
-}
 
 /*Footgolf*/
 
