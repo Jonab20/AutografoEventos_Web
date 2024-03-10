@@ -157,9 +157,17 @@ header label {
     /* header {  Añade mas Altura a la barra cuando se Achica la pantalla
         padding: 20px;
     } */
+    header {
+        width: auto;
+    }
     header label {
         /*Cuando sea chica la pantalla que SI muestre el boton Menú*/
         display: initial;
+        /*Espacio de derecha a final del ancho de pag. para que Menú no quede pegado al final del ancho*/
+        padding-right: 6rem;
+    }
+    header input {
+        padding-right: 6rem;
     }
 
     header .navbar {
@@ -196,10 +204,11 @@ header label {
         display: initial;
     }
 
-    header label {
+    /* header label { */
         /*Espacio de derecha a final del ancho de pag. para que Menú no quede pegado al final del ancho*/
-        padding-right: 2rem;
-    }
+        /* padding-right: 10rem;
+    } */
+
 
 }
 
@@ -210,9 +219,18 @@ header label {
 
     /*Para cuando a la pag se le achique su ancho*/
 
+    header {
+        width: auto;
+    }
     header label {
         /*Cuando sea chica la pantalla que SI muestre el boton Menú*/
         display: initial;
+
+        /*Espacio de derecha a final del ancho de pag. para que Menú no quede pegado al final del ancho*/
+        padding-right: 6rem;
+    }
+    header input {
+        padding-right: 6rem;
     }
 
     header .navbar {
@@ -249,10 +267,10 @@ header label {
         display: initial;
     }
 
-    header label {
+    /* header label { */
         /*Espacio de derecha a final del ancho de pag. para que Menú no quede pegado al final del ancho*/
-        padding-right: 2rem;
-    }
+        /* padding-right: 2rem;
+    } */
 
 }
 
