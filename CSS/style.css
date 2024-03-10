@@ -575,10 +575,12 @@ header .logo img {
         text-align: center;
         margin-bottom: 50px;
     }
+
 }
 @media (min-width: 780px) and (max-width: 900px){
     /*Como se vera quienes somos de 780px a 900px*/
     .contenedor-quienes-somos {
+
 
         display: flex;
         align-items: center;
@@ -588,6 +590,16 @@ header .logo img {
         width: 0px;
         height: 1px;
         margin-right: 0rem;
+    }
+    .txt-qs{
+        color: #000000;
+
+    }
+    .txt-qs:hover {
+        color: var(--naranja);
+        transform: translate(3px, 2px);
+        text-shadow: 2px 5px 10px rgb(255, 255, 255);
+    
     }
 }
 
@@ -609,6 +621,16 @@ header .logo img {
         height: 80px;
         text-align: center;
         margin-bottom: 50px;
+    }
+    .txt-qs{
+        color: #000000;
+
+    }
+    .txt-qs:hover {
+        color: var(--naranja);
+        transform: translate(3px, 2px);
+        text-shadow: 2px 5px 10px rgb(255, 255, 255);
+    
     }
 }
 /* FIN QUIENES SOMOS*/
@@ -763,6 +785,18 @@ header .logo img {
         align-items: center;
         justify-content: center;
        
+    }
+    .txt-reglamento {
+        color: #000000;
+        font-size: 50px;
+        cursor: pointer;
+    }
+    
+    .txt-reglamento:hover {
+        color: var(--naranja);
+        transform: translate(3px, 2px);
+        text-shadow: 2px 5px 10px rgb(255, 255, 255);
+    
     }
     .espaci-reglamento1 {
         width: 0px;
