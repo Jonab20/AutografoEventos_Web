@@ -33,7 +33,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: solid 2px red/* ; Me ayuda a ver que es lo que hace scroll horizontal, marcando lo limites */
+    /*border: solid 2px red*//* ; Me ayuda a ver que es lo que hace scroll horizontal, marcando lo limites */
 
 }
 
@@ -1176,6 +1176,23 @@ iframe {
 }
 /*TERMINA SECCION MAPA DONDE ESTAMOS*/
 
+/*COMIENZA: "LOGO EN CONSTRUCCION"*/
+.contenedor-en-construccion {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 25px;
+    color: #cf8131;
+
+}
+
+.logo-enconstruccion {
+    margin-top: 100px;
+    width: 300px;
+    height: auto;
+}
+/*TERMINA: "LOGO EN CONSTRUCCION"*/
+
 
 
 /*COMIENZA STA: SUPER TORNEO AMATEUR*/
@@ -1458,29 +1475,63 @@ iframe {
 
 
 /*Footgolf*/
-
+/*COMIENZO DEL BANNER*/
 .contenedor-banner-fg{
     width: 100%;
     height: 200%;
-    padding-top: 150px;
+    /* padding-top: 150px; */
     background-image: url(/Imagenes/footgolf-bg.png);
     background-repeat: no-repeat;
     /*Para evitar se repita la imagen*/
     background-size: cover;
     /*Que la imagen se adapte al ancho de pantalla*/
+    background-position: center;
     height: 400px;
     position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .txt-banner{
+    margin-top: 80px;
     font-size: 50px;
     text-align: center;
     color: #ffffff;
 }
+
+/*Como se veran las CATEGORIAS de 0px a 480px*/
+@media (max-width: 480px){
+    .txt-banner {
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+/*FINAL DEL BANNER*/
+
+/*COMIENZA CLUBES DE GOLF*/
 .contenedor-clubes-fg {
-    display: flex;
     width: 100%;
     height: auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cont-club {
+    width: 100%;
+    height: 400px;
+    padding: 50px;
+
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
 }
 
 .cl1 {
@@ -1491,17 +1542,10 @@ iframe {
     background-color: #0a6329;
 }
 
-.cont-club {
-    display: flex;
-    padding: 50px;
-    width: 100%;
-    height: 400px;
-    justify-content: center;
-}
-
 .img_fg {
     width: 250px;
     height: 250px;
+    margin-bottom: 10px;
 }
 .cont-club-txt{
     width: 100%;
@@ -1512,24 +1556,19 @@ iframe {
     color: #ffffff;
     font-weight: bold;
 }
-.cont-txt-fg{
+/* .cont-txt-fg{
     width: 100%;
     height: 150px;
     display: flex;
-}
+} */
 
-/*EN CONSTRUCCION*/
-.contenedor-en-construccion {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    font-size: 25px;
-    color: #cf8131;
-
+/*Como se veran los CLUBES de 0px a 900px*/
+@media (max-width: 900px){
+    .contenedor-clubes-fg {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
+/*TERMINA CLUBES DE GOLF*/
 
-.logo-enconstruccion {
-    margin-top: 100px;
-    width: 300px;
-    height: auto;
-}
