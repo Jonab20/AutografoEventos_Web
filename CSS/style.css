@@ -746,7 +746,7 @@ header .logo img {
 
 
 /* SECCION NUESTROS PARTIDOS*/
-.contenedor-partidos {  /*contenedor-reglamento*/
+.contenedor-partidos {  
     background-image: url(../Imagenes/reglamento-resp.png);
     background-repeat: no-repeat;
     /*Para evitar se repita la imagen*/
@@ -760,24 +760,24 @@ header .logo img {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around; 
 }
 
-.conte-txt-partido {  /*conte-txt-reglamento*/
+.conte-txt-partido { 
     width: 500px;
     height: 120px;
     text-align: center;
 
 }
 
-.txt-partido { /*txt-reglamento*/
+.txt-partido { 
     color: #ffffff; 
     font-size: 50px;
     cursor: pointer;
     text-decoration: none;
 }
 
-.txt-partido:hover {  /*txt-reglamento:hover*/
+.txt-partido:hover {  
     color: rgb(211, 216, 221);
     transform: translate(3px, 2px);
     text-shadow: 2px 5px 10px rgb(0, 0, 0);
@@ -793,13 +793,13 @@ header .logo img {
 @media (min-width: 900px) and (max-width: 990px) {
 
     /*Como se vera NUESTROS PARTIDOS de 900px a 990px*/
-    .espaci-partido1 { /*espaci-reglamento1*/
+    .espaci-partido1 { 
         width: 0px;
-        height: 1px;
+        height: 0px;
         margin-right: 0rem;
     }
 
-    .conte-txt-partido {  /*conte-txt-reglamento*/
+    .conte-txt-partido {  
         width: 400px;
         height: 80px;
         text-align: center;
@@ -809,31 +809,39 @@ header .logo img {
 
 /*Como se vera NUESTROS PARTIDOS de 0px a 900px*/
 @media (max-width: 900px) {
-    .contenedor-partidos {  /*contenedor-reglamento*/
+    .contenedor-partidos {  
         display: flex;
-        flex-direction: column;
+        flex-direction: column; 
         align-items: center;
         justify-content: center;
 
     }
+    .conte-txt-partido {
+        width: 300px;
+        height: 80px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
 
-    .txt-partido { /*txt-reglamento*/
+    .txt-partido { 
         color: #000000;
-        font-size: 50px;
+        /* font-size: 50px; */
         cursor: pointer;
     }
 
-    .txt-partido:hover {  /*txt-reglamento:hover*/
+    .txt-partido:hover {  
         color: var(--naranja);
         transform: translate(3px, 2px);
         text-shadow: 2px 5px 10px rgb(255, 255, 255);
 
     }
 
-    .espaci-partido1 { /*espaci-reglamento1*/
-        width: 0px;
-        height: 1px;
-        margin-right: 0rem;
+    .espaci-partido1 { 
+        /*Se desabilita este contenedor*/
+        display: none;
+        /* width: 0px;
+        height: 0px;
+        margin-right: 0rem; */
     }
 }
 
@@ -1109,9 +1117,68 @@ header .logo img {
 
 
 
+/*LOGOS DE CADA LIGA*/
+.contendor-logo-liga {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+}
+
+.bg-liga {
+
+    /*background-image: url(/Imagenes/bg-liga.png);*/
+
+    background-image: url(../Imagenes/bg-liga-3.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
+/* .conte-logo-lobos {
+    height: 265px;
+    width: 300px;
+} */
+
+.logo-liga {
+    height: auto;
+    width: 300px;
+    margin: 100px;
+
+}
+
+/*Como se veran el LOGO LIGA de 0px a 480px*/
+@media (max-width: 480px){
+    .logo-liga {
+        width: 300px;
+        margin: 0;
+    }
+}
+/*TERMINA LOGOS DE CADA LIGA*/
+
+/*COMIENZA SECCION MAPA DONDE ESTAMOS*/
+.contenedor-donde-estamos iframe {
+    width: 100%;
+    height: 500px;
+}
+
+iframe {
+    height: 800px;
+    width: 50%;
+}
+
+.contenedor-iframe {
+    display: block;
+    justify-content: right;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+/*TERMINA SECCION MAPA DONDE ESTAMOS*/
+
+
+
 /*COMIENZA STA: SUPER TORNEO AMATEUR*/
-
-
 /*COMIENZA DISCIPLINAS/CATEGORIA*/
 .contenedor-una-disciplina {
     /*Espacio de separacion superior entre la section de la Liga y Disciplina*/
@@ -1218,6 +1285,13 @@ header .logo img {
 
     }
 
+    .conte-txt-reglamento {
+        width: 360px;
+        height: 80px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
     .txt-reglamento {
         color: #000000;
         font-size: 45px;
@@ -1232,9 +1306,11 @@ header .logo img {
     }
 
     .espaci-reglamento1 { 
-        width: 0px;
+        /*Desabilito este contenedor*/
+        display: none;
+        /* width: 0px;
         height: 1px;
-        margin-right: 0rem;
+        margin-right: 0rem; */
     }
 
 
@@ -1243,66 +1319,14 @@ header .logo img {
     }
 }
 /*TERMINA SECCION REGLAMENTO*/
-
 /*FINALIZA STA: SUPER TORNEO AMATEUR*/
 
 
 
-/*COMIENZA SECCION MAPA DONDE ESTAMOS*/
-.contenedor-donde-estamos iframe {
-    width: 100%;
-    height: 500px;
-}
 
-iframe {
-    height: 800px;
-    width: 50%;
-}
-
-.contenedor-iframe {
-    display: block;
-    justify-content: right;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-/*TERMINA SECCION MAPA DONDE ESTAMOS*/
 
 
 /*COMIENZA PAG. LOBOS*/
-/*COMIENZA LOGO DE LOBOS*/
-.contendor-logo-liga {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-    width: 100%;
-}
-
-.bg-liga {
-
-    /*background-image: url(/Imagenes/bg-liga.png);*/
-
-    background-image: url(../Imagenes/bg-liga-3.png);
-    background-position: center;
-    background-size: cover;
-
-}
-
-/* .conte-logo-lobos {
-    height: 265px;
-    width: 300px;
-} */
-
-.logo-liga {
-    height: auto;
-    width: 300px;
-    margin: 100px;
-
-}
-/*TERMINA LOGO DE LOBOS*/
-
-
-
 /*COMIENZA DISCIPLINA/CATEGORIAS LOBOS  MASCULINO, FEMENINO*/
 .contenedor-categoria {
     /* margin-top: 145px; */
