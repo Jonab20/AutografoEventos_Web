@@ -56,6 +56,7 @@ body {
         /* padding: 2px; */
         /*Espacio vacio que dejo para no llegar a los bordes izquierda y derecha*/
     }
+    /*Evita que el usuario seleccione contenido*/
     user-select: none; 
     overflow-x: hidden;
     /*hago invisible la barra horizontal, ESO CREEEOOO JA!!!*/
@@ -1567,9 +1568,9 @@ iframe {
 }
 .cont-club-txt{
     width: 100%;
-    text-align: center;
 }
 .txt-club{
+    text-align: center;
     font-size: 25px;
     color: #ffffff;
     font-weight: bold;
