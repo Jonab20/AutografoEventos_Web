@@ -317,65 +317,66 @@ header .logo img {
 
 
 /*Comienzo del CARUSEL*/
-.contenedor-carusel {
+
+/*.contenedor-carusel {
     /* margin-top: 2rem; */
     /*margen de espacio de arriba hacia abajo entre el contenedor carusel y el comienzo
     de el header*/
-    position: relative;
-    width: 300%;
+    /*position: relative;
+    /*width: 300%;
     /*ancho fijo del contenedor del carusel*/
-    height: 550px;
+    /*height: 550px;
     /*altura del contenedor del carusel*/
     /*width: 1000px; /*ancho fijo del contenedor del carusel*/
     /* height: 700px; */
-    background-color: #e0e0e0;
+    /*background-color: #e0e0e0;
     /*color de fondo del carusel*/
-    box-shadow: 0 8px 32px 0 rgb(0, 0, 0, 0.66);
+    /*box-shadow: 0 8px 32px 0 rgb(0, 0, 0, 0.66);
     /*sombra*/
-    overflow: hidden;
+    /*overflow: hidden;
     /*para que se vea solo la primer imagen*/
 
 
-}
+/*}
 
-.carusel {
+/*.carusel {
     /*contedor foto*/
-    width: 300%;
+    /*width: 300%;
     /*le digo que ocupe de ancho 300% del contenedor del carusel,
     porque tengo 3 imagenes que mostrar, cada una de las imagenes ocupara el 100%, al poner 300%,
     me permite mostrar imagen por imagen.
     De lo contrario de poner 100% me mostraria una sola imagen y no las 3 imagenes.*/
-    height: auto;
+    /*height: auto;
     /*le digo que ocupe de alto el 100% del contenedor del carusel*/
-    display: flex;
+    /*display: flex;
 
     /*De querer agregar y mostrar mas imagenes en el carusel, deno poner:
     width: (100% por cada imagen a mostrar, o sea 3 imagenes = 300%, 5 imagenes = 500%,
     10 imagenes = 1000%);*/
 
 
-}
+/*}
 
-.slider-section {
+/*.slider-section {
     width: calc(100%/3);
     /*del 100% del contendor de fotos dividilo en 3, ya que tengo 3 fotos que mostrar*/
-    height: 100%;
+    /*height: 100%;
     /*el 100% de altura del contendor de fotos*/
 
 
     /*Si quiero mostrar 10 imagenes seria:
     width: calc(100% / 10);*/
-}
+/*}
 
-.slider-section img {
+/*.slider-section img {
 
-    width: 100%;
+    /*width: 100%;
     /*Tamaño img ancho que la foto ocupe el 100% del contenedor de foto*/
-    height: 100%;
+    /*height: 100%;
     /*que la foto ocupe el 100% del contenedor de foto*/
     /*object-fit: cover; /*para que las imagenes no pierdan calidad, poner esto agranda o hace
     zoom de mas a las fotos y se ven cortadas*/
-}
+/*}
 
 .btn-left {
     left: 10px;
@@ -383,39 +384,39 @@ header .logo img {
 
 .btn-right {
     right: 10px;
-}
+}*/
 
-.btn-left,
+/*.btn-left,
 .btn-right {
     display: flex;
     position: absolute;
     top: 50%;
     font-size: 1.5rem;
-    background-color: rgba(148, 146, 146, 0.5);
+    background-color: rgba(148, 146, 146, 0.5);*/
     /*transparent;  (148, 146, 146, 0.5)*/
-    border-radius: 50%;
+    /*border-radius: 50%;
     padding: 5px;
     font-weight: 600;
     cursor: pointer;
     color: #00000081;
     transform: translate(0, -50%);
     transition: .5s ease;
-    user-select: none;
+    user-select: none;*/
     /*para que el usuario no pueda seleccionar ese icono*/
-}
+/*}*/
 
-.btn-left:hover,
+/*.btn-left:hover,
 .btn-right:hover {
     background-color: #333333d4;
     color: #ffffff;
-}
+}*/
 
 
 /*Como se vera el CARUSEL de 900px en ADELANTE*/
-@media (min-width: 900px) {
+/*@media (min-width: 900px) {*/
 
     /*Según el ancho de pantalla se modifica la antura de las siguientes partes*/
-    .contenedor-carusel {
+    /*.contenedor-carusel {
         height: auto;
 
     }
@@ -427,33 +428,33 @@ header .logo img {
     .contenedor-carusel .carusel .slider-section {
         height: auto;
 
-    }
+    }*/
 
-    .btn-left,
+    /*.btn-left,
     .btn-right {
         display: flex;
         position: absolute;
         top: 35%;
         font-size: 1.5rem;
-        background-color: rgba(148, 146, 146, 0.5);
+        background-color: rgba(148, 146, 146, 0.5);*/
         /*transparent;  (148, 146, 146, 0.5)*/
-        border-radius: 50%;
+       /* border-radius: 50%;
         padding: 5px;
         font-weight: 600;
         cursor: pointer;
         color: #00000081;
         transform: translate(0, -50%);
         transition: .5s ease;
-        user-select: none;
+        user-select: none;*/
         /*para que el usuario no pueda seleccionar ese icono*/
-    }
-}
+    /*}
+}*/
 
 /*Como se vera el CARUSEL de 480px a 900px*/
-@media (min-width: 480px) and (max-width: 900px) {
+/*@media (min-width: 480px) and (max-width: 900px) {*/
 
     /*Según el ancho de pantalla se modifica la antura de las siguientes partes*/
-    .contenedor-carusel {
+    /*.contenedor-carusel {
         height: auto;
         
     }
@@ -466,91 +467,145 @@ header .logo img {
     .contenedor-carusel .carusel .slider-section {
         height: auto;
 
-    }
+    }*/
 
-    .btn-left,
+    /*.btn-left,
     .btn-right {
         display: flex;
         position: absolute;
         top: 35%;
         font-size: 1.5rem;
-        background-color: rgba(148, 146, 146, 0.5);
+        background-color: rgba(148, 146, 146, 0.5);*/
         /*transparent;  (148, 146, 146, 0.5)*/
-        border-radius: 50%;
+        /*border-radius: 50%;
         padding: 5px;
         font-weight: 600;
         cursor: pointer;
         color: #00000081;
         transform: translate(0, -50%);
         transition: .5s ease;
-        user-select: none;
+        user-select: none;*/
         /*para que el usuario no pueda seleccionar ese icono*/
-    }
-}
+    /*}*/
+/*}
 
 
 /*Como se veran el CARUSEL de 0px a 480px*/
-@media (max-width: 480px) {
+/*@media (max-width: 480px) {
 
     /*Según el ancho de pantalla se modifica la antura de las siguientes partes*/
-    .contenedor-carusel {
-        height: 150px;/*auto*/
-        position: relative;/**/
-        width: 300%;/**/
-        margin-top: 65px;/**/
-        margin-bottom: 2px;
-        padding: 0px;/**/
-        overflow: hidden;/**/
+    /*.contenedor-carusel {
+        /*height: 150px;/*auto*/
+        /*position: relative;/**/
+        /*width: 300%;/**/
+        /*margin-top: 65px;/**/
+       /* margin-bottom: 2px;
+        /*padding: 0px;/**/
+        /*overflow: hidden;/**/
         /*para que se vea solo la primer imagen*/
-    }
+    /*}
 
     .contenedor-carusel .carusel {
         height: auto;
         
     }
-    .carusel {/**/
-        
-    }
+
 
     .contenedor-carusel .carusel .slider-section {
         height: auto;
+    }*/
 
-        background-position: center;/**/
-        background-size: cover;/**/
-        /*Que la imagen se adapte al ancho de pantalla*/
-        width: calc(100%/3);/**/
-    }
-
-    .btn-left,
+    /*.btn-left,
     .btn-right {
         display: flex;
         position: absolute;
         top: 35%;
         font-size: 1.5rem;
-        background-color: rgba(148, 146, 146, 0.5);
+        background-color: rgba(148, 146, 146, 0.5);*/
         /*transparent;  (148, 146, 146, 0.5)*/
-        border-radius: 50%;
+        /*border-radius: 50%;
         padding: 5px;
         font-weight: 600;
         cursor: pointer;
         color: #00000081;
         transform: translate(0, -50%);
         transition: .5s ease;
-        user-select: none;
+        user-select: none;*/
         /*para que el usuario no pueda seleccionar ese icono*/
-    }
+    /*}
 
-    .slider-section img {/**/
+/*}*/
 
+
+
+
+
+
+/*CARUSEL NUEVOOOOOO*/
+.slider-box {
+    max-width: 100%;
+    height: 500px;
+
+    margin-top: 50px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 2px;
+    overflow: hidden;
+
+    background-position: center;
+}
+
+.slider-box ul {
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li {
+    width: 100%;
+    list-style: none;
+    position: relative; /* es solo si arriba le pongo texto a la imagen*/
+}
+
+.slider-box img {
+    width: 100%;
+    background-position: calc(300%/3);
+}
+
+@keyframes slide {
+    /* 0% { margin-left: 0; }
+    20% { margin-left: 0; }
+
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+
+    75% { margin-left: -300%; }
+    100% { margin-left: -300%; }  */
+ 
+
+    0% { margin-left: 0; }
+    45% { margin-left: 0; }
+
+    50% { margin-left: -100%; }
+    70% { margin-left: -100%; }
+
+    75% { margin-left: -200%; }
+    100% { margin-left: -200%; } 
+   
+}
+
+@media (max-width: 480px){
+    .slider-box {
         width: 100%;
-        /*Tamaño img ancho que la foto ocupe el 100% del contenedor de foto*/
-        height: 100%;
-        /*que la foto ocupe el 100% del contenedor de foto*/
-        /*object-fit: cover; /*para que las imagenes no pierdan calidad, poner esto agranda o hace
-        zoom de mas a las fotos y se ven cortadas*/
+        height: auto;
     }
 }
 
+/*TERMINA CARUSEL NUEVOOOO*/
 
 /*--------------------Opcion 3, FUNCIONA BIEN*/
 .contenedor-quienes-somos {
