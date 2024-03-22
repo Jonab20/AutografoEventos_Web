@@ -455,11 +455,12 @@ header .logo img {
     /*Según el ancho de pantalla se modifica la antura de las siguientes partes*/
     .contenedor-carusel {
         height: auto;
-
+        
     }
 
     .contenedor-carusel .carusel {
         height: auto;
+        
     }
 
     .contenedor-carusel .carusel .slider-section {
@@ -493,17 +494,31 @@ header .logo img {
 
     /*Según el ancho de pantalla se modifica la antura de las siguientes partes*/
     .contenedor-carusel {
-        height: auto;
-
+        height: 150px;/*auto*/
+        position: relative;/**/
+        width: 300%;/**/
+        margin-top: 65px;/**/
+        margin-bottom: 2px;
+        padding: 0px;/**/
+        overflow: hidden;/**/
+        /*para que se vea solo la primer imagen*/
     }
 
     .contenedor-carusel .carusel {
         height: auto;
+        
+    }
+    .carusel {/**/
+        
     }
 
     .contenedor-carusel .carusel .slider-section {
         height: auto;
 
+        background-position: center;/**/
+        background-size: cover;/**/
+        /*Que la imagen se adapte al ancho de pantalla*/
+        width: calc(100%/3);/**/
     }
 
     .btn-left,
@@ -523,6 +538,16 @@ header .logo img {
         transition: .5s ease;
         user-select: none;
         /*para que el usuario no pueda seleccionar ese icono*/
+    }
+
+    .slider-section img {/**/
+
+        width: 100%;
+        /*Tamaño img ancho que la foto ocupe el 100% del contenedor de foto*/
+        height: 100%;
+        /*que la foto ocupe el 100% del contenedor de foto*/
+        /*object-fit: cover; /*para que las imagenes no pierdan calidad, poner esto agranda o hace
+        zoom de mas a las fotos y se ven cortadas*/
     }
 }
 
