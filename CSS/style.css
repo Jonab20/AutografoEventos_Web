@@ -544,9 +544,9 @@ header .logo img {
 /*CARUSEL NUEVOOOOOO*/
 .slider-box {
     max-width: 100%;
-    height: 500px;
+    height: 100%;
 
-    margin-top: 50px;
+    margin-top: 0px;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 2px;
@@ -565,11 +565,12 @@ header .logo img {
 .slider-box li {
     width: 100%;
     list-style: none;
-    position: relative; /* es solo si arriba le pongo texto a la imagen*/
+    /*position: relative; /* es solo si arriba le pongo texto a la imagen*/
 }
 
 .slider-box img {
     width: 100%;
+    height: auto;
     background-position: calc(300%/3);
 }
 
@@ -600,6 +601,13 @@ header .logo img {
 
 @media (max-width: 480px){
     .slider-box {
+        width: 100%;
+        height: auto;
+        margin-top: 65px;
+        margin-bottom: 0px;
+    }
+
+    .slider-box img {
         width: 100%;
         height: auto;
     }
