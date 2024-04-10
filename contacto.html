@@ -24,8 +24,7 @@
 
 <body>
     <!--refenciamos el boton y link de whatsapp-->
-    <a href="https://wa.me/5492227402929?text=Me%20gustaría%20me%20den%20info" class="whatsapp"
-        target="_blank">
+    <a href="https://wa.me/5492227402929?text=Me%20gustaría%20me%20den%20info" class="whatsapp" target="_blank">
         <i class="fa fa-whatsapp whatsapp-icon"></i></a>
 
     <header>
@@ -53,9 +52,39 @@
             </ul>
         </nav>
     </header>
-    <div class="contenedor-en-construccion">
+
+    <!--
+  <div class="contenedor-en-construccion">
         <img class="logo-enconstruccion" src="Imagenes/El_Autografo_eventos.png" alt="">
         <h1>PAGINA EN CONSTRUCCION</h1>
+    </div>-->
+
+    <section class="encabezado-contacto">
+        <div>
+            <h1>CONTACTATE CON NOSOTROS!</h1>
+        </div>
+    </section>
+    <div class="contendor-secciones">
+        <section class="cont-form">
+            <h3>ENVIANOS UN MAIL</h3>
+    
+            <form class="contendor_mail" action="">
+                <label class="label-form" for="fnombre">Nombre y apellido:</label>
+                <input type="text" id="fnombre" placeholder="Escriba su nombre" required><br><br>
+                <label class="label-form" for="mail">Mail:</label>
+                <input type="email" id="mail" placeholder="Escriba un mail" required><br><br>
+                <label class="label-form" for="msg">Mensaje:</label>
+                <textarea id="msg" name="Mensaje" rows="4" cols="30" placeholder="Escriba el mensaje"
+                    required></textarea><br><br>
+                <input type="submit" value="Enviar ">
+            </form>
+    
+        </section>
+        <section class="cont-redes">
+            <h3>NUESTRAS REDES</h3>
+            <img src="Imagenes/logo_facebook.png" alt="FACEBOOK"> <br>
+            <img src="Imagenes/logo_instagram.png" alt="INSTAGRAM">
+        </section>    
     </div>
 
     <!--PIE DE PAGINA-->
@@ -69,7 +98,7 @@
             <div class="contener-logo-footer">
                 <img class="logo-footer" src="Imagenes/El_Autografo_logo_blanco.png" alt="EL AUTOGRAFO EVENTOS">
             </div>
-    
+
             <div class="todas-redes">
                 <div class="contener-redes">
 
@@ -83,13 +112,14 @@
                     <div class="red">
                         <img class="img-redes" src="Imagenes/logo_whatsapp.png" alt="whatsapp de el autografo eventos">
                         <a class="link-redes"
-                            href="https://api.whatsapp.com/send/?phone=5211234567890&text=Me+gustar%C3%ADa+saber+el+precio+del+coche&type=phone_number&app_absent=0"
-                            target="_blank">2227-000000</a>
+                            href="https://api.whatsapp.com/send/?phone=5492227402929&text=Me+gustar%C3%ADa+me+den+info&type=phone_number&app_absent=0"
+                            target="_blank">2227-402929</a>
                         <!-- <span>2227-000000</span> -->
                     </div>
 
                     <div class="red">
-                        <img class="img-redes" src="Imagenes/logo_instagram.png" alt="el autografo eventos en instagram">
+                        <img class="img-redes" src="Imagenes/logo_instagram.png"
+                            alt="el autografo eventos en instagram">
                         <a class="link-redes" href="https://www.instagram.com/elautografoeventos/?hl=es-la"
                             target="_blank">@elautografoeventos</a>
                         <!-- <span>@elautografoeventos</span> -->
@@ -101,7 +131,7 @@
         <div>
             <p class="copyright-style">©2024 ElAutografoEventos</p>
         </div>
-        
+
     </footer><!--ACA TERMINA EL FOOTER,    FUNCIONA BIEN, YA ES RESPONSIVE-->
     <script src="mas.js"></script>
 </body>

@@ -33,7 +33,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*border: solid 2px red*//* ; Me ayuda a ver que es lo que hace scroll horizontal, marcando lo limites */
+    /*border: solid 2px red*/
+    /* ; Me ayuda a ver que es lo que hace scroll horizontal, marcando lo limites */
 
 }
 
@@ -56,8 +57,9 @@ body {
         /* padding: 2px; */
         /*Espacio vacio que dejo para no llegar a los bordes izquierda y derecha*/
     }
+
     /*Evita que el usuario seleccione contenido*/
-    user-select: none; 
+    user-select: none;
     overflow-x: hidden;
     /*hago invisible la barra horizontal, ESO CREEEOOO JA!!!*/
 }
@@ -121,7 +123,8 @@ header .navbar ul li ul {
     /*Posiciono el contenedor de los botones Futbol 11, Futbol 6 Monte, etc*/
     position: absolute;
     left: 0;
-    width: 100%;/*135px;*/
+    width: 100%;
+    /*135px;*/
     background-color: rgb(64, 87, 130, .5);
     display: none;
 }
@@ -155,13 +158,15 @@ header label {
 
 /*Como se vera el MENU de 480px a 900px*/
 @media (min-width: 480px) and (max-width: 900px) {
-        /*Para cuando a la pag se le achique su ancho*/
+
+    /*Para cuando a la pag se le achique su ancho*/
     /* header {  Añade mas Altura a la barra cuando se Achica la pantalla
         padding: 20px;
     } */
     header {
         width: 100%;
     }
+
     header label {
         /*Cuando sea chica la pantalla que SI muestre el boton Menú*/
         display: initial;
@@ -169,6 +174,7 @@ header label {
         /* padding-right: 6rem; */
         margin-right: 6rem;
     }
+
     header input {
         /* padding-right: 6rem; */
         margin-right: 6rem;
@@ -210,8 +216,8 @@ header label {
     }
 
     /* header label { */
-        /*Espacio de derecha a final del ancho de pag. para que Menú no quede pegado al final del ancho*/
-        /* padding-right: 10rem;
+    /*Espacio de derecha a final del ancho de pag. para que Menú no quede pegado al final del ancho*/
+    /* padding-right: 10rem;
     } */
 
 
@@ -227,6 +233,7 @@ header label {
     header {
         width: 100%;
     }
+
     header label {
         /*Cuando sea chica la pantalla que SI muestre el boton Menú*/
         display: initial;
@@ -235,6 +242,7 @@ header label {
         /* padding-right: 6rem; */
         margin-right: 3rem;
     }
+
     header input {
         /* padding-right: 6rem; */
         margin-right: 3rem;
@@ -261,7 +269,8 @@ header label {
     header .navbar ul li ul {
         /*Posiciono los botones Futbol 11, Futbol 6, etc, pantalla chica*/
         position: relative;
-        width: auto;/*100%;*/
+        width: auto;
+        /*100%;*/
     }
 
     header .navbar ul li ul li {
@@ -275,8 +284,8 @@ header label {
     }
 
     /* header label { */
-        /*Espacio de derecha a final del ancho de pag. para que Menú no quede pegado al final del ancho*/
-        /* padding-right: 2rem;
+    /*Espacio de derecha a final del ancho de pag. para que Menú no quede pegado al final del ancho*/
+    /* padding-right: 2rem;
     } */
 
 }
@@ -314,227 +323,6 @@ header .logo img {
 
 /*FINAL del HEADER, BARRA DE NAVEGACION*/
 
-
-
-/*Comienzo del CARUSEL*/
-
-/*.contenedor-carusel {
-    /* margin-top: 2rem; */
-    /*margen de espacio de arriba hacia abajo entre el contenedor carusel y el comienzo
-    de el header*/
-    /*position: relative;
-    /*width: 300%;
-    /*ancho fijo del contenedor del carusel*/
-    /*height: 550px;
-    /*altura del contenedor del carusel*/
-    /*width: 1000px; /*ancho fijo del contenedor del carusel*/
-    /* height: 700px; */
-    /*background-color: #e0e0e0;
-    /*color de fondo del carusel*/
-    /*box-shadow: 0 8px 32px 0 rgb(0, 0, 0, 0.66);
-    /*sombra*/
-    /*overflow: hidden;
-    /*para que se vea solo la primer imagen*/
-
-
-/*}
-
-/*.carusel {
-    /*contedor foto*/
-    /*width: 300%;
-    /*le digo que ocupe de ancho 300% del contenedor del carusel,
-    porque tengo 3 imagenes que mostrar, cada una de las imagenes ocupara el 100%, al poner 300%,
-    me permite mostrar imagen por imagen.
-    De lo contrario de poner 100% me mostraria una sola imagen y no las 3 imagenes.*/
-    /*height: auto;
-    /*le digo que ocupe de alto el 100% del contenedor del carusel*/
-    /*display: flex;
-
-    /*De querer agregar y mostrar mas imagenes en el carusel, deno poner:
-    width: (100% por cada imagen a mostrar, o sea 3 imagenes = 300%, 5 imagenes = 500%,
-    10 imagenes = 1000%);*/
-
-
-/*}
-
-/*.slider-section {
-    width: calc(100%/3);
-    /*del 100% del contendor de fotos dividilo en 3, ya que tengo 3 fotos que mostrar*/
-    /*height: 100%;
-    /*el 100% de altura del contendor de fotos*/
-
-
-    /*Si quiero mostrar 10 imagenes seria:
-    width: calc(100% / 10);*/
-/*}
-
-/*.slider-section img {
-
-    /*width: 100%;
-    /*Tamaño img ancho que la foto ocupe el 100% del contenedor de foto*/
-    /*height: 100%;
-    /*que la foto ocupe el 100% del contenedor de foto*/
-    /*object-fit: cover; /*para que las imagenes no pierdan calidad, poner esto agranda o hace
-    zoom de mas a las fotos y se ven cortadas*/
-/*}
-
-.btn-left {
-    left: 10px;
-}
-
-.btn-right {
-    right: 10px;
-}*/
-
-/*.btn-left,
-.btn-right {
-    display: flex;
-    position: absolute;
-    top: 50%;
-    font-size: 1.5rem;
-    background-color: rgba(148, 146, 146, 0.5);*/
-    /*transparent;  (148, 146, 146, 0.5)*/
-    /*border-radius: 50%;
-    padding: 5px;
-    font-weight: 600;
-    cursor: pointer;
-    color: #00000081;
-    transform: translate(0, -50%);
-    transition: .5s ease;
-    user-select: none;*/
-    /*para que el usuario no pueda seleccionar ese icono*/
-/*}*/
-
-/*.btn-left:hover,
-.btn-right:hover {
-    background-color: #333333d4;
-    color: #ffffff;
-}*/
-
-
-/*Como se vera el CARUSEL de 900px en ADELANTE*/
-/*@media (min-width: 900px) {*/
-
-    /*Según el ancho de pantalla se modifica la antura de las siguientes partes*/
-    /*.contenedor-carusel {
-        height: auto;
-
-    }
-
-    .contenedor-carusel .carusel {
-        height: auto;
-    }
-
-    .contenedor-carusel .carusel .slider-section {
-        height: auto;
-
-    }*/
-
-    /*.btn-left,
-    .btn-right {
-        display: flex;
-        position: absolute;
-        top: 35%;
-        font-size: 1.5rem;
-        background-color: rgba(148, 146, 146, 0.5);*/
-        /*transparent;  (148, 146, 146, 0.5)*/
-       /* border-radius: 50%;
-        padding: 5px;
-        font-weight: 600;
-        cursor: pointer;
-        color: #00000081;
-        transform: translate(0, -50%);
-        transition: .5s ease;
-        user-select: none;*/
-        /*para que el usuario no pueda seleccionar ese icono*/
-    /*}
-}*/
-
-/*Como se vera el CARUSEL de 480px a 900px*/
-/*@media (min-width: 480px) and (max-width: 900px) {*/
-
-    /*Según el ancho de pantalla se modifica la antura de las siguientes partes*/
-    /*.contenedor-carusel {
-        height: auto;
-        
-    }
-
-    .contenedor-carusel .carusel {
-        height: auto;
-        
-    }
-
-    .contenedor-carusel .carusel .slider-section {
-        height: auto;
-
-    }*/
-
-    /*.btn-left,
-    .btn-right {
-        display: flex;
-        position: absolute;
-        top: 35%;
-        font-size: 1.5rem;
-        background-color: rgba(148, 146, 146, 0.5);*/
-        /*transparent;  (148, 146, 146, 0.5)*/
-        /*border-radius: 50%;
-        padding: 5px;
-        font-weight: 600;
-        cursor: pointer;
-        color: #00000081;
-        transform: translate(0, -50%);
-        transition: .5s ease;
-        user-select: none;*/
-        /*para que el usuario no pueda seleccionar ese icono*/
-    /*}*/
-/*}
-
-
-/*Como se veran el CARUSEL de 0px a 480px*/
-/*@media (max-width: 480px) {
-
-    /*Según el ancho de pantalla se modifica la antura de las siguientes partes*/
-    /*.contenedor-carusel {
-        /*height: 150px;/*auto*/
-        /*position: relative;/**/
-        /*width: 300%;/**/
-        /*margin-top: 65px;/**/
-       /* margin-bottom: 2px;
-        /*padding: 0px;/**/
-        /*overflow: hidden;/**/
-        /*para que se vea solo la primer imagen*/
-    /*}
-
-    .contenedor-carusel .carusel {
-        height: auto;
-        
-    }
-
-
-    .contenedor-carusel .carusel .slider-section {
-        height: auto;
-    }*/
-
-    /*.btn-left,
-    .btn-right {
-        display: flex;
-        position: absolute;
-        top: 35%;
-        font-size: 1.5rem;
-        background-color: rgba(148, 146, 146, 0.5);*/
-        /*transparent;  (148, 146, 146, 0.5)*/
-        /*border-radius: 50%;
-        padding: 5px;
-        font-weight: 600;
-        cursor: pointer;
-        color: #00000081;
-        transform: translate(0, -50%);
-        transition: .5s ease;
-        user-select: none;*/
-        /*para que el usuario no pueda seleccionar ese icono*/
-    /*}
-
-/*}*/
 
 
 
@@ -576,18 +364,33 @@ header .logo img {
 
 @keyframes slide {
 
-    0% { margin-left: 0; }
-    45% { margin-left: 0; }
+    0% {
+        margin-left: 0;
+    }
 
-    50% { margin-left: -100%; }
-    70% { margin-left: -100%; }
+    45% {
+        margin-left: 0;
+    }
 
-    75% { margin-left: -200%; }
-    100% { margin-left: -200%; } 
-   
+    50% {
+        margin-left: -100%;
+    }
+
+    70% {
+        margin-left: -100%;
+    }
+
+    75% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: -200%;
+    }
+
 }
 
-@media (max-width: 480px){
+@media (max-width: 480px) {
     .slider-box {
         width: 100%;
         height: auto;
@@ -600,6 +403,7 @@ header .logo img {
         height: auto;
     }
 }
+
 /*TERMINA CARUSEL NUEVOOOO*/
 
 
@@ -734,6 +538,58 @@ header .logo img {
     }
 }
 
+.contenedor-quienessomos {
+
+    background: url(../Imagenes/slide6.jpg);
+    background-position: center;
+    width: 100%;
+    height: 600px;
+}
+
+.contenedor-txt-qs {
+    text-align: center;
+    color: #ffffff;
+    font-size: 25px;
+    position: absolute;
+    font-weight: bold;
+    transform: translateY(20%);
+}
+
+.logo-qs {
+    align-items: center;
+    margin-top: 130px;
+    height: 150px;
+    width: auto;
+}
+
+.contenedor-logo {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 0px;
+
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+
+    .contenedor-txt-qs {
+        text-align: center;
+        color: #ffffff;
+        font-size: 14px;
+        position: absolute;
+        font-weight: bold;
+        transform: translateY(10%);
+    }
+
+    .contenedor-quienessomos {
+
+        background: url(../Imagenes/slide6.jpg);
+        background-position: center;
+        width: 100%;
+        height: 600px;
+    }
+
+}
+
 /* FIN QUIENES SOMOS*/
 
 
@@ -824,7 +680,7 @@ header .logo img {
 
 
 /* SECCION NUESTROS PARTIDOS*/
-.contenedor-partidos {  
+.contenedor-partidos {
     background-image: url(../Imagenes/reglamento-resp.png);
     background-repeat: no-repeat;
     /*Para evitar se repita la imagen*/
@@ -838,31 +694,32 @@ header .logo img {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around; 
+    justify-content: space-around;
 }
 
-.conte-txt-partido { 
+.conte-txt-partido {
     width: 500px;
     height: 120px;
     text-align: center;
 
 }
 
-.txt-partido { 
-    color: #ffffff; 
+.txt-partido {
+    color: #ffffff;
     font-size: 50px;
     cursor: pointer;
     text-decoration: none;
 }
 
-.txt-partido:hover {  
+.txt-partido:hover {
     color: rgb(211, 216, 221);
     transform: translate(3px, 2px);
     text-shadow: 2px 5px 10px rgb(0, 0, 0);
 
 }
 
-.espaci-partido1 { /*espaci-reglamento1*/
+.espaci-partido1 {
+    /*espaci-reglamento1*/
     width: 150px;
     height: 100px;
     margin-left: 50rem;
@@ -871,13 +728,13 @@ header .logo img {
 @media (min-width: 900px) and (max-width: 990px) {
 
     /*Como se vera NUESTROS PARTIDOS de 900px a 990px*/
-    .espaci-partido1 { 
+    .espaci-partido1 {
         width: 0px;
         height: 0px;
         margin-right: 0rem;
     }
 
-    .conte-txt-partido {  
+    .conte-txt-partido {
         width: 400px;
         height: 80px;
         text-align: center;
@@ -887,13 +744,14 @@ header .logo img {
 
 /*Como se vera NUESTROS PARTIDOS de 0px a 900px*/
 @media (max-width: 900px) {
-    .contenedor-partidos {  
+    .contenedor-partidos {
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
         justify-content: center;
 
     }
+
     .conte-txt-partido {
         width: 300px;
         height: 80px;
@@ -901,20 +759,20 @@ header .logo img {
         margin-bottom: 50px;
     }
 
-    .txt-partido { 
+    .txt-partido {
         color: #000000;
         /* font-size: 50px; */
         cursor: pointer;
     }
 
-    .txt-partido:hover {  
+    .txt-partido:hover {
         color: var(--naranja);
         transform: translate(3px, 2px);
         text-shadow: 2px 5px 10px rgb(255, 255, 255);
 
     }
 
-    .espaci-partido1 { 
+    .espaci-partido1 {
         /*Se desabilita este contenedor*/
         display: none;
         /* width: 0px;
@@ -1227,12 +1085,13 @@ header .logo img {
 }
 
 /*Como se veran el LOGO LIGA de 0px a 480px*/
-@media (max-width: 480px){
+@media (max-width: 480px) {
     .logo-liga {
         width: 300px;
         margin: 0;
     }
 }
+
 /*TERMINA LOGOS DE CADA LIGA*/
 
 /*COMIENZA SECCION MAPA DONDE ESTAMOS*/
@@ -1252,6 +1111,7 @@ iframe {
     margin-left: 50px;
     margin-right: 50px;
 }
+
 /*TERMINA SECCION MAPA DONDE ESTAMOS*/
 
 /*COMIENZA: "LOGO EN CONSTRUCCION"*/
@@ -1269,11 +1129,12 @@ iframe {
     width: 300px;
     height: auto;
 }
+
 /*TERMINA: "LOGO EN CONSTRUCCION"*/
 
 /*--------------------COMIENZA SECCION ESTILOS LIGAS------------------------*/
 
-.contenedor-cont-liga{
+.contenedor-cont-liga {
     color: #ffffff;
     background-color: #000000;
     text-align: center;
@@ -1285,7 +1146,7 @@ iframe {
     align-items: center;
 }
 
-.iframe-clasificados{
+.iframe-clasificados {
     width: 100%;
     height: 500px;
 }
@@ -1319,10 +1180,11 @@ iframe {
     font-size: 50px;
 
 }
+
 /*TERMINA DISCIPLINAS/CATEGORIA*/
 
 /*COMIENZA SECCION REGLAMENTO*/
-.contenedor-reglamento {  
+.contenedor-reglamento {
     /*Espacio de separacion superior entre la section DISCIPLINA y Reglamento*/
     margin-top: 3px;
 
@@ -1340,24 +1202,24 @@ iframe {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    
+
 }
 
-.conte-txt-reglamento {  
+.conte-txt-reglamento {
     width: 500px;
     height: 120px;
     text-align: center;
     margin-top: 50px;
 }
 
-.txt-reglamento { 
-    color: #ffffff; 
+.txt-reglamento {
+    color: #ffffff;
     font-size: 50px;
     cursor: pointer;
     text-decoration: none;
 }
 
-.txt-reglamento:hover { 
+.txt-reglamento:hover {
     color: rgb(211, 216, 221);
     transform: translate(3px, 2px);
     text-shadow: 2px 5px 10px rgb(0, 0, 0);
@@ -1373,14 +1235,14 @@ iframe {
 /*Como se vera REGLAMENTO de 900px a 990px*/
 @media (min-width: 900px) and (max-width: 990px) {
 
-    
-    .espaci-reglamento1 { 
+
+    .espaci-reglamento1 {
         width: 0px;
         height: 1px;
         margin-right: 0rem;
     }
 
-    .conte-txt-reglamento {  
+    .conte-txt-reglamento {
         width: 400px;
         height: 80px;
         text-align: center;
@@ -1390,7 +1252,7 @@ iframe {
 
 /*Como se vera REGLAMENTO de 0px a 900px*/
 @media (max-width: 900px) {
-    .contenedor-reglamento {  
+    .contenedor-reglamento {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1411,14 +1273,14 @@ iframe {
         cursor: pointer;
     }
 
-    .txt-reglamento:hover {  
+    .txt-reglamento:hover {
         color: var(--naranja);
         transform: translate(3px, 2px);
         text-shadow: 2px 5px 10px rgb(255, 255, 255);
 
     }
 
-    .espaci-reglamento1 { 
+    .espaci-reglamento1 {
         /*Desabilito este contenedor*/
         display: none;
         /* width: 0px;
@@ -1431,6 +1293,7 @@ iframe {
         font-size: 45px;
     }
 }
+
 /*TERMINA SECCION REGLAMENTO*/
 /*FINALIZA STA: SUPER TORNEO AMATEUR*/
 
@@ -1480,7 +1343,7 @@ iframe {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     color: var(--negro);
     font-size: 50px;
     text-align: center;
@@ -1494,21 +1357,25 @@ iframe {
         flex-direction: column;
         align-items: center;
     }
+
     .conte-categoria {
         height: 100%;
     }
+
     .conte-categoria:nth-child(1) {
         margin-right: 0px;
         margin-bottom: 1px;
     }
+
     .conte-categoria:nth-child(2) {
         margin-top: 0px;
     }
+
     .txt-categoria {
         position: absolute;
         top: 40%;
-        
-        transform: translate(-50%, -50%); 
+
+        transform: translate(-50%, -50%);
         color: var(--negro);
         font-size: 50px;
         text-align: center;
@@ -1556,8 +1423,8 @@ iframe {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); */
-    /*    color: var(--negro);*/
-    /* color: #ffffff;
+/*    color: var(--negro);*/
+/* color: #ffffff;
 
     font-size: 50px;
 
@@ -1572,7 +1439,7 @@ iframe {
 
 /*Footgolf*/
 /*COMIENZO DEL BANNER*/
-.contenedor-banner-fg{
+.contenedor-banner-fg {
     width: 100%;
     height: 200%;
     /* padding-top: 150px; */
@@ -1591,7 +1458,7 @@ iframe {
 
 }
 
-.txt-banner{
+.txt-banner {
     margin-top: 80px;
     font-size: 50px;
     text-align: center;
@@ -1599,12 +1466,13 @@ iframe {
 }
 
 /*Como se veran las CATEGORIAS de 0px a 480px*/
-@media (max-width: 480px){
+@media (max-width: 480px) {
     .txt-banner {
         margin-top: 30px;
         text-align: center;
     }
 }
+
 /*FINAL DEL BANNER*/
 
 /*COMIENZA CLUBES DE GOLF*/
@@ -1643,15 +1511,18 @@ iframe {
     height: 250px;
     margin-bottom: 10px;
 }
-.cont-club-txt{
+
+.cont-club-txt {
     width: 100%;
 }
-.txt-club{
+
+.txt-club {
     text-align: center;
     font-size: 25px;
     color: #ffffff;
     font-weight: bold;
 }
+
 /* .cont-txt-fg{
     width: 100%;
     height: 150px;
@@ -1659,12 +1530,47 @@ iframe {
 } */
 
 /*Como se veran los CLUBES de 0px a 900px*/
-@media (max-width: 900px){
+@media (max-width: 900px) {
     .contenedor-clubes-fg {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 }
+
 /*TERMINA CLUBES DE GOLF*/
 
+/*INICIO CONTACTO*/
+
+.encabezado-contacto{
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    height: 150px;
+    width: 100%;
+    font-size: 20px;
+}
+
+.contendor_mail {
+    padding-top: 50px;
+    height: 300px;
+    padding: 2em;
+    border: 2px solid var(--naranja);
+    border-radius: 6px;
+}
+.label-form{
+    display: inline-block;
+    width: 100px;
+}
+
+.contendor-secciones{
+    display: flex;
+}
+
+.cont-form{
+    width: 50%;
+}
+.cont-redes{
+    display: flex box;
+    width: 50%;
+}
