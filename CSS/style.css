@@ -1574,3 +1574,14 @@ iframe {
     display: flex box;
     width: 50%;
 }
+
+/* SECCION NUESTROS PARTIDOS */
+
+.cont-cabecera{
+    width: 100%;
+    height: 150px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    background-color: var(--azulClaro);
+    text-align: center;
+}
