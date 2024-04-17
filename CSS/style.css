@@ -123,8 +123,8 @@ header .navbar ul li ul {
     /*Posiciono el contenedor de los botones Futbol 11, Futbol 6 Monte, etc*/
     position: absolute;
     left: 0;
-    width: 100%;
-    /*135px;*/
+    width: 135px; 
+    /*ancho de los botones de la lista de ligas de futbol*/
     background-color: rgb(64, 87, 130, .5);
     display: none;
 }
@@ -1135,8 +1135,8 @@ iframe {
 /*--------------------COMIENZA SECCION ESTILOS LIGAS------------------------*/
 
 .contenedor-cont-liga {
-    color: #ffffff;
     background-color: #000000;
+    color: #ffffff;
     text-align: center;
     width: 100%;
     height: 200px;
@@ -1144,6 +1144,15 @@ iframe {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+/*Como se veran el INFORMACION DE NUESTRA LIGA de 0px a 480px*/
+@media (max-width: 480px){
+    .contenedor-cont-liga p {
+        text-align: center; 
+        width: 360px;
+        font-size: 40px;
+    }
 }
 
 .iframe-clasificados {
@@ -1307,9 +1316,11 @@ iframe {
 .contenedor-categoria {
     /* margin-top: 145px; */
     width: 100%;
-    height: 500px;
+    height: 700px;
     position: relative;
 
+    margin-top: 3px;
+    margin-bottom: 3px;
 
     /*Posiciono la section categorias*/
     display: flex;
@@ -1319,9 +1330,9 @@ iframe {
 }
 
 .conte-categoria {
-    margin-top: 3px;
+    
     height: 100%;
-    width: 100%;
+    width: 530px;
     /* position: none; */
 
     position: relative;
@@ -1331,6 +1342,16 @@ iframe {
 
 .conte-categoria:nth-child(1) {
     margin-right: 3px;
+    margin-left: 3px;
+}
+
+.conte-categoria:nth-child(2) {
+    margin-right: 3px;
+    
+}
+
+.conte-categoria:nth-child(3) {
+    margin-right: 3px; 
 }
 
 .img-dicisplina {
@@ -1356,6 +1377,8 @@ iframe {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        margin-bottom: .5px;
     }
 
     .conte-categoria {
@@ -1369,6 +1392,11 @@ iframe {
 
     .conte-categoria:nth-child(2) {
         margin-top: 0px;
+        margin-bottom: 0.5px;
+    }
+
+    .conte-categoria:nth-child(3) {
+        margin-bottom: 0px;
     }
 
     .txt-categoria {
@@ -1540,9 +1568,155 @@ iframe {
 
 /*TERMINA CLUBES DE GOLF*/
 
-/*INICIO CONTACTO*/
 
-.encabezado-contacto{
+
+/*INICIO CONTACTO*/
+.espacio-formulario{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.formulario {
+    background-color: rgb(116, 117, 124);
+    /*Color de fondo/contenedor del formulario*/
+    width: min(60rem, 100%);
+    /*Definimos el ancho del formulario*/
+    /*MIN: compara, pregunta que es mas pequeño? 60rem = 600px 
+    ó 100% = 1160px de la pantalla actual, 
+    como 60rem es mas chico, aplica ese ancho.
+
+    Si miramos desde un CELU, MIN vuelve a preguntarse, que es mas pequeño? 
+    600px ó el 100% = 488px de la pantalla actual, 
+    aplica un ancho del 100% de la pantalla actual,
+    porque 488px es mas chico que 60rem = 600px*/
+
+    margin: 0 auto;
+    /*Centro horizontalmente el formulario*/
+    padding: 2rem;
+    /*Espacio del contenedor hacia adentro: de arriba, de abajo, derecha e izquierda*/
+    border-radius: 1rem;
+    /*Redondear las esquinas del contenedor*/
+}
+
+.formulario fieldset {
+    border: none;
+    /*Elimino el borde del fieldset en el formulario*/
+}
+
+.formulario legend {
+    /*Estilo al texto de LEGEND*/
+    text-align: center;
+    /*Centrar el texto horizontalmente del LEGEND*/
+    font-size: 1.8rem;
+    /*Tamaño de las letras*/
+    text-transform: uppercase;
+    /*Texto en Mayusculas*/
+    font-weight: 700;
+    /*Texto en Negrita*/
+    margin-bottom: 2rem;
+    /*Separacion entre el texto y el primer input*/
+    color: var(--primario);
+    /*Color de las letras*/
+}
+
+.field {
+    margin-bottom: 1rem;
+    /*Espacio/Separacion entre cada input*/
+
+}
+
+.field label {
+    /*Estilo de los textos de cada input*/
+    color: var(--blanco);
+    /*Color del texto*/
+    font-weight: bold;
+    /*Texto en Negrita*/
+    margin-bottom: .5rem;
+    /*Separacion entre el texto y el input*/
+    display: block;
+    /*Pone los input uno debajo del texto*/
+}
+
+.input-text {
+    /*Estilo a los inputs: Nombre, Telefono, Correo*/
+    width: 100%;
+    /*Que el input tome todo el ancho disponible*/
+    border: none;
+    /*Quitar el borde de los inputs*/
+    padding: 1.5rem;
+    /*Alto de los inputs*/
+    border-radius: .5rem;
+    /*Redondear esquinas de los inputs*/
+}
+
+.field textarea {
+    /*Estilo a los input de Mensaje*/
+    width: 100%; /*Que el input tome todo el ancho disponible*/
+    height: 18rem;
+    /*Altura del imput de Mensaje*/
+    border-radius: .5rem; /*Redondear esquinas de los inputs*/
+    border: none; /*Quitar el borde de los inputs*/
+    overflow:auto;
+    /*Para que si el USUARIO escribio mucho, le aparesca una barra vertical pero no
+    se modifique el tamaño del contenedor de mensaje*/
+    resize: none; 
+    /*Para que el contenedor de mensaje, el USUARIO no lo agrande y juegue*/
+}
+
+.boton {
+    /*Estilo al boton*/
+    background-color: rgb(53, 177, 226); /*Color de fondo del boton*/
+    color: var(--blanco); /*Color del texto del boton*/
+    padding: 1rem 3rem; /*Espacio hacia adentro del boton*/
+    margin-top: 3rem; /*Espacio entre el parrafo de direccion y el boton contactar*/
+    font-size: 20px; /*Tamaño de letra*/
+    text-decoration: none; /*Quitar subrayado al texto del boton*/
+    text-transform: uppercase; /*Poner en mayusculas el texto del boton*/
+    font-weight: bold; /*Poner en Negrita el texto del boton*/
+    border-radius: .5rem; /*Borde redondeado a las esquinas del boton*/
+    width: 90%; /*Para hacer mas ancho el boton, solo en pantalla chica*/
+    text-align: center; /*Centrar el texto del boton*/
+
+    border: none;
+    /*Quitar el borde al boton*/
+}
+
+.boton:hover {
+    cursor: pointer;
+    /*Que aparesca la manito en el boton Enviar también*/
+}
+
+.w-100 {
+    width: 100%;
+    /*Para hacer mas ancho el boton de ENVIAR, solo estando en pantalla chica*/
+}
+
+.flex {
+    display: flex;
+    /*Activa el flex, por default alinea horizontalmente*/
+}
+
+.alinear-derecha {
+    justify-content: flex-end;
+    /*Ubica a la derecha el boton enviar, en pantalla grande*/
+}
+
+@media (min-width: 768px) {
+    .w-100 {
+        width: auto;
+        /*Para que el boton ENVIAR, en pantalla de tablet o celular, 
+        el boton tome todo el ancho.
+        Pero en pantalla mas grande, solo se ubique del lado derecho*/
+    }
+}
+
+@media (min-width: 768px) {
+    .boton {
+        width: auto;
+    }
+}
+
+/* .encabezado-contacto{
     text-align: center;
     padding-top: 70px;
     padding-bottom: 30px;
@@ -1573,7 +1747,7 @@ iframe {
 .cont-redes{
     display: flex box;
     width: 50%;
-}
+} */
 
 /* SECCION NUESTROS PARTIDOS */
 

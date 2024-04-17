@@ -53,16 +53,72 @@
         </nav>
     </header>
 
+    <!--Seccion Formulario-->
+    <section class="espacio-formulario" >
+        <!-- action="https://formsubmit.co/tumail@gmail.com" method="POST" -->
+        <!-- <h2>CONTACTATE CON NOSOTROS!</h2> -->
+
+        <form class="formulario" >
+            <!-- action="https://formsubmit.co/lunalunilunita1@gmail.com" method="POST" 
+            solo funciona para pruebas, cada vez que se abre denuevo hay que reactivarlo desde su web,
+        la web del servicio, UNA GARCHAAAA-->
+
+            <fieldset>
+                <legend>CONTACTATE CON NOSOTROS!</legend>
+
+                <div class="contenedor-campos">
+
+                    <div class="field">
+                        <label for="from_name">Nombre y Apellido:</label>
+                        <input type="text" name="from_name" id="from_name" class="input-text" placeholder="Nombre">
+                    </div>
+
+                    <div class="field">
+                        <label for="subject">Asunto:</label>
+                        <input type="text" name="subject" id="subject" class="input-text" placeholder="Asunto">
+                    </div>
+
+                    <div class="field">
+                        <label for="email_id">Email:</label>
+                        <input type="email" name="email_id" id="email_id" class="input-text" placeholder="Email">
+                    </div>
+
+                    <div class="field">
+                        <label for="message">Mensaje:</label>
+                        <textarea type="text" name="message" id="message" class="input-text" placeholder="Mensaje"></textarea>
+                    </div>
+
+                </div>
+                <div class="alinear-derecha flex">
+                    <!-- Boton de Envio -->
+                    <!-- <input type="submit" id="button" value="Send Email" > -->
+                    <input type="submit" id="button" value="Enviar" class="boton w-100">
+                    <!-- Esta es otra forma de poner el boton de envio, la funcion es la misma
+                   solo cambia la sintaxis. -->
+                    <!-- <button type="submit" value="Enviar"Enviar></button> -->
+                </div>
+            </fieldset>
+
+            <input type="hidden" name="_next" value=" http://127.0.0.1:5500/"> <!--href="contacto.html" -->
+            <input type="hidden" name="_captcha" value="false"> 
+
+
+        </form>
+    </section>
+    <!--Seccion Formulario-->
+
     <!--
   <div class="contenedor-en-construccion">
         <img class="logo-enconstruccion" src="Imagenes/El_Autografo_eventos.png" alt="">
         <h1>PAGINA EN CONSTRUCCION</h1>
     </div>-->
 
-    <section class="encabezado-contacto">
+    <!-- <section class="encabezado-contacto">
+        
         <div>
-            <h1>CONTACTATE CON NOSOTROS!</h1>
+            <h2>CONTACTATE CON NOSOTROS!</h2>
         </div>
+
     </section>
     <div class="contendor-secciones">
         <section class="cont-form">
@@ -85,7 +141,7 @@
             <img src="Imagenes/logo_facebook.png" alt="FACEBOOK"> <br>
             <img src="Imagenes/logo_instagram.png" alt="INSTAGRAM">
         </section>    
-    </div>
+    </div> -->
 
     <!--PIE DE PAGINA-->
     <footer class="footer">
