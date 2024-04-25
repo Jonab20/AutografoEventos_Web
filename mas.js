@@ -56,9 +56,9 @@
 
 //    btn.value = 'Enviando...';
 
-//    const serviceID = 'service_gfrd4ub';
+//    const serviceID = 'service_8khjir9';
 //    const templateID = 'template_t5v4k8l';
-//    const apiKey = 'PEx33QalUroQBy-AA';
+//    //const apiKey = 'PEx33QalUroQBy-AA';
 
 //    emailjs.sendForm(serviceID, templateID, this)
 //     .then(() => {
