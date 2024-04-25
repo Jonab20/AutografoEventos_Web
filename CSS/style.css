@@ -123,7 +123,7 @@ header .navbar ul li ul {
     /*Posiciono el contenedor de los botones Futbol 11, Futbol 6 Monte, etc*/
     position: absolute;
     left: 0;
-    width: 135px; 
+    width: 135px;
     /*ancho de los botones de la lista de ligas de futbol*/
     background-color: rgb(64, 87, 130, .5);
     display: none;
@@ -347,7 +347,7 @@ header .logo img {
     display: flex;
     padding: 0;
     width: 300%;
-    animation: slide 20s infinite alternate ease-in-out;
+    animation: slide 10s infinite alternate ease-in-out;
 }
 
 .slider-box li {
@@ -781,6 +781,77 @@ header .logo img {
     }
 }
 
+.cont-p-p {
+    height: auto;
+    width: 100%;
+    align-items: center;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1375%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%26quot%3b%23SvgjsLinearGradient1376%26quot%3b)'%3e%3c/rect%3e%3cpath d='M71.19 437.39L242.67 536.39L242.67 734.39L71.19 833.39L-100.29 734.39L-100.29 536.39zM585.62 140.39L757.1 239.39L757.1 437.39L585.62 536.39L414.15 437.39L414.15 239.39z' stroke='url(%26quot%3b%23SvgjsLinearGradient1377%26quot%3b)' stroke-width='2'%3e%3c/path%3e%3cpath d='M223.54 256.99L396.75 356.99L396.75 556.99L223.54 656.99L50.33 556.99L50.33 356.99zM50.33 556.99L223.54 656.99L223.54 856.99L50.33 956.99L-122.88 856.99L-122.88 656.99zM396.75 -43.01L569.96 56.99L569.96 256.99L396.75 356.99L223.54 256.99L223.54 56.99zM569.96 256.99L743.17 356.99L743.17 556.99L569.96 656.99L396.75 556.99L396.75 356.99zM396.75 556.99L569.96 656.99L569.96 856.99L396.75 956.99L223.54 856.99L223.54 656.99zM1089.59 -43.01L1262.8 56.99L1262.8 256.99L1089.59 356.99L916.38 256.99L916.38 56.99zM1262.8 256.99L1436.01 356.99L1436.01 556.99L1262.8 656.99L1089.59 556.99L1089.59 356.99zM1436.01 -43.01L1609.22 56.99L1609.22 256.99L1436.01 356.99L1262.8 256.99L1262.8 56.99z' stroke='rgba(23%2c 41%2c 63%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1375'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='15.28%25' y1='-39.29%25' x2='84.72%25' y2='139.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1376'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='%2300459e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='220.03199999999998' y1='-220.02399999999997' x2='1219.9679999999998' y2='780.024' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1377'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(255%2c 255%2c 255%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cont-cabecera {
+    width: 100%;
+    height: auto;
+
+    background-color: orange;
+    text-align: center;
+
+    h1 {
+        padding-top: 100px;
+        padding-bottom: 50px;
+        background-color: var(--azulClaro);
+
+    }
+}
+
+.cont-partidos {
+    display: flex;
+    height: auto;
+    width: 100%;
+    border-color: #ff004c;
+    justify-content: space-evenly;
+
+    a {
+        text-decoration: none;
+        color: #000000;
+    }
+}
+
+.list-p {
+    text-align: center;
+    align-items: center;
+}
+
+.item {
+    box-sizing: border-box;
+    border: 6px solid --azulClaro(255, 0, 0);
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 1px;
+    cursor: pointer;
+    transition: all 0.5s;
+    user-select: none;
+    height: 150px;
+    width: 400px;
+    margin: 10px;
+    background-image: url(../Imagenes/p-temp.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item:hover {
+    border: 4px solid var(--naranja);
+    transform: scale(1.05);
+}
+
+.item:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+
+
+
 /*Termina NUESTROS PARTIDOS*/
 
 
@@ -1066,7 +1137,7 @@ header .logo img {
 
     /*background-image: url(/Imagenes/bg-liga.png);*/
 
-    background-image: url(../Imagenes/bg-liga-3.png);
+    background-image: url(../Imagenes/bg-liga2.png);
     background-position: center;
     background-size: cover;
 
@@ -1147,9 +1218,9 @@ iframe {
 }
 
 /*Como se veran el INFORMACION DE NUESTRA LIGA de 0px a 480px*/
-@media (max-width: 480px){
+@media (max-width: 480px) {
     .contenedor-cont-liga p {
-        text-align: center; 
+        text-align: center;
         width: 360px;
         font-size: 40px;
     }
@@ -1330,7 +1401,7 @@ iframe {
 }
 
 .conte-categoria {
-    
+
     height: 100%;
     width: 530px;
     /* position: none; */
@@ -1347,11 +1418,11 @@ iframe {
 
 .conte-categoria:nth-child(2) {
     margin-right: 3px;
-    
+
 }
 
 .conte-categoria:nth-child(3) {
-    margin-right: 3px; 
+    margin-right: 3px;
 }
 
 .img-dicisplina {
@@ -1571,7 +1642,7 @@ iframe {
 
 
 /*INICIO CONTACTO*/
-.espacio-formulario{
+.espacio-formulario {
     margin-top: 100px;
     margin-bottom: 50px;
 }
@@ -1651,31 +1722,45 @@ iframe {
 
 .field textarea {
     /*Estilo a los input de Mensaje*/
-    width: 100%; /*Que el input tome todo el ancho disponible*/
+    width: 100%;
+    /*Que el input tome todo el ancho disponible*/
     height: 18rem;
     /*Altura del imput de Mensaje*/
-    border-radius: .5rem; /*Redondear esquinas de los inputs*/
-    border: none; /*Quitar el borde de los inputs*/
-    overflow:auto;
+    border-radius: .5rem;
+    /*Redondear esquinas de los inputs*/
+    border: none;
+    /*Quitar el borde de los inputs*/
+    overflow: auto;
     /*Para que si el USUARIO escribio mucho, le aparesca una barra vertical pero no
     se modifique el tamaño del contenedor de mensaje*/
-    resize: none; 
+    resize: none;
     /*Para que el contenedor de mensaje, el USUARIO no lo agrande y juegue*/
 }
 
 .boton {
     /*Estilo al boton*/
-    background-color: rgb(53, 177, 226); /*Color de fondo del boton*/
-    color: var(--blanco); /*Color del texto del boton*/
-    padding: 1rem 3rem; /*Espacio hacia adentro del boton*/
-    margin-top: 3rem; /*Espacio entre el parrafo de direccion y el boton contactar*/
-    font-size: 20px; /*Tamaño de letra*/
-    text-decoration: none; /*Quitar subrayado al texto del boton*/
-    text-transform: uppercase; /*Poner en mayusculas el texto del boton*/
-    font-weight: bold; /*Poner en Negrita el texto del boton*/
-    border-radius: .5rem; /*Borde redondeado a las esquinas del boton*/
-    width: 90%; /*Para hacer mas ancho el boton, solo en pantalla chica*/
-    text-align: center; /*Centrar el texto del boton*/
+    background-color: rgb(53, 177, 226);
+    /*Color de fondo del boton*/
+    color: var(--blanco);
+    /*Color del texto del boton*/
+    padding: 1rem 3rem;
+    /*Espacio hacia adentro del boton*/
+    margin-top: 3rem;
+    /*Espacio entre el parrafo de direccion y el boton contactar*/
+    font-size: 20px;
+    /*Tamaño de letra*/
+    text-decoration: none;
+    /*Quitar subrayado al texto del boton*/
+    text-transform: uppercase;
+    /*Poner en mayusculas el texto del boton*/
+    font-weight: bold;
+    /*Poner en Negrita el texto del boton*/
+    border-radius: .5rem;
+    /*Borde redondeado a las esquinas del boton*/
+    width: 90%;
+    /*Para hacer mas ancho el boton, solo en pantalla chica*/
+    text-align: center;
+    /*Centrar el texto del boton*/
 
     border: none;
     /*Quitar el borde al boton*/
@@ -1748,14 +1833,3 @@ iframe {
     display: flex box;
     width: 50%;
 } */
-
-/* SECCION NUESTROS PARTIDOS */
-
-.cont-cabecera{
-    width: 100%;
-    height: 150px;
-    padding-top: 100px;
-    padding-bottom: 50px;
-    background-color: var(--azulClaro);
-    text-align: center;
-}
