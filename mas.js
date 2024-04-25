@@ -48,6 +48,10 @@
 /*Termina la automatización para el Carusel*/
 
 
+
+
+
+
 /*Enviar datos al mail mediante el formulario.*/
 // const btn = document.getElementById('button');
 
@@ -72,32 +76,6 @@
 // });
 
 
-
-// const frmEmail = document.getElementById('frm-email')
-// frmEmai.addEventListener('submit', sendEmail)
-
-// const serviceID = 'service_uxoglmp';
-// const templateID = 'template_t5v4k8l';
-// const apiKey = 'PEx33QalUroQBy-AA';
-
-// function sendEmail(event) {
-//     event.preventDefault()
-//     emailjs.init(serviceID)
-
-//     emailjs.sendForm(serviceID, templateID, frmEmail, apiKey)
-//     .then( result => Swall.fire('Su mensaje se ha enviado con exito') )
-//     .catch( error => {
-//         Swall.fire({
-//             icon: 'error',
-//             title: 'Oops...',
-//             text: 'No ha sido posible enviar el mensaje!',
-//         });
-//     });
-// }
-
-
-
-
 const btn = document.getElementById('button');
 
 document.getElementById('form')
@@ -106,7 +84,7 @@ document.getElementById('form')
 
    btn.value = 'Sending...';
 
-   const serviceID = 'default_service';
+   const serviceID = 'service_3dmi066';  /*'default_service';*/
    const templateID = 'template_t5v4k8l';
 
    emailjs.sendForm(serviceID, templateID, this)
