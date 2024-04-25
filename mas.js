@@ -82,17 +82,17 @@ document.getElementById('form')
  .addEventListener('submit', function(event) {
    event.preventDefault();
 
-   btn.value = 'Sending...';
+   btn.value = 'Enviando...';
 
    const serviceID = 'service_3dmi066';  /*'default_service';*/
    const templateID = 'template_t5v4k8l';
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
-      btn.value = 'Send Email';
-      alert('Sent!');
+      btn.value = 'Enviar Email'; /*'Send Email'*/
+      alert('Enviar!'); /*('Sent!');*/ 
     }, (err) => {
-      btn.value = 'Send Email';
+      btn.value = 'Enviar Email'; /*'Send Email'*/
       alert(JSON.stringify(err));
     });
 });
