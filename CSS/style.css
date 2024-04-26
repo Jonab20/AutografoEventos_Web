@@ -1792,6 +1792,23 @@ iframe {
     /*Ubica a la derecha el boton enviar, en pantalla grande*/
 }
 
+.advertencia {   /*Probar mensaje de NO validacion*/
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #ff004c;
+    padding-top: 20px;
+}
+
+/*Como se veran el FORMULARIO de 0px a 480px*/
+@media (max-width: 480px) {
+    .formulario {
+        width: auto;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
 @media (min-width: 768px) {
     .w-100 {
         width: auto;

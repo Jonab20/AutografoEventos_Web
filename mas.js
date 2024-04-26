@@ -76,23 +76,103 @@
 // });
 
 
-const btn = document.getElementById('button');
 
-document.getElementById('form')
- .addEventListener('submit', function(event) {
+/* VALIDAR SE COMPLETEN LOS CAMPOS ANTES DE ENVIAR EL FORMULARIO*/
+const nombre = document.getElementById("from_name");
+const asunto = document.getElementById("subject");
+const email = document.getElementById("email_id");
+const mensaje = document.getElementById("message");
+const formu = document.getElementById("form");
+const parrafo = document.getElementById("advertencia");
+
+
+const btn = document.getElementById('button');    /*original aca*/
+
+document.getElementById('form').addEventListener('submit', function(event) {
    event.preventDefault();
 
-   btn.value = 'Enviando...';
 
-   const serviceID = 'service_3dmi066';  /*'default_service';*/
-   const templateID = 'template_t5v4k8l';
+   let adver = "";
+   let entrar = false;
+   let regexEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+   /*ayuda a validar los caracteres del email*/
+   parrafo.innerHTML = "";
 
-   emailjs.sendForm(serviceID, templateID, this)
+   if ( btn.click && nombre.value.length <= 3 ) {
+    adver += 'El nombre y apellido es corto <br>';
+    entrar = true;
+   }
+
+   if ( btn.click && !regexEmail.test(email.value) ) {
+    adver += 'Al email no le falta el @ y/o el .com <br>';
+    entrar = true;
+   }
+
+   if ( btn.click && mensaje.value.length <= 4 ) {
+    adver += 'El mensaje es corto <br>';
+    entrar = true;
+   }
+
+   if ( entrar ) {
+    parrafo.innerHTML = adver;
+   }
+
+   if ( nombre.value.length > 3 && regexEmail.test(email.value) && mensaje.value.length > 4) {
+
+    btn.value = 'Enviando...';
+
+    const serviceID = 'service_3dmi066';  /*'default_service';*/
+    const templateID = 'template_t5v4k8l';
+
+    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
-      btn.value = 'Enviar Email'; /*'Send Email'*/
-      alert('Enviar!'); /*('Sent!');*/ 
+      btn.value = 'Enviar'; /*'Send Email'*/
+      /*alert('Enviado!'); ('Sent!');    MEnsaje de que se envio el FORMULARIO*/ 
+      limpiarForm ();
+
     }, (err) => {
-      btn.value = 'Enviar Email'; /*'Send Email'*/
-      alert(JSON.stringify(err));
+      btn.value = 'Enviar'; /*'Send Email'*/
+      alert(JSON.stringify(err));  /*Mensaje en caso de Error al tratar de Enviar el formulario*/
     });
+
+
+    function limpiarForm () { /*Limpia el formulario una vez Enviado*/
+    form.reset();
+    }
+
+   }
+
+   
+
+   
 });
+
+
+
+
+/* Envio del formulario*/
+// const btn = document.getElementById('button');    /*original aca*/
+
+// document.getElementById('form').addEventListener('submit', function(event) {
+//    event.preventDefault();
+
+//    btn.value = 'Enviando...';
+
+//    const serviceID = 'service_3dmi066';  /*'default_service';*/
+//    const templateID = 'template_t5v4k8l';
+
+//    emailjs.sendForm(serviceID, templateID, this)
+//     .then(() => {
+//       btn.value = 'Enviar'; /*'Send Email'*/
+//       /*alert('Enviado!'); ('Sent!');    MEnsaje de que se envio el FORMULARIO*/ 
+//       limpiarForm ();
+
+//     }, (err) => {
+//       btn.value = 'Enviar'; /*'Send Email'*/
+//       alert(JSON.stringify(err));  /*Mensaje en caso de Error al tratar de Enviar el formulario*/
+//     });
+// });
+
+// function limpiarForm () { /*Limpia el formulario una vez Enviado*/
+//     form.reset();
+// }
