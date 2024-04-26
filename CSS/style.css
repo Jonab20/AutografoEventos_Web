@@ -1648,13 +1648,54 @@ iframe {
 
 
 /*INICIO CONTACTO*/
-.espacio-formulario {
+.cont-cabez{
+    text-align: center;
     margin-top: 100px;
+    margin-bottom: 50px;
+    padding-top: 10px;
+    width: 100%;
+    height: 100px;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.cont-text{
+    padding-top: 10px;
+    text-align: center;
+    color: #ffffff;
+    height: 50px;
+    width: 100%;
+    background-color: #000000;
+}
+
+.sect-redes{
+    background-color: var(--azulPrimero);
+    text-align: center;
+}
+
+.cont-ico-redes{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    img{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+.icon-r{
+    margin: 30px;
+}
+
+
+.espacio-formulario {
+    margin-top: 20px;
     margin-bottom: 50px;
 }
 
+
 .formulario {
-    background-color: rgb(116, 117, 124);
+    background-color: var(--azulPrimero);
     /*Color de fondo/contenedor del formulario*/
     width: min(60rem, 100%);
     /*Definimos el ancho del formulario*/
@@ -1671,7 +1712,7 @@ iframe {
     /*Centro horizontalmente el formulario*/
     padding: 2rem;
     /*Espacio del contenedor hacia adentro: de arriba, de abajo, derecha e izquierda*/
-    border-radius: 1rem;
+    border-radius: 0px;
     /*Redondear las esquinas del contenedor*/
 }
 
@@ -1722,7 +1763,7 @@ iframe {
     /*Quitar el borde de los inputs*/
     padding: 1.5rem;
     /*Alto de los inputs*/
-    border-radius: .5rem;
+    border-radius: 0px;
     /*Redondear esquinas de los inputs*/
 }
 
@@ -1732,7 +1773,7 @@ iframe {
     /*Que el input tome todo el ancho disponible*/
     height: 18rem;
     /*Altura del imput de Mensaje*/
-    border-radius: .5rem;
+    border-radius: 0px;
     /*Redondear esquinas de los inputs*/
     border: none;
     /*Quitar el borde de los inputs*/
@@ -1745,7 +1786,7 @@ iframe {
 
 .boton {
     /*Estilo al boton*/
-    background-color: rgb(53, 177, 226);
+    background-color: var(--naranja);
     /*Color de fondo del boton*/
     color: var(--blanco);
     /*Color del texto del boton*/
@@ -1761,7 +1802,7 @@ iframe {
     /*Poner en mayusculas el texto del boton*/
     font-weight: bold;
     /*Poner en Negrita el texto del boton*/
-    border-radius: .5rem;
+    border-radius: 0px;
     /*Borde redondeado a las esquinas del boton*/
     width: 90%;
     /*Para hacer mas ancho el boton, solo en pantalla chica*/
