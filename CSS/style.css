@@ -1129,17 +1129,26 @@ header .logo img {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    padding-top: 70px;
+    height: 350px;
     width: 100%;
 }
 
 .bg-liga {
-
     /*background-image: url(/Imagenes/bg-liga.png);*/
-
     background-image: url(../Imagenes/bg-liga2.png);
     background-position: center;
     background-size: cover;
+
+}
+
+.bg-liga-Lobos-senior {
+
+    /*background-image: url(/Imagenes/bg-liga.png);*/
+    /*background-image: url(../Imagenes/bg-liga-senior.png);*/
+    background-position: center;
+    background-size: cover;
+    background-color: #000000;
 
 }
 
@@ -1234,11 +1243,10 @@ iframe {
 
 /*COMIENZA STA: SUPER TORNEO AMATEUR*/
 /*COMIENZA DISCIPLINAS/CATEGORIA*/
-.contenedor-una-disciplina {
-    /*Espacio de separacion superior entre la section de la Liga y Disciplina*/
+.contenedor-una-disciplina-femenino {
     margin-top: 3px;
 
-    background-image: url(../Imagenes/Disc-masc-2.png);
+    background-image: url(../Imagenes/bg-liga-femenino.png);
     background-repeat: no-repeat;
     /*Para evitar se repita la imagen*/
     background-size: cover;
@@ -1248,6 +1256,104 @@ iframe {
     position: relative;
 
     /*Posicion del Texto que esta sobre la Imagen*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+}
+
+.contenedor-una-disciplina-lobos {
+    margin-top: 3px;
+    background-image: url(../Imagenes/bg-liga-lobos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+}
+
+.contenedor-una-disciplina-monte {
+    margin-top: 3px;
+    background-image: url(../Imagenes/bg-liga-monte.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+}
+
+.contenedor-una-disciplina-senior {
+    margin-top: 3px;
+    background-image: url(../Imagenes/bg-liga-senior.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+}
+
+.contenedor-una-disciplina-masculino {
+    margin-top: 3px;
+    background-image: url(../Imagenes/bg-liga-senior.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+}
+
+.contenedor-una-disciplina-sta {
+    margin-top: 3px;
+    background-image: url(../Imagenes/bg-liga-sta.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+}
+
+.contenedor-una-disciplina {
+    margin-top: 3px;
+    background-image: url(../Imagenes/bg-liga-roqueperez.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+}
+
+.contenedor-una-disciplina-roqueperez {
+    margin-top: 3px;
+    background-image: url(../Imagenes/bg-liga-roqueperez.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1390,25 +1496,139 @@ iframe {
     height: 700px;
     position: relative;
 
-    margin-top: 3px;
-    margin-bottom: 3px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 
     /*Posiciono la section categorias*/
     display: flex;
     flex-direction: row;
     align-items: center;
-
+    background-color: #000000;
 }
 
 .conte-categoria {
-
+    background: var(--negro);
+    transition: all 1ms;
+    border-radius: 0px;
+    font-size: 30px;
+    font-weight: 900;
     height: 100%;
     width: 530px;
     /* position: none; */
-
+    text-decoration: none;
     position: relative;
     display: inline-block;
     text-align: center;
+    a{
+        text-decoration: none;
+        color: #ffffff;
+    }
+}
+
+.card:hover {
+    border-radius: 0px;
+    cursor: pointer;
+    transform: scale(1.0);
+    background: var(--negro);
+}
+/*TARJETA MASCULINO*/
+
+.primer-content-M{
+    height: 100%;
+    width: 100%;
+    transition: all 1.0s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 0px;
+    background-image: url(/Imagenes/Disc-masculina.png);
+    span{
+        text-decoration: none;
+    }
+}
+.card:hover .primer-content-M {
+    height: 0px;
+    opacity: 0;
+}
+/*FIN TARJETA MASCULINO*/
+
+/*TARJETA FEMENINO*/
+.primer-content-F{
+    height: 100%;
+    width: 100%;
+    transition: all 1.0s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 0px;
+    background-image: url(/Imagenes/Disc-fem-2.png);
+    span{
+        text-decoration: none;
+    }
+}
+
+.card:hover .primer-content-F {
+    height: 0px;
+    opacity: 0;
+}
+/*FIN TARJETA FEMENINO*/
+
+/*TARJETA SENIOR*/
+.primer-content-S {
+    height: 100%;
+    width: 100%;
+    transition: all 1.0s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 0px;
+    background-image: url(/Imagenes/Disc-senior-2.png);
+ 
+    text-decoration: none;
+
+}
+
+.card:hover .primer-content-S {
+    height: 0px;
+    opacity: 0;
+}
+
+/*FIN TARJETA SENIOR*/
+
+.card:hover .primer-content {
+    height: 0px;
+    opacity: 0;
+}
+
+.segundo-content {
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px;
+    transition: all 1.0s;
+    font-size: 0px;
+    transform: skew(90degs);
+    /*transform: rotate(90deg) scale(-1);*/
+    color: white;
+    text-decoration: none;
+
+}
+
+.card:hover .segundo-content {
+    opacity: 1;
+    height: 100%;
+    font-size: 1.8rem;
+
+    /*transform: rotate(0deg);*/
+    transform: skew(90degs);
+    text-decoration: none;
+
 }
 
 .conte-categoria:nth-child(1) {
@@ -1436,8 +1656,8 @@ iframe {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--negro);
-    font-size: 50px;
+    color: white;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -1648,7 +1868,7 @@ iframe {
 
 
 /*INICIO CONTACTO*/
-.cont-cabez{
+.cont-cabez {
     text-align: center;
     margin-top: 100px;
     margin-bottom: 50px;
@@ -1659,7 +1879,7 @@ iframe {
     background-color: #000000;
 }
 
-.cont-text{
+.cont-text {
     padding-top: 10px;
     text-align: center;
     color: #ffffff;
@@ -1668,22 +1888,23 @@ iframe {
     background-color: #000000;
 }
 
-.sect-redes{
+.sect-redes {
     background-color: var(--azulPrimero);
     text-align: center;
 }
 
-.cont-ico-redes{
+.cont-ico-redes {
     display: flex;
     align-items: center;
-    justify-content:center;
-    img{
+    justify-content: center;
+
+    img {
         height: 100px;
         width: 100px;
     }
 }
 
-.icon-r{
+.icon-r {
     margin: 30px;
 }
 
@@ -1833,7 +2054,8 @@ iframe {
     /*Ubica a la derecha el boton enviar, en pantalla grande*/
 }
 
-.advertencia {   /*Probar mensaje de NO validacion*/
+.advertencia {
+    /*Probar mensaje de NO validacion*/
     width: 200px;
     text-align: center;
     margin: auto;
