@@ -26,7 +26,6 @@
 
     <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">emailjs.init('PEx33QalUroQBy-AA')</script>
-    <!-- Esta verga de mandar formulario por mail no anda-->
 
 
 </head>
@@ -62,10 +61,11 @@
             </ul>
         </nav>
     </header>
+
+    <div class="espacioarriba"></div>
+
     <div class="cont-cabez">
-        <div>
-            <h1>NUESTROS MEDIOS DE CONTACTO</h1>
-        </div>
+        <h1>NUESTROS MEDIOS DE CONTACTO</h1>
     </div>
 
     <!--Seccion Formulario-->
@@ -78,15 +78,18 @@
 
                 <div class="contenedor-campos">
 
-                    <div class="field"> <!--field = campo--> 
-                        <label for="from_name">Nombre y Apellido:</label>
-                        <input type="text" name="from_name" id="from_name" class="input-text" placeholder="Nombre">
+                    <div class="contegrid">
+                        <div class="field"> <!--field = campo--> 
+                            <label for="from_name">Nombre:</label>
+                            <input type="text" name="from_name" id="from_name" class="input-text" placeholder="Nombre">
+                        </div>
+    
+                        <div class="field">
+                            <label for="subject">Asunto:</label>
+                            <input type="text" name="subject" id="subject" class="input-text" placeholder="Asunto">
+                        </div>
                     </div>
-
-                    <div class="field">
-                        <label for="subject">Asunto:</label>
-                        <input type="text" name="subject" id="subject" class="input-text" placeholder="Asunto">
-                    </div>
+                    
 
                     <div class="field">
                         <label for="email_id">Email:</label>
@@ -99,16 +102,20 @@
                     </div>
 
                 </div>
-                <div class="alinear-derecha flex">
-                    <!-- Boton de Envio -->
-                    <!-- <input type="submit" id="button" value="Send Email" > -->
-                    <input type="submit" id="button" value="Enviar" class="boton w-100">  <!--onclick="return limpiarForm();"-->
-                    <!-- Esta es otra forma de poner el boton de envio, la funcion es la misma
-                   solo cambia la sintaxis. -->
-                    <!-- <button type="submit" value="Enviar"Enviar></button> -->
-                </div>
 
-                <p class="advertencia" id="advertencia"></p>
+                <div class="contegrid2">
+                    <div class="alinear-derecha flex">
+                        <!-- Boton de Envio -->
+                        <!-- <input type="submit" id="button" value="Send Email" > -->
+                        <input type="submit" id="button" value="Enviar" class="boton w-100">  <!--onclick="return limpiarForm();"-->
+                        <!-- Esta es otra forma de poner el boton de envio, la funcion es la misma
+                       solo cambia la sintaxis. -->
+                        <!-- <button type="submit" value="Enviar"Enviar></button> -->
+                    </div>
+    
+                    <p class="advertencia" id="advertencia"></p>
+                </div>
+                
             </fieldset>
 
             <!--<input type="hidden" name="_next" value=" http://127.0.0.1:5500/contacto.html">--> <!--href="contacto.html"-->
@@ -118,28 +125,32 @@
         </form>
     </section>
 
+    <div class="cont-text">
+        <h2>NUESTRAS REDES</h2>
+    </div>
+    
     <section class="sect-redes">
-        <div class="cont-text">
-            <div>
-                <h2>NUESTRAS REDES</h2>
-            </div>
-        </div>
+
         <div class="cont-ico-redes">
+
             <div class="icon-r">
                 <a href="https://wa.me/5492227402929?text=Me%20gustaría%20me%20den%20info" target="_blank">
-                    <img src="Imagenes/logo_whatsapp_negro.png" alt="Whastapp">
+                    <img src="Imagenes/logo_whatsapp_negro.png" alt="Whatsapp">
                 </a>
             </div>
+
             <div class="icon-r">
                 <a href="https://www.facebook.com/profile.php?id=100063732751592" target="_blank">
-                    <img src="Imagenes/logo_facebook_negro.png" alt="Facebook">
+                    <img src="Imagenes/logo_facebook_negro.png" alt="Facebook"> 
                 </a>
             </div>
+
             <div class="icon-r">
                 <a href="https://www.instagram.com/elautografoeventos/?hl=es-la" target="_blank">
                     <img src="Imagenes/logo_instagram_negro.png" alt="instagram">
                 </a>
             </div>
+            
         </div>
 
     </section>

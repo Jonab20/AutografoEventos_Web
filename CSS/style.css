@@ -1868,7 +1868,7 @@ iframe {
 
 
 /*INICIO CONTACTO*/
-.cont-cabez {
+/* .cont-cabez{
     text-align: center;
     margin-top: 100px;
     margin-bottom: 50px;
@@ -1877,9 +1877,45 @@ iframe {
     height: 100px;
     color: #ffffff;
     background-color: #000000;
+} */
+
+.espacioarriba {
+    margin-top: 70px;
 }
 
-.cont-text {
+.cont-cabez {
+    width: 100%;
+    height: 100px;
+    background-color: var(--negro);
+
+}
+
+h1 {
+    width: 700px;
+    height: auto;
+    text-align: center;
+    font-size: 30px;
+    color: var(--blanco);
+    padding-top: 30px;
+    margin: auto;
+}
+
+/*Como se vera de 0px a 480px*/
+@media (max-width: 480px){
+    .cont-cabez {
+        width: 100%;
+    }
+
+    h1 {
+        width: 96%;
+        height: 100%;
+        font-size: 25px;
+        padding-top: 20px;
+    }
+
+}
+
+.cont-text{
     padding-top: 10px;
     text-align: center;
     color: #ffffff;
@@ -1888,37 +1924,82 @@ iframe {
     background-color: #000000;
 }
 
-.sect-redes {
+.sect-redes{
     background-color: var(--azulPrimero);
     text-align: center;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-.cont-ico-redes {
+.cont-ico-redes{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
+    
+}
+img{
+    margin-top: 10px;
+    height: 60px;
+    width: 60px;
+}
+.icon-r{
+    /* margin: 25px; */
 
-    img {
-        height: 100px;
-        width: 100px;
-    }
+    width: 80px;
+    height: 80px;
 }
 
-.icon-r {
-    margin: 30px;
+.icon-r:nth-child(1),
+.icon-r:nth-child(2),
+.icon-r:nth-child(3) {
+    margin: 5px;
+}
+
+.icon-r:nth-child(1):hover {
+    background-color: #02a533;
+    border-radius: 50px;
+    box-shadow: #02a533;
+    transform: scale(1.1);
+}
+
+.icon-r:nth-child(2):hover {
+    background-color: #090cc2;
+    border-radius: 50px;
+    box-shadow: #090cc2;
+    transform: scale(1.1);
+}
+
+.icon-r:nth-child(3):hover {
+    background-color: #c20937;
+    border-radius: 50px;
+    box-shadow: #c20937;
+    transform: scale(1.1);
+}
+
+@media (max-width: 480px){
+    .cont-ico-redes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .icon-r {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
 }
 
 
 .espacio-formulario {
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
-
+/*Comienza el Formulario*/
 .formulario {
-    background-color: var(--azulPrimero);
+    /*background-color: var(--azulPrimero);*/
+    background: rgb(64, 87, 130, 0.9);
     /*Color de fondo/contenedor del formulario*/
-    width: min(60rem, 100%);
+    width: min(50rem, 100%);
     /*Definimos el ancho del formulario*/
     /*MIN: compara, pregunta que es mas pequeño? 60rem = 600px 
     ó 100% = 1160px de la pantalla actual, 
@@ -1933,8 +2014,10 @@ iframe {
     /*Centro horizontalmente el formulario*/
     padding: 2rem;
     /*Espacio del contenedor hacia adentro: de arriba, de abajo, derecha e izquierda*/
-    border-radius: 0px;
+    border-radius: 3px;
     /*Redondear las esquinas del contenedor*/
+
+    
 }
 
 .formulario fieldset {
@@ -1956,6 +2039,15 @@ iframe {
     /*Separacion entre el texto y el primer input*/
     color: var(--primario);
     /*Color de las letras*/
+}
+
+
+.contegrid {
+    display: flex;
+}
+
+.contegrid .field:nth-child(1) {
+    margin-right: 12px;
 }
 
 .field {
@@ -1988,6 +2080,16 @@ iframe {
     /*Redondear esquinas de los inputs*/
 }
 
+input:focus{
+    border: .5px solid rgb(124, 127, 129);
+    outline: 1px solid rgb(20, 94, 243);
+}
+
+/* input:hover{
+    border: .5px solid rgb(124, 127, 129);
+    outline: 1px solid rgb(20, 94, 243);
+} */
+
 .field textarea {
     /*Estilo a los input de Mensaje*/
     width: 100%;
@@ -2005,6 +2107,24 @@ iframe {
     /*Para que el contenedor de mensaje, el USUARIO no lo agrande y juegue*/
 }
 
+textarea:focus{
+    border: .5px solid rgb(124, 127, 129);
+    outline: 1px solid rgb(20, 94, 243);
+}
+
+/* textarea:hover{
+    border: .5px solid rgb(124, 127, 129);
+    outline: 1px solid rgb(20, 94, 243);
+} */
+
+/*Posicionar en pantalla GRANDE el boton enviar y los mensajes de error*/
+.contegrid2 {  
+    display: flex;
+    flex-direction: row-reverse;
+}
+/*Termina el Formulario*/
+
+/*Comienza el BOTON ENVIAR*/
 .boton {
     /*Estilo al boton*/
     background-color: var(--naranja);
@@ -2031,31 +2151,36 @@ iframe {
     /*Centrar el texto del boton*/
 
     border: none;
-    /*Quitar el borde al boton*/
+    
+    transition: transform 0.4s;
 }
 
 .boton:hover {
     cursor: pointer;
     /*Que aparesca la manito en el boton Enviar también*/
+    border-radius: 5px;
+    transform: scale(1.1);
 }
+
+
 
 .w-100 {
     width: 100%;
     /*Para hacer mas ancho el boton de ENVIAR, solo estando en pantalla chica*/
 }
 
-.flex {
+/* .flex {
     display: flex;
     /*Activa el flex, por default alinea horizontalmente*/
-}
+/*} */
 
-.alinear-derecha {
+/* .alinear-derecha {
     justify-content: flex-end;
     /*Ubica a la derecha el boton enviar, en pantalla grande*/
-}
+/*} */
+/*Terminar el BOTON ENVIAR*/
 
-.advertencia {
-    /*Probar mensaje de NO validacion*/
+.advertencia {   /*Probar mensaje de NO validacion*/
     width: 200px;
     text-align: center;
     margin: auto;
@@ -2069,6 +2194,18 @@ iframe {
         width: auto;
         margin-left: 5px;
         margin-right: 5px;
+    }
+
+    .contegrid {
+        flex-direction: column;
+    }
+
+    .contegrid .field:nth-child(1) {
+        margin-right: 0px;
+    }
+
+    .contegrid2 {
+        flex-direction: column-reverse;
     }
 }
 
