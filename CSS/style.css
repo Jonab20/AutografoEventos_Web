@@ -341,6 +341,7 @@ header .logo img {
     overflow: hidden;
 
     background-position: center;
+    padding-top: 55px;
 }
 
 .slider-box ul {
@@ -390,12 +391,14 @@ header .logo img {
 
 }
 
+/*Como se vera el Carusel de 0px a 480px*/
 @media (max-width: 480px) {
     .slider-box {
         width: 100%;
         height: auto;
-        margin-top: 65px;
+        margin-top: 58px;
         margin-bottom: 0px;
+        padding-top: 0px;
     }
 
     .slider-box img {
