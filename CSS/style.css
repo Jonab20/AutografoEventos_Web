@@ -789,6 +789,10 @@ header .logo img {
     }
 }
 
+
+/*Comienza la pag. de NUESTROS PARTIDOS*/
+
+
 .cont-p-p {
     height: auto;
     width: 100%;
@@ -800,16 +804,17 @@ header .logo img {
 
 .cont-cabecera {
     width: 100%;
-    height: auto;
-
+    height: 100px;
     background-color: rgb(0, 0, 0);
     text-align: center;
 
-    h1 {
+    margin-top: 70px;
+
+    /* h1 {
         padding-top: 100px;
         padding-bottom: 50px;
 
-    }
+    } */
 }
 
 .cont-partidos {
@@ -864,7 +869,67 @@ header .logo img {
     width: 100%;
 }
 
-/*Termina NUESTROS PARTIDOS*/
+.visitanos-videos {
+    margin-top: 2px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 70px;
+    background-color: var(--negro);
+    text-align: center;
+}
+
+.visitanos-videos h4 {
+    padding-top: 20px;
+    color: var(--blanco);
+    font-size: 25px;
+    
+}
+
+
+.cont-vid {
+    width: 100%;
+    height: 550px;
+    margin-bottom: 2px;
+}
+
+.cont-vid iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*Como se vera NUESTROS PARTIDOS de 0px a 480px*/
+@media (max-width: 480px){
+    .cont-partidos {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .visitanos-videos h4 {
+        width: 100%;
+        padding-top: 15px;
+        font-size: 18px;
+        text-align: center;
+        /* margin-left: 5px; */
+        margin-right: 5px;
+    }
+
+    .cont-vid {
+        width: 100%;
+        height: 200px;
+    }
+
+    .cont-vid iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+/*Termina pag. NUESTROS PARTIDOS*/
+
+
+
+
 
 
 /* SECCION DONDE NOS ENCONTRAMOS*/
