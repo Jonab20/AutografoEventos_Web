@@ -1141,7 +1141,6 @@ header .logo img {
 }
 
 .bg-liga {
-    /*background-image: url(/Imagenes/bg-liga.png);*/
     background-image: url(../Imagenes/bg-liga2.png);
     background-position: center;
     background-size: cover;
