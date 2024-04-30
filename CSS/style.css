@@ -1123,6 +1123,11 @@ header .logo img {
     height: 25px;
 }
 
+.red .link-redes {
+    margin-top: 12px;
+}
+
+
 .link-redes {
     text-decoration: none;
     color: var(--blanco);
