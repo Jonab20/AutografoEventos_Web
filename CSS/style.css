@@ -2013,7 +2013,7 @@ img {
 .espacio-formulario {
     padding-top: 20px;
     padding-bottom: 20px;
-    background-image: url(../Imagenes/bg-contacto.png);
+    background: url(../Imagenes/bg-contacto.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
