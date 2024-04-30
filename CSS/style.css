@@ -813,7 +813,6 @@ header .logo img {
     display: flex;
     height: auto;
     width: 100%;
-    border-color: #ff004c;
     justify-content: space-evenly;
     backdrop-filter: blur(1px);
 
@@ -846,7 +845,7 @@ header .logo img {
 }
 
 .item:hover {
-    border: 4px solid var(--naranja);
+    border: 1px solid var(--azulPrimero);
     transform: scale(1.05);
 }
 
@@ -854,6 +853,13 @@ header .logo img {
     transform: scale(0.95) rotateZ(1.7deg);
 }
 
+.cont-canal{
+    display: flex;
+}
+
+.cont-vid{
+    width: 100%;
+}
 
 /*Termina NUESTROS PARTIDOS*/
 
@@ -1703,6 +1709,7 @@ iframe {
         text-align: center;
     }
 }
+
 /*Footgolf*/
 /*COMIENZO DEL BANNER*/
 .contenedor-banner-fg {
