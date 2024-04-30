@@ -1783,6 +1783,22 @@ iframe {
     }
 }
 
+@media (max-width: 480px){
+    .contenedor-categoria {
+        width: 100%;
+        height: 2100px;
+
+        /*Posiciono la section categorias*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conte-categoria {
+        margin-bottom: 3px;
+    }
+}
+
 /*Footgolf*/
 /*COMIENZO DEL BANNER*/
 .contenedor-banner-fg {
