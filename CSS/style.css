@@ -791,11 +791,9 @@ header .logo img {
     width: 100%;
     align-items: center;
     background-image: url(../Imagenes/bg-nuestros-partidos.png);
-    backdrop-filter: blur(2px);
     background-repeat: no-repeat;
     background-size: cover;
-    backdrop-filter: blur(2px);}
-
+}
 
 .cont-cabecera {
     width: 100%;
@@ -817,7 +815,8 @@ header .logo img {
     width: 100%;
     border-color: #ff004c;
     justify-content: space-evenly;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(1px);
+
     a {
         text-decoration: none;
         color: #000000;
@@ -833,7 +832,6 @@ header .logo img {
     box-sizing: border-box;
     border: 6px solid --azulClaro(255, 0, 0);
     box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
-    backdrop-filter: blur(6px);
     border-radius: 1px;
     cursor: pointer;
     transition: all 0.5s;
@@ -855,7 +853,6 @@ header .logo img {
 .item:active {
     transform: scale(0.95) rotateZ(1.7deg);
 }
-
 
 
 /*Termina NUESTROS PARTIDOS*/
@@ -1149,18 +1146,11 @@ header .logo img {
 
 .bg-liga-Lobos-senior {
 
-    /*background-image: url(/Imagenes/bg-liga.png);*/
-    /*background-image: url(../Imagenes/bg-liga-senior.png);*/
     background-position: center;
     background-size: cover;
     background-color: #000000;
 
 }
-
-/* .conte-logo-lobos {
-    height: 265px;
-    width: 300px;
-} */
 
 .logo-liga {
     height: auto;
@@ -1713,62 +1703,6 @@ iframe {
         text-align: center;
     }
 }
-
-
-/*Mas de una Disciplina: Masculino, Femenino*/
-/* .contenedor-disciplinas {
-    width: 100%;
-    display: flex;
-    position: relative;
-
-}
-
-.contenedor-una-disciplina {
-    position: relative;
-}
-
-
-.contenedor-img-txt-disc {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-} */
-
-/*.contenedor-img-txt-disc {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-
-}*/
-
-/* .img-dicsiplina {
-    width: 650px;
-}
-
-.img-una-dicsiplina {
-    width: 100%;
-    height: auto;
-}
-
-.txt-disc {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
-/*    color: var(--negro);*/
-/* color: #ffffff;
-
-    font-size: 50px;
-
-
-} */
-
-/*TERMINA DISCIPLINA/CATEGORIAS LOBOS  MASCULINO, FEMENINO*/
-/*FINALIZA PAG. LOBOS*/
-
-
-
-
 /*Footgolf*/
 /*COMIENZO DEL BANNER*/
 .contenedor-banner-fg {
@@ -1785,11 +1719,9 @@ iframe {
     height: 400px;
     position: relative;
     backdrop-filter: blur(2px);
-
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .txt-banner {
@@ -1800,7 +1732,7 @@ iframe {
 
 }
 
-.bg-fg{
+.bg-fg {
     width: 100%;
     height: 100%;
     background-color: #000000;
@@ -1885,16 +1817,7 @@ iframe {
 
 
 /*INICIO CONTACTO*/
-/* .cont-cabez{
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    padding-top: 10px;
-    width: 100%;
-    height: 100px;
-    color: #ffffff;
-    background-color: #000000;
-} */
+
 
 .espacioarriba {
     margin-top: 70px;
@@ -2316,46 +2239,48 @@ textarea:focus {
     border: none
   } */
 
-  /* COMIENZA SECCION TRUCO */
+/* COMIENZA SECCION TRUCO */
 
-  .contenedor-cabezera-truco{
+.contenedor-cabezera-truco {
     padding-top: 100px;
     height: 300px;
     color: #ffffff;
     text-align: center;
-    
+
     background-color: #000000;
     background: url(../Imagenes/bg-truco.png);
     background-repeat: no-repeat;
     background-size: cover;
-    h1{
+
+    h1 {
         font-size: 40px;
     }
-  }
-  .contenedor-parrafo{
+}
+
+.contenedor-parrafo {
     width: 100%;
     height: 100%;
     padding-top: 200px;
-    padding-left: 20px; 
+    padding-left: 20px;
     padding-right: 20px;
     text-align: center;
     font-size: 25px;
     color: #000000;
     opacity: 100%;
 
-  }
+}
 
-.contenedortruco{
+.contenedortruco {
     background: url(../Imagenes/bg-body-truco.png);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     width: 100%;
     height: 600px;
 }
-.bg-truco{
+
+.bg-truco {
     background-color: #ffffff;
     width: 100%;
     height: 100%;
     opacity: 75%;
 }
-
