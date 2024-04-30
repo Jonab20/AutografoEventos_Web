@@ -790,22 +790,23 @@ header .logo img {
     height: auto;
     width: 100%;
     align-items: center;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1375%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%26quot%3b%23SvgjsLinearGradient1376%26quot%3b)'%3e%3c/rect%3e%3cpath d='M71.19 437.39L242.67 536.39L242.67 734.39L71.19 833.39L-100.29 734.39L-100.29 536.39zM585.62 140.39L757.1 239.39L757.1 437.39L585.62 536.39L414.15 437.39L414.15 239.39z' stroke='url(%26quot%3b%23SvgjsLinearGradient1377%26quot%3b)' stroke-width='2'%3e%3c/path%3e%3cpath d='M223.54 256.99L396.75 356.99L396.75 556.99L223.54 656.99L50.33 556.99L50.33 356.99zM50.33 556.99L223.54 656.99L223.54 856.99L50.33 956.99L-122.88 856.99L-122.88 656.99zM396.75 -43.01L569.96 56.99L569.96 256.99L396.75 356.99L223.54 256.99L223.54 56.99zM569.96 256.99L743.17 356.99L743.17 556.99L569.96 656.99L396.75 556.99L396.75 356.99zM396.75 556.99L569.96 656.99L569.96 856.99L396.75 956.99L223.54 856.99L223.54 656.99zM1089.59 -43.01L1262.8 56.99L1262.8 256.99L1089.59 356.99L916.38 256.99L916.38 56.99zM1262.8 256.99L1436.01 356.99L1436.01 556.99L1262.8 656.99L1089.59 556.99L1089.59 356.99zM1436.01 -43.01L1609.22 56.99L1609.22 256.99L1436.01 356.99L1262.8 256.99L1262.8 56.99z' stroke='rgba(23%2c 41%2c 63%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1375'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='15.28%25' y1='-39.29%25' x2='84.72%25' y2='139.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1376'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='%2300459e' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='220.03199999999998' y1='-220.02399999999997' x2='1219.9679999999998' y2='780.024' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1377'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(255%2c 255%2c 255%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    background-image: url(/Imagenes/bg-nuestros-partidos.png);
+    backdrop-filter: blur(2px);
     background-repeat: no-repeat;
     background-size: cover;
-}
+    backdrop-filter: blur(2px);}
+
 
 .cont-cabecera {
     width: 100%;
     height: auto;
 
-    background-color: orange;
+    background-color: rgb(0, 0, 0);
     text-align: center;
 
     h1 {
         padding-top: 100px;
         padding-bottom: 50px;
-        background-color: var(--azulClaro);
 
     }
 }
@@ -816,7 +817,7 @@ header .logo img {
     width: 100%;
     border-color: #ff004c;
     justify-content: space-evenly;
-
+    backdrop-filter: blur(2px);
     a {
         text-decoration: none;
         color: #000000;
@@ -1777,12 +1778,14 @@ iframe {
     /* padding-top: 150px; */
     background-image: url(/Imagenes/footgolf-bg.png);
     background-repeat: no-repeat;
+
     /*Para evitar se repita la imagen*/
     background-size: cover;
     /*Que la imagen se adapte al ancho de pantalla*/
     background-position: center;
     height: 400px;
     position: relative;
+    backdrop-filter: blur(2px);
 
     display: flex;
     justify-content: center;
@@ -1791,10 +1794,18 @@ iframe {
 }
 
 .txt-banner {
-    margin-top: 80px;
+    padding-top: 200px;
     font-size: 50px;
     text-align: center;
     color: #ffffff;
+
+}
+
+.bg-fg{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 95%;
 }
 
 /*Como se veran las CATEGORIAS de 0px a 480px*/
@@ -2000,8 +2011,13 @@ img {
 
 
 .espacio-formulario {
-    margin-top: 20px;
-    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url(/Imagenes/bg-contacto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+
 }
 
 /*Comienza el Formulario*/
@@ -2026,7 +2042,6 @@ img {
     /*Espacio del contenedor hacia adentro: de arriba, de abajo, derecha e izquierda*/
     border-radius: 3px;
     /*Redondear las esquinas del contenedor*/
-
 
 }
 
@@ -2309,96 +2324,39 @@ textarea:focus {
     height: 300px;
     color: #ffffff;
     text-align: center;
-    font-size: 20px;
+    
     background-color: #000000;
     background: url(/Imagenes/bg-truco.png);
     background-repeat: no-repeat;
     background-size: cover;
+    h1{
+        font-size: 40px;
+    }
   }
   .contenedor-parrafo{
-    width: 50%;
-    height: 100px;
-    padding-top: 20px;
+    width: 100%;
+    height: 100%;
+    padding-top: 200px;
     padding-left: 20px; 
     padding-right: 20px;
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
+    color: #000000;
+    opacity: 100%;
+
   }
 
-.contenedor-asaid{
-    display: flex;
-}
-
-/*SLIDER TRUCO*/Ç
-.slider-truco {
-    max-width: 50%;
-    height: 800px;
-    margin-top: 0px;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0px;
-    overflow: scroll;
-    background-position: left;
-}
-
-.slider-truco ul {
-    display: flex;
-    padding: 0;
-    width: 300%;
-    animation: slide 15s infinite alternate ease-in-out;
-}
-
-.slider-truco li {
-    width: 300%;
-    list-style: none;
-    /*position: relative; /* es solo si arriba le pongo texto a la imagen*/
-}
-
-.slider-truco img {
+.contenedortruco{
+    background: url(/Imagenes/bg-body-truco.png);
+    background-repeat: no-repeat;
+    background-size:cover;
     width: 100%;
-    height: 700px;
-    background-position: calc(300%/3);
-
+    height: 600px;
+}
+.bg-truco{
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    opacity: 75%;
 }
 
-@keyframes slide {
-
-    0% {
-        margin-left: 0;
-    }
-
-    45% {
-        margin-left: 0;
-    }
-
-    50% {
-        margin-left: -100%;
-    }
-
-    70% {
-        margin-left: -100%;
-    }
-
-    75% {
-        margin-left: -200%;
-    }
-
-    100% {
-        margin-left: -200%;
-    }
-
-}
-
-@media (max-width: 480px) {
-    .slider-truco {
-        width: 100%;
-        height: auto;
-        margin-top: 65px;
-        margin-bottom: 0px;
-    }
-
-    .slider-truco img {
-        width: 100%;
-        height: auto;
-    }
-}
