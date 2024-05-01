@@ -99,17 +99,17 @@ document.getElementById('form').addEventListener('submit', function(event) {
    parrafo.innerHTML = "";
 
    if ( btn.click && nombre.value.length <= 3 ) {
-    adver += 'El nombre y apellido es corto <br>';
+    adver += '- El nombre debe tener más de 3 caracteres <br>';
     entrar = true;
    }
 
    if ( btn.click && !regexEmail.test(email.value) ) {
-    adver += 'Al email no le falta el @ y/o el .com <br>';
+    adver += '- El email debe tener el .com <br>';
     entrar = true;
    }
 
    if ( btn.click && mensaje.value.length <= 4 ) {
-    adver += 'El mensaje es corto <br>';
+    adver += '- El mensaje debe tener más de 4 caracteres <br>';
     entrar = true;
    }
 

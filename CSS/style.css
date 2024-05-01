@@ -2164,6 +2164,7 @@ textarea:focus {
 .contegrid2 {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
 }
 
 /*Termina el Formulario*/
@@ -2226,11 +2227,11 @@ textarea:focus {
 
 .advertencia {
     /*Probar mensaje de NO validacion*/
-    width: 200px;
-    text-align: center;
-    margin: auto;
-    color: #ff004c;
-    padding-top: 20px;
+    width: 300px;
+    text-align: left;
+    margin-top: 20px;
+    color: #ff0000;
+    
 }
 
 /*Como se veran el FORMULARIO de 0px a 480px*/
