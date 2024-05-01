@@ -2030,9 +2030,10 @@ img {
 }
 
 .icon-r:nth-child(3):hover {
-    background-color: #c20937;
+    /* background-color: #c20937; */
+    background: linear-gradient(200deg, #c20937, yellow);
     border-radius: 50px;
-    box-shadow: #c20937;
+    box-shadow: linear-gradient(200deg, #c20937, yellow);
     transform: scale(1.1);
 }
 
